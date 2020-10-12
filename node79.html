@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Initializing Arrays in Java?</TITLE>
+<META NAME="description" CONTENT="Initializing Arrays in Java?">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node80.html">
+<LINK REL="previous" HREF="node78.html">
+<LINK REL="next" HREF="node80.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node80.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node78.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node78.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html799"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node80.html">Accessing Elements of an</A>
+<B> Up:</B> <A
+ HREF="node78.html">Java Arrays</A>
+<B> Previous:</B> <A
+ HREF="node78.html">Java Arrays</A>
+ &nbsp; <B>  <A ID="tex2html800"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00571000000000000000">
+Initializing Arrays in Java?</A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In Java, we can initialize arrays during declaration. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img167.svg"
+ ALT="\begin{lstlisting}
+//declare and initialize and array
+int[] age = {12, 4, 5, 2, 5};
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here, we have created an array named age and initialized it with the values inside the curly brackets. Note that we have not provided the size of the array. In this case, the Java compiler automatically specifies the size by counting the number of elements in the array (i.e. 5). In the Java array, each memory location is associated with a number. The number is known as an array index. We can also initialize arrays in Java, using the index number. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img168.svg"
+ ALT="\begin{lstlisting}
+// declare an array
+int[] age = new int[5];
+\par
+// initialize array
+age[0] = 12;
+age[1] = 4;
+age[2] = 5;
+..
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Array indices always start from 0. That is, the first element of an array is at index 0. If the size of an array is <SPAN  CLASS="texttt">n</SPAN>, then the last element of the array will be at index <SPAN  CLASS="texttt">n-1</SPAN>.
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

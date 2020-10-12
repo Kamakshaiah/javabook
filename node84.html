@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Copying Arrays Using Assignment Operator</TITLE>
+<META NAME="description" CONTENT="Copying Arrays Using Assignment Operator">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node85.html">
+<LINK REL="previous" HREF="node83.html">
+<LINK REL="next" HREF="node85.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node85.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node78.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node83.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html809"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node85.html">Using Looping Construct to</A>
+<B> Up:</B> <A
+ HREF="node78.html">Java Arrays</A>
+<B> Previous:</B> <A
+ HREF="node83.html">initialize a 2d array</A>
+ &nbsp; <B>  <A ID="tex2html810"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00576000000000000000">
+Copying Arrays Using Assignment Operator</A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In Java, we can copy one array into another. There are several techniques you can use to copy arrays in Java. Let's take an example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img191.svg"
+ ALT="\begin{lstlisting}
+class Main {
+public static void main(String[] args) {
+\par
+i...
+... positiveNumbers) {
+System.out.print(number + '', '');
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output for the above code block will be <SPAN  CLASS="texttt">1, 2, 3, 4, 5, 6</SPAN>. In the above example, we have used the assignment operator <SPAN  CLASS="texttt">(=)</SPAN> to copy an array named <SPAN  CLASS="texttt">numbers</SPAN> to another array named <SPAN  CLASS="texttt">positiveNumbers</SPAN>. This technique is the easiest one and it works as well. However, there is a problem with this technique. If we change elements of one array, corresponding elements of the other arrays also change. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img192.svg"
+ ALT="\begin{lstlisting}
+class Main {
+public static void main(String[] args) {
+\par
+i...
+... positiveNumbers) {
+System.out.print(number + '', '');
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output for the above program can look like <SPAN  CLASS="texttt">-1, 2, 3, 4, 5, 6</SPAN>. Here, we can see that we have changed one value of the <SPAN  CLASS="texttt">numbers</SPAN> array. When we print the <SPAN  CLASS="texttt">positiveNumbers</SPAN> array, we can see that the same value is also changed. It's because both arrays refer to the same array object. This is because of the shallow copy. To learn more about shallow copy, visit shallow copy. Now, to make new array objects while copying the arrays, we need deep copy rather than a shallow copy.
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node85.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node78.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node83.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html809"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node85.html">Using Looping Construct to</A>
+<B> Up:</B> <A
+ HREF="node78.html">Java Arrays</A>
+<B> Previous:</B> <A
+ HREF="node83.html">initialize a 2d array</A>
+ &nbsp; <B>  <A ID="tex2html810"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8.776 10.98" version="1.2">
+<defs>
+<g>
+<symbol overflow="visible" id="glyph0-0">
+<path style="stroke:none;" d=""/>
+</symbol>
+<symbol overflow="visible" id="glyph0-1">
+<path style="stroke:none;" d="M 4 2.25 C 4.046875 2.390625 4.09375 2.5 4.234375 2.5 C 4.34375 2.5 4.421875 2.40625 4.421875 2.296875 C 4.421875 2.265625 4.421875 2.25 4.375 2.140625 L 0.96875 -7.234375 C 0.90625 -7.40625 0.875 -7.484375 0.75 -7.484375 C 0.640625 -7.484375 0.546875 -7.390625 0.546875 -7.28125 C 0.546875 -7.25 0.546875 -7.234375 0.59375 -7.125 Z M 4 2.25 "/>
+</symbol>
+<symbol overflow="visible" id="glyph1-0">
+<path style="stroke:none;" d=""/>
+</symbol>
+<symbol overflow="visible" id="glyph1-1">
+<path style="stroke:none;" d="M 2.015625 -3.296875 C 2.078125 -3.40625 2.078125 -3.46875 2.078125 -3.515625 C 2.078125 -3.734375 1.890625 -3.890625 1.671875 -3.890625 C 1.40625 -3.890625 1.328125 -3.671875 1.296875 -3.5625 L 0.375 -0.546875 C 0.359375 -0.53125 0.328125 -0.453125 0.328125 -0.4375 C 0.328125 -0.359375 0.546875 -0.28125 0.609375 -0.28125 C 0.65625 -0.28125 0.65625 -0.296875 0.703125 -0.40625 Z M 2.015625 -3.296875 "/>
+</symbol>
+</g>
+<clipPath id="clip1">
+  <path d="M 1 0 L 5 0 L 5 10.980469 L 1 10.980469 Z M 1 0 "/>
+</clipPath>
+</defs>
+<g id="surface1">
+<g clip-path="url(#clip1)" clip-rule="nonzero">
+<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="0.5" y="7.989"/>
+</g>
+</g>
+<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
+  <use xlink:href="#glyph1-1" x="5.481" y="4.374"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Looping Through Array Elements</TITLE>
+<META NAME="description" CONTENT="Looping Through Array Elements">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node82.html">
+<LINK REL="previous" HREF="node80.html">
+<LINK REL="next" HREF="node82.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node82.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node78.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node80.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html803"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node82.html">Multidimensional Arrays</A>
+<B> Up:</B> <A
+ HREF="node78.html">Java Arrays</A>
+<B> Previous:</B> <A
+ HREF="node80.html">Accessing Elements of an</A>
+ &nbsp; <B>  <A ID="tex2html804"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00573000000000000000">
+Looping Through Array Elements</A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In Java, we can also loop through each element of the array. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img172.svg"
+ ALT="\begin{lstlisting}
+class Main {
+public static void main(String[] args) {
+\par
+/...
+... 0; i &lt; age.length; i++) {
+System.out.println(age[i]);
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The output for the above program is 
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img173.svg"
+ ALT="\begin{lstlisting}
+Using for Loop:
+12
+4
+5
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In the above example, we are using the for Loop in Java to iterate through each element of the array. Notice the expression inside the loop, <SPAN  CLASS="texttt">age.length</SPAN>; Here, we are using the length property of the array to get the size of the array. We can also use the for-each loop to iterate through the elements of an array. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img174.svg"
+ ALT="\begin{lstlisting}
+class Main {
+public static void main(String[] args) {
+\par
+/...
+...h Loop:'');
+for(int a : age) {
+System.out.println(a);
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The output will be as follows
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img175.svg"
+ ALT="\begin{lstlisting}
+Using for-each Loop:
+12
+4
+5
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img176.svg"
+ ALT="\begin{lstlisting}
+class Main {
+public static void main(String[] args) {
+\par
+i...
+... '' + sum);
+System.out.println(''Average = '' + average);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The output will be 
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img177.svg"
+ ALT="\begin{lstlisting}
+Sum = 36
+Average = 3.6
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In the above example, we have created an array of named <SPAN  CLASS="texttt">numbers</SPAN>. We have used the <SPAN  CLASS="texttt">for...each</SPAN> loop to access each element of the array. Inside the loop, we are calculating the sum of each element. Notice the line, <SPAN  CLASS="texttt">int arrayLength = number.length;</SPAN> Here, we are using the length attribute of the array to calculate the size of the array. We then calculate the average using:
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img178.svg"
+ ALT="\begin{lstlisting}
+average = ((double)sum / (double)arrayLength);
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node82.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node78.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node80.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html803"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node82.html">Multidimensional Arrays</A>
+<B> Up:</B> <A
+ HREF="node78.html">Java Arrays</A>
+<B> Previous:</B> <A
+ HREF="node80.html">Accessing Elements of an</A>
+ &nbsp; <B>  <A ID="tex2html804"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

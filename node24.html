@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Examples</TITLE>
+<META NAME="description" CONTENT="Examples">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node23.html">
+<LINK REL="next" HREF="node25.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node25.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node23.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node23.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html464"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node25.html">JavaFX application</A>
+<B> Up:</B> <A
+ HREF="node23.html">Swing application</A>
+<B> Previous:</B> <A
+ HREF="node23.html">Swing application</A>
+ &nbsp; <B>  <A ID="tex2html465"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00474100000000000000">
+Examples</A>
+</H3><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN  CLASS="textbf">This example Swing application creates a single window with Hello, world! inside. </SPAN>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img36.svg"
+ ALT="\begin{lstlisting}
+// Hello.java (Java SE 5)
+import javax.swing.*;
+\par
+public c...
+...blic static void main(final String[] args) {
+new Hello();
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The first <!-- MATH
+ $\lstinline{import}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img37.svg"
+ ALT="$\lstinline{import}$"></SPAN> includes all the public classes and interfaces from the <!-- MATH
+ $\lstinline{javax.swing}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img38.svg"
+ ALT="$\lstinline{javax.swing}$"></SPAN> package. The <!-- MATH
+ $\lstinline{Hello}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img39.svg"
+ ALT="$\lstinline{Hello}$"></SPAN> class <!-- MATH
+ $\lstinline{extends}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img40.svg"
+ ALT="$\lstinline{extends}$"></SPAN> the <!-- MATH
+ $\lstinline{JFrame}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img41.svg"
+ ALT="$\lstinline{JFrame}$"></SPAN> class; the <!-- MATH
+ $\lstinline{JFrame}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img41.svg"
+ ALT="$\lstinline{JFrame}$"></SPAN> class implements a <SPAN  CLASS="textit">window</SPAN> with a <SPAN  CLASS="textit">title bar</SPAN> and a <SPAN  CLASS="textit">close</SPAN> control.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The <!-- MATH
+ $\lstinline{Hello()}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.67ex; vertical-align: -0.27ex; " SRC="img42.svg"
+ ALT="$\lstinline{Hello()}$"></SPAN> constructor initializes the frame by first calling the superclass constructor, passing the parameter hello, which is used as the window's title. It then calls the <!-- MATH
+ $\lstinline{setDefaultCloseOperation(int)}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.93ex; vertical-align: -0.53ex; " SRC="img43.svg"
+ ALT="$\lstinline{setDefaultCloseOperation(int)}$"></SPAN> method inherited from <!-- MATH
+ $\lstinline{JFrame}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img41.svg"
+ ALT="$\lstinline{JFrame}$"></SPAN> to set the default operation when the close control on the title bar is selected to <!-- MATH
+ $\lstinline{WindowConstants.EXIT_ON_CLOSE}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.55ex; vertical-align: -0.30ex; " SRC="img44.svg"
+ ALT="$\lstinline{WindowConstants.EXIT_ON_CLOSE}$"></SPAN> - this causes the <!-- MATH
+ $\lstinline{JFrame}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img41.svg"
+ ALT="$\lstinline{JFrame}$"></SPAN> to be disposed of when the frame is closed (as opposed to merely hidden), which allows the Java virtual machine to exit and the program to terminate. Next, a <!-- MATH
+ $\lstinline{JLabel}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img45.svg"
+ ALT="$\lstinline{JLabel}$"></SPAN> is created for the string Hello, world!" and the <!-- MATH
+ $\lstinline{add(Component)}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.93ex; vertical-align: -0.53ex; " SRC="img46.svg"
+ ALT="$\lstinline{add(Component)}$"></SPAN> method inherited from the <!-- MATH
+ $\lstinline{Container}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img47.svg"
+ ALT="$\lstinline{Container}$"></SPAN> superclass is called to add the label to the frame. The <!-- MATH
+ $\lstinline{pack()}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.93ex; vertical-align: -0.53ex; " SRC="img48.svg"
+ ALT="$\lstinline{pack()}$"></SPAN> method inherited from the <!-- MATH
+ $\lstinline{Window}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img49.svg"
+ ALT="$\lstinline{Window}$"></SPAN> superclass is called to size the window and lay out its contents.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The <!-- MATH
+ $\lstinline{main()}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.67ex; vertical-align: -0.27ex; " SRC="img50.svg"
+ ALT="$\lstinline{main()}$"></SPAN> method is called by the Java virtual machine when the program starts. It instantiates a new <SPAN  CLASS="textit">Hello</SPAN> frame and causes it to be displayed by calling the <!-- MATH
+ $\lstinline{setVisible(boolean)}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.67ex; vertical-align: -0.27ex; " SRC="img51.svg"
+ ALT="$\lstinline{setVisible(boolean)}$"></SPAN> method inherited from the <!-- MATH
+ $\lstinline{Component}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img52.svg"
+ ALT="$\lstinline{Component}$"></SPAN> superclass with the boolean parameter <!-- MATH
+ $\lstinline{true}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.26ex; vertical-align: -0.12ex; " SRC="img53.svg"
+ ALT="$\lstinline{true}$"></SPAN>. Once the frame is displayed, exiting the main method does not cause the program to terminate because the AWT event dispatching thread remains active until all of the Swing top-level windows have been disposed.
+</SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN  CLASS="textbf">The following is a rather simple Swing-based program. It displays a window (a JFrame) containing a label and a button. </SPAN>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img54.svg"
+ ALT="\begin{lstlisting}
+import java.awt.FlowLayout;
+import javax.swing.JButton;
+impor...
+... in the event queue.
+SwingUtilities.invokeLater(se);
+}
+\par
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Notice how all instantiation and handling of Swing components are done by creating an instance of the class, which implements the Runnable interface. This is then run on the <SPAN  CLASS="textit">Event Dispatch Thread</SPAN> by use of the method <!-- MATH
+ $\lstinline{SwingUtilities.invokeLater(Runnable))}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.93ex; vertical-align: -0.53ex; " SRC="img55.svg"
+ ALT="$\lstinline{SwingUtilities.invokeLater(Runnable))}$"></SPAN>, created in the main method. Although Swing code can be run without using this technique (for instance, by not implementing Runnable and moving all commands from the run method to the main method), it is considered to be good form, as Swing is not thread-safe, meaning that invoking resources from multiple threads can result in thread interference and memory consistency errors.
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node25.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node23.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node23.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html464"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node25.html">JavaFX application</A>
+<B> Up:</B> <A
+ HREF="node23.html">Swing application</A>
+<B> Previous:</B> <A
+ HREF="node23.html">Swing application</A>
+ &nbsp; <B>  <A ID="tex2html465"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

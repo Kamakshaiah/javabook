@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>char</TITLE>
+<META NAME="description" CONTENT="char">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node59.html">
+<LINK REL="previous" HREF="node57.html">
+<LINK REL="next" HREF="node59.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node59.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node50.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node57.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html722"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node59.html">String</A>
+<B> Up:</B> <A
+ HREF="node50.html">8 Primitive Data Types</A>
+<B> Previous:</B> <A
+ HREF="node57.html">float</A>
+ &nbsp; <B>  <A ID="tex2html723"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00543800000000000000">
+char</A>
+</H3><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">It's a 16-bit Unicode character. The minimum value of the char data type is <!-- MATH
+ $'\symbol{92}u0000'$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img114.svg"
+ ALT="$'\symbol{92}u0000'$"></SPAN> (0). The maximum value of the char data type is <!-- MATH
+ $'\symbol{92}uffff'$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img115.svg"
+ ALT="$'\symbol{92}uffff'$"></SPAN>. Default value is <!-- MATH
+ $'\symbol{92}u0000'$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img114.svg"
+ ALT="$'\symbol{92}u0000'$"></SPAN>. 
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img116.svg"
+ ALT="\begin{lstlisting}
+class CharExample {
+public static void main(String[] args) {
+\par
+char letter = '\u0051';
+System.out.println(letter);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">You get the output <SPAN  CLASS="textit">Q</SPAN> because the Unicode value of <SPAN  CLASS="textit">Q</SPAN> is <!-- MATH
+ $'\symbol{92}u0051'$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.55ex; vertical-align: -0.70ex; " SRC="img117.svg"
+ ALT="$'\symbol{92}u0051'$"></SPAN>. Here is another example:
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img118.svg"
+ ALT="\begin{lstlisting}
+class CharExample {
+public static void main(String[] args) {...
+...
+\par
+char letter2 = 65;
+System.out.println(letter2);
+\par
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">When you print <!-- MATH
+ $\lstinline{letter1}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img119.svg"
+ ALT="$\lstinline{letter1}$"></SPAN>, you will get 9 because <!-- MATH
+ $\lstinline{letter1}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img119.svg"
+ ALT="$\lstinline{letter1}$"></SPAN> is assigned character '9'. When you print <!-- MATH
+ $\lstinline{letter2}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img120.svg"
+ ALT="$\lstinline{letter2}$"></SPAN>, you get A because the ASCII value of 'A' is 65. It's because java compiler treats the character as an integral type.
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

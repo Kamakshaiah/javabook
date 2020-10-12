@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>How while loop works?</TITLE>
+<META NAME="description" CONTENT="How while loop works?">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node188.html">
+<LINK REL="next" HREF="node190.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node190.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node188.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node188.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1180"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node190.html">Java do...while Loop</A>
+<B> Up:</B> <A
+ HREF="node188.html">Java while loop</A>
+<B> Previous:</B> <A
+ HREF="node188.html">Java while loop</A>
+ &nbsp; <B>  <A ID="tex2html1181"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00650100000000000000">
+How <SPAN  CLASS="texttt">while</SPAN> loop works?</A>
+</H3><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above syntax, the test expression inside parenthesis is a boolean expression. If the test expression is evaluated to <SPAN  CLASS="texttt">true</SPAN>, 
+</SPAN></SPAN>
+<UL>
+<LI>statements inside the while loop are executed.
+</LI>
+<LI>then, the test expression is evaluated again.
+</LI>
+</UL><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">This process goes on until the test expression is evaluated to <SPAN  CLASS="texttt">false</SPAN>. If the test expression is evaluated to <SPAN  CLASS="texttt">false</SPAN>, the while loop is terminated.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img337.svg"
+ ALT="\begin{lstlisting}
+// Program to print line 10 times
+\par
+class Loop {
+public s...
+...e (i &lt;= 10) {
+System.out.println(''Line '' + i);
+++i;
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img327.svg"
+ ALT="\begin{lstlisting}
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+Line 10
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above example, we have a test expression <SPAN  CLASS="texttt">(i &lt;= 10)</SPAN>. It checks whether the value of <SPAN  CLASS="texttt">i</SPAN> is less than or equal to 10.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Here initially, the value of <SPAN  CLASS="texttt">i</SPAN> is 1. So the test expression evaluates to <SPAN  CLASS="texttt">true</SPAN> for the first time. Hence, the print statement inside <SPAN  CLASS="texttt">while</SPAN> loop is executed. Inside while loop notice the statement <SPAN  CLASS="texttt">++i</SPAN>; This statement increases the value of <SPAN  CLASS="texttt">i</SPAN> by 1 in each iteration. After 10 iterations, the value of <SPAN  CLASS="texttt">i</SPAN> will be 11. Then, the test expression <SPAN  CLASS="texttt">(i &lt;= 10)</SPAN><SPAN  CLASS="texttt">(i &lt;= 10)</SPAN> evaluates to false and while loop terminates. The following code block executes <SPAN  CLASS="textit">sum of natural numbers from 1 to 100</SPAN>.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img338.svg"
+ ALT="\begin{lstlisting}
+// Program to find the sum of natural numbers from 1 to 100.
+...
+...m + i;
+--i;
+}
+\par
+System.out.println(''Sum = '' + sum);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The output for the above program will be <SPAN  CLASS="texttt">Sum = 5050</SPAN>. Here, we have two variables named sum and i whose initial values are 0 and 100 respectively. In each iteration of the while loop,
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<UL>
+<LI>the sum variable is assigned value: sum + i
+</LI>
+<LI>the value of i is decreased by 1
+</LI>
+</UL><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node190.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node188.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node188.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1180"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node190.html">Java do...while Loop</A>
+<B> Up:</B> <A
+ HREF="node188.html">Java while loop</A>
+<B> Previous:</B> <A
+ HREF="node188.html">Java while loop</A>
+ &nbsp; <B>  <A ID="tex2html1181"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

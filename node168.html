@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Methods of InputStream</TITLE>
+<META NAME="description" CONTENT="Methods of InputStream">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node169.html">
+<LINK REL="previous" HREF="node167.html">
+<LINK REL="next" HREF="node169.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node169.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node167.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1102"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node169.html">Java OutputStream Class</A>
+<B> Up:</B> <A
+ HREF="node166.html">Java I/O Streams</A>
+<B> Previous:</B> <A
+ HREF="node167.html">Java InputStream Class</A>
+ &nbsp; <B>  <A ID="tex2html1103"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION005122000000000000000">
+Methods of <SPAN  CLASS="texttt">InputStream</SPAN></A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The <SPAN  CLASS="texttt">InputStream</SPAN> class provides different methods that are implemented by its <SPAN  CLASS="textit">subclasses</SPAN>. Here are some of the commonly used methods:
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<OL>
+<LI><SPAN  CLASS="texttt">read()</SPAN> - reads one byte of data from the input stream
+</LI>
+<LI><SPAN  CLASS="texttt">read(byte[] array)</SPAN> - reads bytes from the stream and stores in the specified array
+</LI>
+<LI><SPAN  CLASS="texttt">available()</SPAN> - returns the number of bytes available in the input stream
+</LI>
+<LI><SPAN  CLASS="texttt">mark()</SPAN> - marks the position in the input stream up to which data has been read
+</LI>
+<LI><SPAN  CLASS="texttt">reset()</SPAN> - returns the control to the point in the stream where the mark was set
+</LI>
+<LI><SPAN  CLASS="texttt">markSupported()</SPAN> - checks if the mark() and reset() method is supported in the stream
+</LI>
+<LI><SPAN  CLASS="texttt">skips()</SPAN> - skips and discards the specified number of bytes from the input stream
+</LI>
+<LI><SPAN  CLASS="texttt">close()</SPAN> - closes the input stream
+</LI>
+</OL><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here is how we can implement <SPAN  CLASS="texttt">InputStream</SPAN> using the <SPAN  CLASS="texttt">FileInputStream</SPAN> class. Suppose we have a file named <SPAN  CLASS="texttt">input.txt</SPAN> with the following content.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img296.svg"
+ ALT="\begin{lstlisting}
+This is a line of text inside the file.
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Let's try to read this file using <SPAN  CLASS="texttt">FileInputStream</SPAN> (a subclass of <SPAN  CLASS="texttt">InputStream</SPAN>).
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img297.svg"
+ ALT="\begin{lstlisting}
+import java.io.FileInputStream;
+import java.io.InputStream;
+\...
+....close();
+}
+catch (Exception e) {
+e.getStackTrace();
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img298.svg"
+ ALT="\begin{lstlisting}
+Available bytes in the file: 35
+Data read from the file:
+This is a line of text inside the file
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node169.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node166.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node167.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1102"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node169.html">Java OutputStream Class</A>
+<B> Up:</B> <A
+ HREF="node166.html">Java I/O Streams</A>
+<B> Previous:</B> <A
+ HREF="node167.html">Java InputStream Class</A>
+ &nbsp; <B>  <A ID="tex2html1103"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

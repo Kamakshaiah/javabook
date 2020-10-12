@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>switch statement</TITLE>
+<META NAME="description" CONTENT="switch statement">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node182.html">
+<LINK REL="previous" HREF="node179.html">
+<LINK REL="next" HREF="node182.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node182.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node175.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node180.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1154"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node182.html">Java for Loop</A>
+<B> Up:</B> <A
+ HREF="node175.html">Control Flow and Decision</A>
+<B> Previous:</B> <A
+ HREF="node180.html">When to use ternary</A>
+ &nbsp; <B>  <A ID="tex2html1155"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00630000000000000000">
+<SPAN  CLASS="texttt">switch</SPAN> statement</A>
+</H1><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In Java, <SPAN  CLASS="texttt">if..else..if</SPAN> ladder is used to execute a block of code among multiple blocks. However, the syntax of <SPAN  CLASS="texttt">if...else...if</SPAN> ladders are too long. Hence, we can use the switch statement as a substitute for long <SPAN  CLASS="texttt">if...else...if</SPAN> ladders. The use of switch statements makes our code more readable. 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img321.svg"
+ ALT="\begin{lstlisting}
+switch (variable/expression) {
+case value1:
+// statements of...
+...par
+.. .. ...
+.. .. ...
+\par
+default:
+// default statements
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The <SPAN  CLASS="texttt">switch</SPAN> statement evaluates the <SPAN  CLASS="texttt">expression</SPAN> (mostly <SPAN  CLASS="texttt">variable</SPAN>) and compares it with values (can be expressions) of each <SPAN  CLASS="texttt">case</SPAN> label. Now, if the value matches a certain <SPAN  CLASS="texttt">case</SPAN> label, then all the statements of the matching <SPAN  CLASS="texttt">case</SPAN> label are executed. For example, if the <SPAN  CLASS="texttt">variable/expression</SPAN> is equal to <SPAN  CLASS="texttt">value2</SPAN>. In this <SPAN  CLASS="texttt">case</SPAN>, all statements of that matching <SPAN  CLASS="texttt">case</SPAN> (statements of case2) are executed. Notice, the use of <SPAN  CLASS="texttt">break</SPAN> statements in each case. The <SPAN  CLASS="texttt">break</SPAN> statement is used to terminate the execution of the <SPAN  CLASS="texttt">switch</SPAN> statement. It is important because if <SPAN  CLASS="texttt">break</SPAN> is not used all the statements after the matching <SPAN  CLASS="texttt">case</SPAN> are executed in sequence until the end of the <SPAN  CLASS="texttt">switch</SPAN> statement.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The Java switch statement only works with:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<UL>
+<LI>Java Primitive data types: byte, short, char, and int
+</LI>
+<LI>Java Enumerated types
+</LI>
+<LI>Java String Class
+</LI>
+<LI>Java Wrapper Classes: Character, Byte, Short, and Integer.
+</LI>
+</UL><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img322.svg"
+ ALT="\begin{lstlisting}
+class Main {
+public static void main(String[] args) {
+\par
+i...
+...'';
+break;
+}
+System.out.println(''The day is '' + day);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The output for the above code is <SPAN  CLASS="texttt">The day is Wednesday</SPAN>. In the above example, we have used the <SPAN  CLASS="texttt">switch</SPAN> statement to find out the day of a week. Here, we have a variable <SPAN  CLASS="texttt">week</SPAN> that holds an integer value. The value is compared to each <SPAN  CLASS="texttt">case</SPAN> inside the <SPAN  CLASS="texttt">switch</SPAN> block. Here the value of <SPAN  CLASS="texttt">week</SPAN> is 4. Hence it matches the <SPAN  CLASS="texttt">case 4</SPAN>. So the statement inside <SPAN  CLASS="texttt">case 4</SPAN> is executed.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<BLOCKQUOTE><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<SPAN  CLASS="textbf">Exercise</SPAN> 
+<BR>
+Make Calculator using the switch statement. 
+<BR>
+</SPAN></SPAN></BLOCKQUOTE><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img323.svg"
+ ALT="\begin{lstlisting}
+import java.util.Scanner;
+\par
+class Main {
+public static vo...
+...lt:
+System.out.println(''Invalid operator!'');
+break;
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output is as follows:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img324.svg"
+ ALT="\begin{lstlisting}
+Enter operator (either +, -, * or /): *
+Enter number1 and number2 respectively: 1.4
+-5.3
+1.4*-5.3 = -7.419999999999999
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node182.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node175.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node180.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1154"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node182.html">Java for Loop</A>
+<B> Up:</B> <A
+ HREF="node175.html">Control Flow and Decision</A>
+<B> Previous:</B> <A
+ HREF="node180.html">When to use ternary</A>
+ &nbsp; <B>  <A ID="tex2html1155"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

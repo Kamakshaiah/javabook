@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Java if...else (if-then-else) Statement</TITLE>
+<META NAME="description" CONTENT="Java if...else (if-then-else) Statement">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node178.html">
+<LINK REL="previous" HREF="node176.html">
+<LINK REL="next" HREF="node178.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node178.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node176.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node176.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1145"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node178.html">Nested if..else Statement</A>
+<B> Up:</B> <A
+ HREF="node176.html">Java if, if...else Statement</A>
+<B> Previous:</B> <A
+ HREF="node176.html">Java if, if...else Statement</A>
+ &nbsp; <B>  <A ID="tex2html1146"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00611000000000000000">
+Java <SPAN  CLASS="texttt">if...else (if-then-else)</SPAN> Statement</A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In Java, the syntax of the if-then statement is:
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img306.svg"
+ ALT="\begin{lstlisting}
+if (expression) {
+// statements
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here expression is a boolean expression. A boolean expression returns either true or false.
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<UL>
+<LI>if the expression is evaluated to <SPAN  CLASS="texttt">true</SPAN>, statement(s) inside the body of <SPAN  CLASS="texttt">if</SPAN>(statements inside parenthesis) are executed
+</LI>
+<LI>if the expression is evaluated to <SPAN  CLASS="texttt">false</SPAN>, statement(s) inside the body of <SPAN  CLASS="texttt">if</SPAN> are skipped from execution
+
+<P>
+</LI>
+</UL><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Working of Java if statement
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img307.svg"
+ ALT="\begin{lstlisting}
+class IfStatement {
+public static void main(String[] args) {...
+...ystem.out.println(''This statement is always executed.'');
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The output for the above code is as follows. 
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img308.svg"
+ ALT="\begin{lstlisting}
+The number is positive.
+This statement is always executed.
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In the above example, we have a variable named <SPAN  CLASS="texttt">number</SPAN>. Here, the test expression checks if the <SPAN  CLASS="texttt">number</SPAN> is greater than <SPAN  CLASS="texttt">0</SPAN> (<SPAN  CLASS="texttt">number &gt; 0</SPAN>). Since the <SPAN  CLASS="texttt">number</SPAN> is greater than <SPAN  CLASS="texttt">0</SPAN>. So the test expression evaluates to <SPAN  CLASS="texttt">true</SPAN>. Hence code inside the body of <SPAN  CLASS="texttt">if</SPAN> is executed. Now, change the value of the <SPAN  CLASS="texttt">number</SPAN> to a negative integer. Let's say -5. If we run the above program with the new value of the number, the output will be <SPAN  CLASS="texttt">This statement is always executed.</SPAN>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img309.svg"
+ ALT="\begin{lstlisting}
+class Main {
+public static void main(String[] args) {
+// cr...
+...m.out.println(''This is best programming language.'');
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Above program display <SPAN CLASS="SPAN"><SPAN  CLASS="texttt">This is best programming language</SPAN> as an output. Here, we are comparing two strings in the if block.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The <SPAN  CLASS="texttt">if</SPAN> statement executes a certain section of code if the test expression is evaluated to <SPAN  CLASS="texttt">true</SPAN>. However, if the test expression is evaluated to <SPAN  CLASS="texttt">false</SPAN>, it does nothing. 
+In this case, we can use an optional <SPAN  CLASS="texttt">else</SPAN> block. Statements inside the body of else block are executed if the test expression is evaluated to <SPAN  CLASS="texttt">false</SPAN>. This is known as the <SPAN  CLASS="texttt">if-then-else</SPAN> statement in Java. The syntax of the if-then-else statement is:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img310.svg"
+ ALT="\begin{lstlisting}
+if (expression) {
+// codes
+}
+else {
+// some other code
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Here, our program will do one task (task inside if block) if the test expression is <SPAN  CLASS="texttt">true</SPAN> and another task (task inside else block) if the test expression is <SPAN  CLASS="texttt">false</SPAN>.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img311.svg"
+ ALT="\begin{lstlisting}
+class IfElse {
+public static void main(String[] args) {
+in...
+...ystem.out.println(''This statement is always executed.'');
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The output for the above code is 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img308.svg"
+ ALT="\begin{lstlisting}
+The number is positive.
+This statement is always executed.
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above example, we have a variable named <SPAN  CLASS="texttt">number</SPAN>. Here, the test expression checks if the <SPAN  CLASS="texttt">number</SPAN> is greater than <SPAN  CLASS="texttt">0 (number &gt; 0)</SPAN>. Since the value of the <SPAN  CLASS="texttt">number</SPAN> is 10, the test expression evaluates to <SPAN  CLASS="texttt">true</SPAN>. Hence code inside the body of <SPAN  CLASS="texttt">if</SPAN> is executed. Now, change the value of the <SPAN  CLASS="texttt">number</SPAN> to a negative integer. Let's say -5, (<SPAN  CLASS="texttt">int number = -5;</SPAN>). If we run the program with the new value of the number, the output will be:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img312.svg"
+ ALT="\begin{lstlisting}
+The number is not positive.
+This statement is always executed.
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Here, the value of <SPAN  CLASS="texttt">number</SPAN> is -5. So the test expression evaluates to <SPAN  CLASS="texttt">false</SPAN>. Hence code inside the body of <SPAN  CLASS="texttt">else</SPAN> is executed.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In Java, we have an <SPAN  CLASS="texttt">if...else...if</SPAN> ladder, that can be used to execute one block of code among multiple other blocks.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img313.svg"
+ ALT="\begin{lstlisting}
+if (expression1) {
+// codes
+}
+else if(expression2) {
+// codes
+}
+else if (expression3) {
+// codes
+}
+.
+.
+else {
+// codes
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Here, <SPAN  CLASS="texttt">if</SPAN> statements are executed from the top towards the bottom. As soon as the test expression is <SPAN  CLASS="texttt">true</SPAN>, codes inside the body of that the <SPAN  CLASS="texttt">if</SPAN> statement is executed. Then, the control of the program jumps outside the <SPAN  CLASS="texttt">if-else-if</SPAN> ladder. If all test expressions are <SPAN  CLASS="texttt">false</SPAN>, codes inside the body of <SPAN  CLASS="texttt">else</SPAN> is executed.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img314.svg"
+ ALT="\begin{lstlisting}
+class Ladder {
+public static void main(String[] args) {
+\pa...
+...
+}
+else {
+System.out.println(''The number is 0.'');
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output from above code looks like <SPAN  CLASS="texttt">The number is 0.</SPAN> In the above example, we are checking whether the <SPAN  CLASS="texttt">number</SPAN> is positive, negative or zero. Here, we have two test expressions:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<UL>
+<LI><SPAN  CLASS="texttt">number &gt; 0</SPAN> - checks if the number is greater than 0
+</LI>
+<LI><SPAN  CLASS="texttt">number &lt; 0</SPAN> - checks if the number is less than 0
+</LI>
+</UL><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Here, the value of <SPAN  CLASS="texttt">number</SPAN> is 0. So both the test expression evaluates to <SPAN  CLASS="texttt">false</SPAN>. Hence the statement inside the body of else is executed.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node178.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node176.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node176.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1145"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node178.html">Nested if..else Statement</A>
+<B> Up:</B> <A
+ HREF="node176.html">Java if, if...else Statement</A>
+<B> Previous:</B> <A
+ HREF="node176.html">Java if, if...else Statement</A>
+ &nbsp; <B>  <A ID="tex2html1146"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

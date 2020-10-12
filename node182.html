@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Java for Loop</TITLE>
+<META NAME="description" CONTENT="Java for Loop">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node188.html">
+<LINK REL="previous" HREF="node181.html">
+<LINK REL="next" HREF="node183.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node183.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node175.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node181.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1156"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node183.html">infinite for Loop</A>
+<B> Up:</B> <A
+ HREF="node175.html">Control Flow and Decision</A>
+<B> Previous:</B> <A
+ HREF="node181.html">switch statement</A>
+ &nbsp; <B>  <A ID="tex2html1157"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00640000000000000000">
+Java <SPAN  CLASS="texttt">for</SPAN> Loop</A>
+</H1><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In computer programming, loops are used to repeat a specific block of code until a certain condition is met (test expression is false). For example, imagine we need to print a sentence 50 times on your screen. Well, we can do it by using the print statement 50 times (without using loops). How about you need to print a sentence one million times? You need to use loops. With loops, we can simply write the print statement one time and run it for any number of times. It's just a simple example showing the importance of loop in computer programming. The syntax of <SPAN  CLASS="texttt">for</SPAN> Loop in Java is:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img325.svg"
+ ALT="\begin{lstlisting}
+for (initialization; testExpression; update)
+{
+// codes inside for loop's body
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Steps involving in working of for loop.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<OL>
+<LI>The <SPAN  CLASS="textit">initialization</SPAN> expression is executed only once.
+</LI>
+<LI>Then, the <SPAN  CLASS="textit">test</SPAN> expression is evaluated. Here, test expression is a boolean expression.
+</LI>
+<LI>If the test expression is evaluated to <SPAN  CLASS="texttt">true</SPAN>, codes inside the body of for loop is executed. Then the update expression is executed. Again, the test expression is evaluated.
+If the test expression is <SPAN  CLASS="texttt">true</SPAN>, codes inside the body of for loop is executed and update expression is executed. This process goes on until the test expression is evaluated to false.
+</LI>
+<LI>If the test expression is evaluated to false, for loop terminates.
+</LI>
+</OL><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img326.svg"
+ ALT="\begin{lstlisting}
+// Program to print a sentence 10 times
+\par
+class Loop {
+pu...
+... 1; i &lt;= 10; ++i) {
+System.out.println(''Line '' + i);
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img327.svg"
+ ALT="\begin{lstlisting}
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+Line 10
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above example, we have
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<UL>
+<LI>initialization expression: <SPAN  CLASS="texttt">int i = 1</SPAN>
+</LI>
+<LI>test expression: <SPAN  CLASS="texttt">i &lt;=10</SPAN>
+</LI>
+<LI>update expression: <SPAN  CLASS="texttt">++i</SPAN>
+</LI>
+</UL><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Here, initially, the value of <SPAN  CLASS="texttt">i</SPAN> is 1. So the test expression evaluates to <SPAN  CLASS="texttt">true</SPAN> for the first time. Hence, the print statement is executed. Now the update expression is evaluated. Each time the update expression is evaluated, the value of <SPAN  CLASS="texttt">i</SPAN> is increased by 1. Again, the test expression is evaluated. And, the same process is repeated. This process goes on until <SPAN  CLASS="texttt">i</SPAN> is 11. When <SPAN  CLASS="texttt">i</SPAN> is 11, the test expression <SPAN  CLASS="texttt">(i &lt;= 10)</SPAN> is <SPAN  CLASS="texttt">false</SPAN> and the for loop terminates.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img328.svg"
+ ALT="\begin{lstlisting}
+// Program to find the sum of natural numbers from 1 to 1000....
+...um = sum + i
+}
+\par
+System.out.println(''Sum = '' + sum);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output for the above code will be <SPAN  CLASS="texttt">Sum = 500500</SPAN>. 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<BR><HR>
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><A ID="tex2html1158"
+  HREF="node183.html">infinite for Loop</A>
+</UL>
+<BR>
+<LI><A ID="tex2html1159"
+  HREF="node184.html">Java <SPAN  CLASS="texttt">for-each</SPAN> Loop</A>
+<UL>
+<LI><A ID="tex2html1160"
+  HREF="node185.html"><SPAN  CLASS="texttt">for</SPAN> loop</A>
+<LI><A ID="tex2html1161"
+  HREF="node186.html"><SPAN  CLASS="texttt">Using for-each</SPAN> loop</A>
+</UL>
+<BR>
+<LI><A ID="tex2html1162"
+  HREF="node187.html">Disadvantages of Using for-each Loop</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node183.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node175.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node181.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1156"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node183.html">infinite for Loop</A>
+<B> Up:</B> <A
+ HREF="node175.html">Control Flow and Decision</A>
+<B> Previous:</B> <A
+ HREF="node181.html">switch statement</A>
+ &nbsp; <B>  <A ID="tex2html1157"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

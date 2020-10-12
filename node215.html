@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Java enums</TITLE>
+<META NAME="description" CONTENT="Java enums">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node208.html">
+<LINK REL="next" HREF="node216.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node216.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node196.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node214.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1271"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node216.html">Methods of enum Class</A>
+<B> Up:</B> <A
+ HREF="node196.html">Object-Oriented Programming</A>
+<B> Previous:</B> <A
+ HREF="node214.html">SOLID and GRASP guidelines</A>
+ &nbsp; <B>  <A ID="tex2html1272"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00760000000000000000">
+Java <SPAN  CLASS="texttt">enums</SPAN></A>
+</H1><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In Java, <SPAN  CLASS="texttt">enum</SPAN> types are considered to be a special type of class. It was introduced with the release of Java 5. An <SPAN  CLASS="texttt">enum</SPAN> class can include methods and fields just like regular classes. Following is the syntaxt for <SPAN  CLASS="texttt">enum</SPAN> class. 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img367.svg"
+ ALT="\begin{lstlisting}
+enum Size {
+constant1, constant2, …, constantN;
+\par
+// methods and fields
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The <SPAN  CLASS="texttt">enum</SPAN> constants are always public static final by default. When an <SPAN  CLASS="texttt">enum</SPAN> class is created, the compiler will also create instances (objects) of each <SPAN  CLASS="texttt">enum</SPAN> constants.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In Java, an <SPAN  CLASS="texttt">enum</SPAN> (short for enumeration) is a type that has a fixed set of possible values. We use the <SPAN  CLASS="textbf">enum</SPAN> keyword to declare <SPAN  CLASS="texttt">enums</SPAN>. For example,
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img368.svg"
+ ALT="\begin{lstlisting}
+enum Size {
+SMALL, MEDIUM, LARGE, EXTRALARGE
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Here, we have created an <SPAN  CLASS="texttt">enum</SPAN> named Size. The values inside the braces are called <SPAN  CLASS="texttt">enum</SPAN> values (constants). These are the only values that the <SPAN  CLASS="texttt">enum</SPAN> type can hold.  The enum constants are usually represented in uppercase. Let’s take a simple example.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img369.svg"
+ ALT="\begin{lstlisting}
+enum Size {
+SMALL, MEDIUM, LARGE, EXTRALARGE
+}
+\par
+class Ma...
+...out.println(Size.SMALL);
+System.out.println(Size.MEDIUM);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output for the above code block will be as follows: 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img370.svg"
+ ALT="\begin{lstlisting}
+SMALL
+MEDIUM
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">As we can see from the above example, we use the enum name to access the constant values. Also, we can create variables of enum types. For example, <SPAN  CLASS="texttt">Size pizzaSize;</SPAN>. <SPAN  CLASS="texttt">pizzaSize</SPAN> is a variable of the Size type. It can only be assigned with 4 values.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img371.svg"
+ ALT="\begin{lstlisting}
+pizzaSize = Size.SMALL;
+pizzaSize = Size.MEDIUM;
+pizzaSize = Size.LARGE;
+pizzaSize = Size.EXTRALARGE;
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img372.svg"
+ ALT="\begin{lstlisting}
+enum Size {
+SMALL, MEDIUM, LARGE, EXTRALARGE
+}
+\par
+class Te...
+...rgs) {
+Test t1 = new Test(Size.MEDIUM);
+t1.orderPizza();
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output will be as follows: 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img373.svg"
+ ALT="\begin{lstlisting}
+I ordered a medium size pizza.
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above program, we have created an <SPAN  CLASS="texttt">enum</SPAN> type Size. We then declared a variable <SPAN  CLASS="texttt">pizzaSize</SPAN> of the <SPAN  CLASS="texttt">Size</SPAN> type. The variable <SPAN  CLASS="texttt">pizzaSize</SPAN> can only be assigned with 4 values (<SPAN  CLASS="texttt">SMALL, MEDIUM, LARGE, EXTRALARGE</SPAN>). The variable <SPAN  CLASS="texttt">pizzaSize</SPAN> is assigned with the <SPAN  CLASS="texttt">MEDIUM</SPAN> constant. Based on this, one of the cases of the <SPAN  CLASS="texttt">switch case</SPAN> statement is printed.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img374.svg"
+ ALT="\begin{lstlisting}
+enum Size{
+SMALL, MEDIUM, LARGE, EXTRALARGE;
+\par
+public Str...
+...tln(''The size of the pizza is '' + Size.SMALL.getSize());
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The output for the above code block is <SPAN  CLASS="texttt">The size of the pizza is small</SPAN>. In the above example, we have created an <SPAN  CLASS="texttt">enum</SPAN> class Size. It has four constants <SPAN  CLASS="texttt">SMALL, MEDIUM, LARGE and EXTRALARGE</SPAN>. Since Size is an <SPAN  CLASS="texttt">enum</SPAN> class, the compiler automatically creates instances for each <SPAN  CLASS="texttt">enum</SPAN> constants. Here inside the <SPAN  CLASS="texttt">main()</SPAN> method, we have used the instance <SPAN  CLASS="texttt">SMALL</SPAN> to call the <SPAN  CLASS="texttt">getSize()</SPAN> method.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<BR><HR>
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html1273"
+  HREF="node216.html">Methods of enum Class</A>
+<LI><A ID="tex2html1274"
+  HREF="node217.html">Why Java enums?</A>
+<LI><A ID="tex2html1275"
+  HREF="node218.html">Java <SPAN  CLASS="texttt">enum</SPAN> Constructor</A>
+<LI><A ID="tex2html1276"
+  HREF="node219.html">Java <SPAN  CLASS="texttt">enum</SPAN> Strings</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node216.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node196.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node214.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1271"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node216.html">Methods of enum Class</A>
+<B> Up:</B> <A
+ HREF="node196.html">Object-Oriented Programming</A>
+<B> Previous:</B> <A
+ HREF="node214.html">SOLID and GRASP guidelines</A>
+ &nbsp; <B>  <A ID="tex2html1272"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

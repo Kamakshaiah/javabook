@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Methods of Writer</TITLE>
+<META NAME="description" CONTENT="Methods of Writer">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node173.html">
+<LINK REL="next" HREF="node175.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node175.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node171.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node173.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1117"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node175.html">Control Flow and Decision</A>
+<B> Up:</B> <A
+ HREF="node171.html">Java Reader/Writer</A>
+<B> Previous:</B> <A
+ HREF="node173.html">Java Writer Class</A>
+ &nbsp; <B>  <A ID="tex2html1118"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION005133000000000000000">
+Methods of Writer</A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The <SPAN  CLASS="texttt">Writer</SPAN> class provides different methods that are implemented by its <SPAN  CLASS="textit">subclasses</SPAN>. Here are some of the methods:
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<OL>
+<LI><SPAN  CLASS="texttt">write(char[] array)</SPAN> - writes the characters from the specified array to the output stream
+</LI>
+<LI><SPAN  CLASS="texttt">write(String data)</SPAN> - writes the specified string to the writer
+</LI>
+<LI><SPAN  CLASS="texttt">append(char c)</SPAN> - inserts the specified character to the current writer
+</LI>
+<LI><SPAN  CLASS="texttt">flush()</SPAN> - forces to write all the data present in the writer to the corresponding destination
+</LI>
+<LI><SPAN  CLASS="texttt">close()</SPAN> - closes the writer
+</LI>
+</OL><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here is how we can implement the Writer using the <SPAN  CLASS="texttt">FileWriter</SPAN> class.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img305.svg"
+ ALT="\begin{lstlisting}
+import java.io.FileWriter;
+import java.io.Writer;
+\par
+public...
+...
+}
+\par
+catch (Exception e) {
+e.getStackTrace();
+}
+}
+}
+\par
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

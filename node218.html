@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Java enum Constructor</TITLE>
+<META NAME="description" CONTENT="Java enum Constructor">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node219.html">
+<LINK REL="previous" HREF="node217.html">
+<LINK REL="next" HREF="node219.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node219.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node215.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node217.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1281"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node219.html">Java enum Strings</A>
+<B> Up:</B> <A
+ HREF="node215.html">Java enums</A>
+<B> Previous:</B> <A
+ HREF="node217.html">Why Java enums?</A>
+ &nbsp; <B>  <A ID="tex2html1282"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00763000000000000000">
+Java <SPAN  CLASS="texttt">enum</SPAN> Constructor</A>
+</H2><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In Java, an <SPAN  CLASS="texttt">enum</SPAN> class may include a constructor like a regular class. These <SPAN  CLASS="texttt">enum</SPAN>constructors are either
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<OL>
+<LI>private - accessible within the class
+</LI>
+<LI>package-private - accessible within the package.
+</LI>
+</OL><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">So, <SPAN  CLASS="texttt">enum</SPAN> constructor is more or like a <SPAN  CLASS="texttt">strategy to access data</SPAN>. 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img376.svg"
+ ALT="\begin{lstlisting}
+enum Size {
+\par
+// enum constants calling the enum construct...
+...ze size = Size.SMALL;
+System.out.println(size.getSize());
+}
+}
+\end{lstlisting}">
+<BR> 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The output for the above code block will be <SPAN  CLASS="texttt">The size is small</SPAN>. In the above example, we have created an <SPAN  CLASS="texttt">enum</SPAN> Size. It includes a private <SPAN  CLASS="texttt">enum</SPAN> constructor. The constructor takes a string value as a parameter and assigns value to the variable <SPAN  CLASS="texttt">pizzaSize</SPAN>. Since the constructor is <SPAN  CLASS="textit">private</SPAN>, we cannot access it from outside the class. However, we can use <SPAN  CLASS="texttt">enum</SPAN> constants to call the constructor. In the <SPAN  CLASS="texttt">Main class</SPAN>, we assigned <SPAN  CLASS="texttt">SMALL</SPAN> to an <SPAN  CLASS="texttt">enum</SPAN> variable size. The constant <SPAN  CLASS="texttt">SMALL</SPAN> then calls the constructor <SPAN  CLASS="texttt">Size</SPAN> with string as an argument. Finally, we called <SPAN  CLASS="texttt">getSize()</SPAN> using size.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Implementing the LinkedList Class</TITLE>
+<META NAME="description" CONTENT="Implementing the LinkedList Class">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node137.html">
+<LINK REL="next" HREF="node139.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node139.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node137.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node137.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1000"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node139.html">Deque Interface</A>
+<B> Up:</B> <A
+ HREF="node137.html">Implementation of the Queue</A>
+<B> Previous:</B> <A
+ HREF="node137.html">Implementation of the Queue</A>
+ &nbsp; <B>  <A ID="tex2html1001"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00594100000000000000">
+Implementing the LinkedList Class</A>
+</H3><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img260.svg"
+ ALT="\begin{lstlisting}
+import java.util.Queue;
+import java.util.LinkedList;
+\par
+cla...
+...);
+\par
+System.out.println(''Updated Queue: '' + numbers);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img261.svg"
+ ALT="\begin{lstlisting}
+Queue: [1, 2, 3]
+Accessed Element: 1
+Removed Element: 1
+Updated Queue: [2, 3]
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Unlike normal queues, <SPAN  CLASS="texttt">priority Queue</SPAN> elements are retrieved in sorted order. Suppose, we want to retrieve elements in the ascending order. In this case, the head of the priority queue will be the smallest element. Once this element is retrieved, the next smallest element will be the head of the queue. <SPAN  CLASS="textit">It is important to note that the elements of a priority queue may not be sorted. However, elements are always retrieved in sorted order.</SPAN>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Following code iterates each element in a <SPAN  CLASS="texttt">priority Queue</SPAN>. To iterate over the elements of a priority queue, we can use the <SPAN  CLASS="texttt">iterator()</SPAN> method. In order to use this method, we must import the <SPAN  CLASS="texttt">java.util.Iterator</SPAN> package. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img262.svg"
+ ALT="\begin{lstlisting}
+import java.util.PriorityQueue;
+import java.util.Iterator;
+\p...
+...m.out.print(iterate.next());
+System.out.print('', '');
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Above code chunk produces <SPAN  CLASS="texttt">PriorityQueue using iterator(): 1, 4, 2,</SPAN>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

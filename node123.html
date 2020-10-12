@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Methods of Vector</TITLE>
+<META NAME="description" CONTENT="Methods of Vector">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node124.html">
+<LINK REL="previous" HREF="node122.html">
+<LINK REL="next" HREF="node124.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node124.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node120.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node122.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html954"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node124.html">Other Vector Methods</A>
+<B> Up:</B> <A
+ HREF="node120.html">Vectors</A>
+<B> Previous:</B> <A
+ HREF="node122.html">Creating a Vector</A>
+ &nbsp; <B>  <A ID="tex2html955"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00589300000000000000">
+Methods of Vector</A>
+</H3><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The <SPAN  CLASS="texttt">Vector</SPAN> class also provides the resizable-array implementations of the <SPAN  CLASS="texttt">List</SPAN> interface (similar to the <SPAN  CLASS="texttt">ArrayList</SPAN> class). Some of the <SPAN  CLASS="texttt">Vector</SPAN> methods are:
+</SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN  CLASS="textbf">Add Elements to Vector</SPAN>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<OL>
+<LI><SPAN  CLASS="texttt">add(element)</SPAN> - adds an element to vectors
+</LI>
+<LI><SPAN  CLASS="texttt">add(index, element)</SPAN> - adds an element to the specified position
+</LI>
+<LI><SPAN  CLASS="texttt">addAll(vector)</SPAN> - adds all elements of a vector to another vector
+</LI>
+</OL><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img242.svg"
+ ALT="\begin{lstlisting}
+import java.util.Vector;
+\par
+class Main {
+public static voi...
+...mammals);
+System.out.println(''New Vector: '' + animals);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img243.svg"
+ ALT="\begin{lstlisting}
+Vector: [Dog, Horse, Cat]
+New Vector: [Crocodile, Dog, Horse, Cat]
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN  CLASS="textbf">Access Vector Elements</SPAN>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<OL>
+<LI><SPAN  CLASS="texttt">get(index)</SPAN> - returns an element specified by the index
+</LI>
+<LI><SPAN  CLASS="texttt">iterator()</SPAN> - returns an iterator object to sequentially access vector elements
+</LI>
+</OL><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img244.svg"
+ ALT="\begin{lstlisting}
+import java.util.Iterator;
+import java.util.Vector;
+\par
+clas...
+...m.out.print(iterate.next());
+System.out.print('', '');
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img245.svg"
+ ALT="\begin{lstlisting}
+Element at index 2: Cat
+Vector: Dog, Horse, Cat,
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN  CLASS="textbf">Remove Vector Elements</SPAN>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<OL>
+<LI><SPAN  CLASS="texttt">remove(index)</SPAN> - removes an element from specified position
+</LI>
+<LI><SPAN  CLASS="texttt">removeAll()</SPAN> - removes all the elements
+</LI>
+<LI><SPAN  CLASS="texttt">clear()</SPAN> - removes all elements. It is more efficient than removeAll()
+</LI>
+</OL><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img246.svg"
+ ALT="\begin{lstlisting}
+import java.util.Vector;
+\par
+class Main {
+public static voi...
+... System.out.println(''Vector after clear(): '' + animals);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img247.svg"
+ ALT="\begin{lstlisting}
+Initial Vector: [Dog, Horse, Cat]
+Removed Element: Horse
+New Vector: [Dog, Cat]
+Vector after clear(): []
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node124.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node120.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node122.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html954"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node124.html">Other Vector Methods</A>
+<B> Up:</B> <A
+ HREF="node120.html">Vectors</A>
+<B> Previous:</B> <A
+ HREF="node122.html">Creating a Vector</A>
+ &nbsp; <B>  <A ID="tex2html955"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

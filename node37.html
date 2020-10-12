@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Protected</TITLE>
+<META NAME="description" CONTENT="Protected">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node36.html">
+<LINK REL="next" HREF="node38.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node38.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node34.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node36.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html654"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node38.html">Static vs. Non-static routines</A>
+<B> Up:</B> <A
+ HREF="node34.html">Access Modifiers</A>
+<B> Previous:</B> <A
+ HREF="node36.html">Private</A>
+ &nbsp; <B>  <A ID="tex2html655"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00531300000000000000">
+Protected</A>
+</H3><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The protected access modifier is specified using the keyword protected. The methods or data members declared as protected are accessible within same package or sub classes in different package. 
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In the below example, we will create two packages <SPAN  CLASS="textit">p1</SPAN> and <SPAN  CLASS="textit">p2</SPAN>. Class <SPAN  CLASS="textit">A</SPAN> in <SPAN  CLASS="textit">p1</SPAN> is made <SPAN  CLASS="texttt">public</SPAN>, to access it in <SPAN  CLASS="textit">p2</SPAN>. The method display in class <SPAN  CLASS="textit">A</SPAN> is <SPAN  CLASS="texttt">protected</SPAN> and class <SPAN  CLASS="textit">B</SPAN> is inherited from class <SPAN  CLASS="textit">A</SPAN> and this <SPAN  CLASS="texttt">protected</SPAN> method is then accessed by creating an object of class <SPAN  CLASS="textit">B</SPAN>.
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR>
+<IMG STYLE=""
+ SRC="img66.svg"
+ ALT="\begin{lstlisting}
+//Java program to illustrate
+//protected modifier
+package p...
+...y()
+{
+System.out.println(''This is class A of p1'');
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img67.svg"
+ ALT="\begin{lstlisting}
+//Java program to illustrate
+//protected modifier
+package p...
+...ng args[])
+{
+B obj = new B();
+obj.display();
+}
+\par
+}
+\end{lstlisting}">
+<BR>
+<SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The word <SPAN  CLASS="texttt">extends</SPAN> help class B inherit class A. 
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

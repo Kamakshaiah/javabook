@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Example</TITLE>
+<META NAME="description" CONTENT="Example">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node20.html">
+<LINK REL="next" HREF="node22.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node22.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node20.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html457"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node22.html">JavaServer Pages</A>
+<B> Up:</B> <A
+ HREF="node20.html">Servlet</A>
+<B> Previous:</B> <A
+ HREF="node20.html">Servlet</A>
+ &nbsp; <B>  <A ID="tex2html458"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00472100000000000000">
+Example</A>
+</H3><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The following example servlet prints how many times its <!-- MATH
+ $\lstinline{service()}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.67ex; vertical-align: -0.27ex; " SRC="img29.svg"
+ ALT="$\lstinline{service()}$"></SPAN> method was called. Note that <!-- MATH
+ $\lstinline{HttpServlet}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img30.svg"
+ ALT="$\lstinline{HttpServlet}$"></SPAN> is a subclass of <!-- MATH
+ $\lstinline{GenericServlet}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img31.svg"
+ ALT="$\lstinline{GenericServlet}$"></SPAN>, an implementation of the Servlet interface.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The <!-- MATH
+ $\lstinline{service()}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.67ex; vertical-align: -0.27ex; " SRC="img29.svg"
+ ALT="$\lstinline{service()}$"></SPAN> method of <!-- MATH
+ $\lstinline{HttpServlet}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img30.svg"
+ ALT="$\lstinline{HttpServlet}$"></SPAN> class dispatches requests to the methods <!-- MATH
+ $\lstinline{doGet(), doPost(), doPut(), doDelete()}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.37ex; " SRC="img32.svg"
+ ALT="$\lstinline{doGet(), doPost(), doPut(), doDelete()}$"></SPAN>, and so on; according to the HTTP request. In the example below <!-- MATH
+ $\lstinline{service()}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.67ex; vertical-align: -0.27ex; " SRC="img29.svg"
+ ALT="$\lstinline{service()}$"></SPAN> is overridden and does not distinguish which HTTP request method it serves.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img33.svg"
+ ALT="\begin{lstlisting}
+import java.io.IOException;
+\par
+import javax.servlet.Servlet...
+...estroy() {
+getServletContext().log(''destroy() called'');
+}
+}
+\end{lstlisting}">
+<BR> 
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

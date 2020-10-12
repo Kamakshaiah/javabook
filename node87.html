@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Copying Arrays Using copyOfRange() method</TITLE>
+<META NAME="description" CONTENT="Copying Arrays Using copyOfRange() method">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node88.html">
+<LINK REL="previous" HREF="node86.html">
+<LINK REL="next" HREF="node88.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node88.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node78.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node86.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html815"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node88.html">Copying 2d Arrays Using</A>
+<B> Up:</B> <A
+ HREF="node78.html">Java Arrays</A>
+<B> Previous:</B> <A
+ HREF="node86.html">Copying Arrays Using arraycopy()</A>
+ &nbsp; <B>  <A ID="tex2html816"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00579000000000000000">
+Copying Arrays Using copyOfRange() method</A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">We can also use the <SPAN  CLASS="texttt">copyOfRange()</SPAN> method defined in Java Arrays class to copy arrays. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img197.svg"
+ ALT="\begin{lstlisting}
+// To use toString() and copyOfRange() method
+import java.uti...
+...tln(''destination2 = '' + Arrays.toString(destination2));
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output for the above code block will be 
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img198.svg"
+ ALT="\begin{lstlisting}
+destination1 = [2, 3, 12, 4, 12, -2]
+destination2 = [12, 4, 12]
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In the above example, notice the line,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img199.svg"
+ ALT="\begin{lstlisting}
+int[] destination1 = Arrays.copyOfRange(source, 0, source.length);
+\end{lstlisting}">
+<BR>
+
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here, we can see that we are creating the <SPAN  CLASS="texttt">destination1</SPAN> array and copying the <SPAN  CLASS="texttt">source</SPAN> array to it at the same time. We are not creating the <SPAN  CLASS="texttt">destination1</SPAN> array before calling the <SPAN  CLASS="texttt">copyOfRange()</SPAN> method. 
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

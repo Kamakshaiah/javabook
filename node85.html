@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Using Looping Construct to Copy Arrays</TITLE>
+<META NAME="description" CONTENT="Using Looping Construct to Copy Arrays">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node86.html">
+<LINK REL="previous" HREF="node84.html">
+<LINK REL="next" HREF="node86.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node86.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node78.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node84.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html811"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node86.html">Copying Arrays Using arraycopy()</A>
+<B> Up:</B> <A
+ HREF="node78.html">Java Arrays</A>
+<B> Previous:</B> <A
+ HREF="node84.html">Copying Arrays Using Assignment</A>
+ &nbsp; <B>  <A ID="tex2html812"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00577000000000000000">
+Using Looping Construct to Copy Arrays</A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Let's take an example:
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img193.svg"
+ ALT="\begin{lstlisting}
+import java.util.Arrays;
+\par
+class Main {
+public static voi...
+... string
+System.out.println(Arrays.toString(destination));
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The output for the above code block looks like <SPAN  CLASS="texttt">[1, 2, 3, 4, 5, 6]</SPAN>. In the above example, we have used the <SPAN  CLASS="texttt">for</SPAN> loop to iterate through each element of the <SPAN  CLASS="texttt">source</SPAN> array. In each iteration, we are copying elements from the source array to the <SPAN  CLASS="texttt">destination</SPAN> array. Here, the source and destination array refer to different objects (deep copy). Hence, if elements of one array are changed, corresponding elements of another array is unchanged. Notice the statement, <SPAN  CLASS="texttt">System.out.println(Arrays.toString(destination));</SPAN> Here, the toString() method is used to convert an array into a string.
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

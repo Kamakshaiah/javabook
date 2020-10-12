@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Java Arrays</TITLE>
+<META NAME="description" CONTENT="Java Arrays">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node90.html">
+<LINK REL="previous" HREF="node64.html">
+<LINK REL="next" HREF="node79.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node79.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node29.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node77.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html786"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node79.html">Initializing Arrays in Java?</A>
+<B> Up:</B> <A
+ HREF="node29.html">Programming</A>
+<B> Previous:</B> <A
+ HREF="node77.html">Example</A>
+ &nbsp; <B>  <A ID="tex2html787"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00570000000000000000">
+Java Arrays</A>
+</H1><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In computer programming, an array is a collection of similar types of data. For example, if we want to store the names of 100 people then we can create an array of the string type that can store 100 names. 
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img162.svg"
+ ALT="\begin{lstlisting}
+String[] array = new String[100];
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The number of values in the Java array is fixed. That is, the above array can not store more than 100 elements. In Java, here is how we can declare an array.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img163.svg"
+ ALT="\begin{lstlisting}
+dataType[] arrayName;
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<UL>
+<LI>dataType - it can be primitive data types like int, char, double, byte, etc. or Java objects
+</LI>
+<LI>arrayName - it is an identifier
+</LI>
+</UL><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img164.svg"
+ ALT="\begin{lstlisting}
+double[] data;
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here, <SPAN  CLASS="texttt">data</SPAN> is an array that can hold values of type <SPAN  CLASS="texttt">double</SPAN>. But, how many elements can array this hold? To define the number of elements that an array can hold, we have to allocate memory for the array in Java. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img165.svg"
+ ALT="\begin{lstlisting}
+// declare an array
+double[] data;
+\par
+// allocate memory
+data = new Double[10];
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here, the array can store 10 elements. We can also say that the size or length of the array is 10. 
+In Java, we can declare and allocate memory of an array in one single statement. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img166.svg"
+ ALT="\begin{lstlisting}
+double[] data = new double[10];
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html788"
+  HREF="node79.html">Initializing Arrays in Java?</A>
+<LI><A ID="tex2html789"
+  HREF="node80.html">Accessing Elements of an Array in Java</A>
+<LI><A ID="tex2html790"
+  HREF="node81.html">Looping Through Array Elements</A>
+<LI><A ID="tex2html791"
+  HREF="node82.html">Multidimensional Arrays</A>
+<LI><A ID="tex2html792"
+  HREF="node83.html">initialize a 2d array in Java</A>
+<LI><A ID="tex2html793"
+  HREF="node84.html">Copying Arrays Using Assignment Operator</A>
+<LI><A ID="tex2html794"
+  HREF="node85.html">Using Looping Construct to Copy Arrays</A>
+<LI><A ID="tex2html795"
+  HREF="node86.html">Copying Arrays Using arraycopy() method</A>
+<LI><A ID="tex2html796"
+  HREF="node87.html">Copying Arrays Using copyOfRange() method</A>
+<LI><A ID="tex2html797"
+  HREF="node88.html">Copying 2d Arrays Using Loop</A>
+<LI><A ID="tex2html798"
+  HREF="node89.html">Copying 2d Arrays using arraycopy()</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node79.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node29.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node77.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html786"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node79.html">Initializing Arrays in Java?</A>
+<B> Up:</B> <A
+ HREF="node29.html">Programming</A>
+<B> Previous:</B> <A
+ HREF="node77.html">Example</A>
+ &nbsp; <B>  <A ID="tex2html787"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

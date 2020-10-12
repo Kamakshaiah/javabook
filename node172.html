@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Methods of Reader</TITLE>
+<META NAME="description" CONTENT="Methods of Reader">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node173.html">
+<LINK REL="previous" HREF="node171.html">
+<LINK REL="next" HREF="node173.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node173.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node171.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node171.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1113"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node173.html">Java Writer Class</A>
+<B> Up:</B> <A
+ HREF="node171.html">Java Reader/Writer</A>
+<B> Previous:</B> <A
+ HREF="node171.html">Java Reader/Writer</A>
+ &nbsp; <B>  <A ID="tex2html1114"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION005131000000000000000">
+Methods of Reader</A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The <SPAN  CLASS="texttt">Reader</SPAN> class provides different methods that are implemented by its <SPAN  CLASS="texttt">subclasses</SPAN>. Here are some of the commonly used methods:
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<OL>
+<LI><SPAN  CLASS="texttt">ready()</SPAN> - checks if the reader is ready to be read
+</LI>
+<LI><SPAN  CLASS="texttt">read(char[] array)</SPAN> - reads the characters from the stream and stores in the specified array
+</LI>
+<LI><SPAN  CLASS="texttt">read(char[] array, int start, int length)</SPAN> - reads the number of characters equal to length from the stream and stores in the specified array starting from the start
+</LI>
+<LI><SPAN  CLASS="texttt">mark()</SPAN> - marks the position in the stream up to which data has been read
+</LI>
+<LI><SPAN  CLASS="texttt">reset()</SPAN> - returns the control to the point in the stream where the mark is set
+</LI>
+<LI><SPAN  CLASS="texttt">skip()</SPAN> - discards the specified number of characters from the stream
+</LI>
+</OL><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here is how we can implement <SPAN  CLASS="texttt">Reader</SPAN> using the <SPAN  CLASS="texttt">FileReader</SPAN> class. Suppose we have a file named <SPAN  CLASS="texttt">input.txt</SPAN> with the following content.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img296.svg"
+ ALT="\begin{lstlisting}
+This is a line of text inside the file.
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Let's try to read this file using <SPAN  CLASS="textit">FileReader</SPAN> (a subclass of <SPAN  CLASS="texttt">Reader</SPAN>).
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img302.svg"
+ ALT="\begin{lstlisting}
+import java.io.Reader;
+import java.io.FileReader;
+\par
+class ...
+...ose();
+}
+\par
+catch(Exception e) {
+e.getStackTrace();
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img303.svg"
+ ALT="\begin{lstlisting}
+Is there data in the stream? true
+Data in the stream:
+This is a line of text inside the file.
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In the above example, we have created a reader using the <SPAN  CLASS="texttt">FileReader</SPAN> class. The reader is linked with the file <SPAN  CLASS="texttt">input.txt</SPAN>.
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node173.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node171.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node171.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1113"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node173.html">Java Writer Class</A>
+<B> Up:</B> <A
+ HREF="node171.html">Java Reader/Writer</A>
+<B> Previous:</B> <A
+ HREF="node171.html">Java Reader/Writer</A>
+ &nbsp; <B>  <A ID="tex2html1114"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

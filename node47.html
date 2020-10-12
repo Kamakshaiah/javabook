@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Java Variables</TITLE>
+<META NAME="description" CONTENT="Java Variables">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node60.html">
+<LINK REL="previous" HREF="node33.html">
+<LINK REL="next" HREF="node48.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node48.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node29.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node46.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html679"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node48.html">Rules for Naming Variables</A>
+<B> Up:</B> <A
+ HREF="node29.html">Programming</A>
+<B> Previous:</B> <A
+ HREF="node46.html">Rules for Naming an</A>
+ &nbsp; <B>  <A ID="tex2html680"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00540000000000000000">
+Java Variables</A>
+</H1><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">A variable is a location in memory (storage area) to hold data. To indicate the storage area, each variable should be given a unique name (identifier). How to declare variables in Java? Here's an example to declare a variable in Java.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img80.svg"
+ ALT="\begin{lstlisting}
+int speedLimit = 80;
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here, <!-- MATH
+ $\lstinline{speedLimit}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img81.svg"
+ ALT="$\lstinline{speedLimit}$"></SPAN> is a variable of <!-- MATH
+ $\lstinline{int}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img73.svg"
+ ALT="$\lstinline{int}$"></SPAN> data type and is assigned value 80. Meaning, the <!-- MATH
+ $\lstinline{speedLimit}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img81.svg"
+ ALT="$\lstinline{speedLimit}$"></SPAN> variable can store integer values. You will learn about Java data types in detail later in the article.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In the example, we have assigned value to the variable during declaration. However, it's not mandatory. You can declare variables without assigning the value, and later you can store the value as you wish. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img82.svg"
+ ALT="\begin{lstlisting}
+int speedLimit;
+speedLimit = 80;
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The value of a variable can be changed in the program, hence the name variable. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img83.svg"
+ ALT="\begin{lstlisting}
+int speedLimit = 80;
+... ... ...
+speedLimit = 90;
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Java is a statically-typed language. It means that all variables must be declared before they can be used. 
+Also, you cannot change the data type of a variable in Java within the same scope. What is the variable scope? Don't worry about it for now. For now, just remember you cannot do something like this.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img84.svg"
+ ALT="\begin{lstlisting}
+int speedLimit = 80;
+... ... ...
+float speedLimit;
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html681"
+  HREF="node48.html">Rules for Naming Variables in Java</A>
+<LI><A ID="tex2html682"
+  HREF="node49.html">Java Primitive Data Types</A>
+<LI><A ID="tex2html683"
+  HREF="node50.html">8 Primitive Data Types</A>
+<UL>
+<LI><A ID="tex2html684"
+  HREF="node51.html">boolean</A>
+<LI><A ID="tex2html685"
+  HREF="node52.html">byte</A>
+<LI><A ID="tex2html686"
+  HREF="node53.html">short</A>
+<LI><A ID="tex2html687"
+  HREF="node54.html">int</A>
+<LI><A ID="tex2html688"
+  HREF="node55.html">long</A>
+<LI><A ID="tex2html689"
+  HREF="node56.html">double</A>
+<LI><A ID="tex2html690"
+  HREF="node57.html">float</A>
+<LI><A ID="tex2html691"
+  HREF="node58.html">char</A>
+<LI><A ID="tex2html692"
+  HREF="node59.html">String</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node48.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node29.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node46.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html679"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node48.html">Rules for Naming Variables</A>
+<B> Up:</B> <A
+ HREF="node29.html">Programming</A>
+<B> Previous:</B> <A
+ HREF="node46.html">Rules for Naming an</A>
+ &nbsp; <B>  <A ID="tex2html680"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

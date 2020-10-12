@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Java enum Strings</TITLE>
+<META NAME="description" CONTENT="Java enum Strings">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node218.html">
+<LINK REL="next" HREF="node220.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node220.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node215.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node218.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1283"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node220.html">Java Exception Handling</A>
+<B> Up:</B> <A
+ HREF="node215.html">Java enums</A>
+<B> Previous:</B> <A
+ HREF="node218.html">Java enum Constructor</A>
+ &nbsp; <B>  <A ID="tex2html1284"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00764000000000000000">
+Java <SPAN  CLASS="texttt">enum</SPAN> Strings</A>
+</H2><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Before you learn about <SPAN  CLASS="texttt">enum</SPAN> strings, make sure to know about Java <SPAN  CLASS="texttt">enum</SPAN>. In Java, we can get the string representation of <SPAN  CLASS="texttt">enum</SPAN> constants using the <SPAN  CLASS="texttt">toString()</SPAN> method or the <SPAN  CLASS="texttt">name()</SPAN> method. For example, 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img377.svg"
+ ALT="\begin{lstlisting}
+enum Size {
+SMALL, MEDIUM, LARGE, EXTRALARGE
+}
+\par
+class Ma...
+...(''string value of MEDIUM is '' + Size.MEDIUM.name());
+\par
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The output for the above code block is going to be 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img378.svg"
+ ALT="\begin{lstlisting}
+string value of SMALL is SMALL
+string value of MEDIUM is MEDIUM
+\end{lstlisting}">
+<BR> 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above example, we have seen the default string representation of an <SPAN  CLASS="texttt">enum</SPAN> constant is the name of the same constant. We can change the default string representation of <SPAN  CLASS="texttt">enum</SPAN> constants by overriding the <SPAN  CLASS="texttt">toString()</SPAN> method. For example,
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img379.svg"
+ ALT="\begin{lstlisting}
+enum Size {
+SMALL {
+\par
+// overriding toString() for SMALL
+...
+...ing[] args) {
+System.out.println(Size.MEDIUM.toString());
+}
+}
+\end{lstlisting}">
+<BR> 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The output for above code will be <SPAN  CLASS="texttt">The size is medium</SPAN>. In the above program, we have created an <SPAN  CLASS="texttt">enum</SPAN> Size. And we have overridden the <SPAN  CLASS="texttt">toString()</SPAN> method for <SPAN  CLASS="texttt">enum</SPAN> constants <SPAN  CLASS="texttt">SMALL</SPAN> and <SPAN  CLASS="texttt">MEDIUM</SPAN>. We cannot override the <SPAN  CLASS="texttt">name()</SPAN> method. It is because the <SPAN  CLASS="texttt">name()</SPAN> method is final.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Labeled continue Statement</TITLE>
+<META NAME="description" CONTENT="Labeled continue Statement">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node194.html">
+<LINK REL="next" HREF="node196.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node196.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node194.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node194.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1195"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node196.html">Object-Oriented Programming</A>
+<B> Up:</B> <A
+ HREF="node194.html">Java continue Statement</A>
+<B> Previous:</B> <A
+ HREF="node194.html">Java continue Statement</A>
+ &nbsp; <B>  <A ID="tex2html1196"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00670100000000000000">
+Labeled continue Statement</A>
+</H3><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Till now, we have used the unlabeled <SPAN  CLASS="texttt">continue</SPAN> statement. It is used to terminate the innermost loop and <SPAN  CLASS="texttt">switch</SPAN> statement. However, there is another form of <SPAN  CLASS="texttt">continue</SPAN> statement in Java known as <SPAN  CLASS="texttt">labeled contine</SPAN>. We can use the <SPAN  CLASS="texttt">labeled contine</SPAN> statement to terminate the outermost loop as well.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Here, the <SPAN  CLASS="texttt">continue</SPAN> statement is skipping the current iteration of the labeled statement (i.e. outer loop). Then, the control of the program goes to the next iteration of the labeled statement (outer loop)
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img361.svg"
+ ALT="\begin{lstlisting}
+class LabeledContinue {
+public static void main(String[] arg...
+...System.out.println(''i = '' + i + ''; j = '' + j);
+}
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img362.svg"
+ ALT="\begin{lstlisting}
+i = 1; j = 1
+i = 2; j = 1
+i = 4; j = 1
+i = 5; j = 1
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above example, the <SPAN  CLASS="texttt">labeled continue</SPAN> statement is used to skip the current iteration of the loop labeled as <SPAN  CLASS="texttt">first</SPAN>.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img363.svg"
+ ALT="\begin{lstlisting}
+if (i==3 \vert\vert j==2)
+continue first;
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Here, we can see the outermost <SPAN  CLASS="texttt">for</SPAN> loop is labeled as <SPAN  CLASS="texttt">first</SPAN>,
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img364.svg"
+ ALT="\begin{lstlisting}
+first:
+for (int i = 1; i &lt; 6; ++i) {..}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Hence, the iteration of the outer <SPAN  CLASS="texttt">for</SPAN> loop is skipped if the value of <SPAN  CLASS="texttt">i</SPAN> is 3 or the value of <SPAN  CLASS="texttt">j</SPAN> is 2.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node196.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node194.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node194.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1195"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node196.html">Object-Oriented Programming</A>
+<B> Up:</B> <A
+ HREF="node194.html">Java continue Statement</A>
+<B> Previous:</B> <A
+ HREF="node194.html">Java continue Statement</A>
+ &nbsp; <B>  <A ID="tex2html1196"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

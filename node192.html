@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Java break Statement</TITLE>
+<META NAME="description" CONTENT="Java break Statement">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node194.html">
+<LINK REL="previous" HREF="node188.html">
+<LINK REL="next" HREF="node193.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node193.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node175.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node191.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1187"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node193.html">Labeled break Statement</A>
+<B> Up:</B> <A
+ HREF="node175.html">Control Flow and Decision</A>
+<B> Previous:</B> <A
+ HREF="node191.html">Infinite while Loop</A>
+ &nbsp; <B>  <A ID="tex2html1188"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00660000000000000000">
+Java <SPAN  CLASS="texttt">break</SPAN> Statement</A>
+</H1><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The <SPAN  CLASS="texttt">break</SPAN> statement in Java terminates the loop immediately, and the control of the program moves to the next statement following the loop. It is almost always used with decision-making statements (Java if...else Statement). Here is the syntax of the break statement in Java:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img344.svg"
+ ALT="\begin{lstlisting}
+class Test {
+public static void main(String[] args) {
+\par
+/...
+...es
+if (i == 5) {
+break;
+}
+System.out.println(i);
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img345.svg"
+ ALT="\begin{lstlisting}
+1
+2
+3
+4
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above program, we are using the <SPAN  CLASS="texttt">for</SPAN> loop to print the value of <SPAN  CLASS="texttt">i</SPAN> in each iteration. To know how <SPAN  CLASS="texttt">for</SPAN> loop works, visit the Java for loop. Here, notice the statement,
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img346.svg"
+ ALT="\begin{lstlisting}
+if (i == 5) {
+break;
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">This means when the value of i is equal to 5, the loop terminates. Hence we get the output with values less than 5 only. The program below calculates the sum of numbers entered by the user until user enters a negative number. To take input from the user, we have used the <SPAN  CLASS="texttt">Scanner</SPAN> object. To learn more about <SPAN  CLASS="texttt">Scanner</SPAN>, visit Java <SPAN  CLASS="texttt">Scanner</SPAN>.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img347.svg"
+ ALT="\begin{lstlisting}
+import java.util.Scanner;
+\par
+class UserInputSum {
+public s...
+...r
+sum += number;
+}
+System.out.println(''Sum = '' + sum);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img348.svg"
+ ALT="\begin{lstlisting}
+Enter a number: 3.2
+Enter a number: 5
+Enter a number: 2.3
+Enter a number: 0
+Enter a number: -4.5
+Sum = 10.5
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above program, the test expression of the <SPAN  CLASS="texttt">while</SPAN> loop is always <SPAN  CLASS="texttt">true</SPAN>. Here, notice the line,
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img349.svg"
+ ALT="\begin{lstlisting}
+if (number &lt; 0.0) {
+break;
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">This means when the user input negative numbers, the while loop is terminated.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<BR><HR>
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><A ID="tex2html1189"
+  HREF="node193.html">Labeled break Statement</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node193.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node175.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node191.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1187"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node193.html">Labeled break Statement</A>
+<B> Up:</B> <A
+ HREF="node175.html">Control Flow and Decision</A>
+<B> Previous:</B> <A
+ HREF="node191.html">Infinite while Loop</A>
+ &nbsp; <B>  <A ID="tex2html1188"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

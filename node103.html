@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Initialize an ArrayList Using asList()</TITLE>
+<META NAME="description" CONTENT="Initialize an ArrayList Using asList()">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node102.html">
+<LINK REL="next" HREF="node104.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node104.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node95.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node102.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html897"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node104.html">Access ArrayList Elements</A>
+<B> Up:</B> <A
+ HREF="node95.html">Classes that Implement List</A>
+<B> Previous:</B> <A
+ HREF="node102.html">Add elements of an</A>
+ &nbsp; <B>  <A ID="tex2html898"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00585800000000000000">
+Initialize an ArrayList Using asList()</A>
+</H3><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Unlike arrays, we cannot initialize array lists directly. However, we can use the <SPAN  CLASS="texttt">asList()</SPAN> method of the <SPAN  CLASS="texttt">Arrays</SPAN> class to achieve the same effect. In order to use the <SPAN  CLASS="texttt">asList()</SPAN> method, we must import the <SPAN  CLASS="texttt">java.util.Arrays</SPAN> package first.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img214.svg"
+ ALT="\begin{lstlisting}
+import java.util.ArrayList;
+import java.util.Arrays;
+\par
+cla...
+...1);
+System.out.println(''Accessed Element: '' + element);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img215.svg"
+ ALT="\begin{lstlisting}
+ArrayList: [Cat, Cow, Dog]
+Accessed Elemenet: Cow
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In the above example, notice the expression,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img216.svg"
+ ALT="\begin{lstlisting}
+new ArrayList&lt;&gt;(Arrays.asList((''Cat'', ''Cow'', ''Dog''));
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here, we have first created an array of 3 elements: <SPAN  CLASS="texttt">"Cat", "Cow",</SPAN> and <SPAN  CLASS="texttt">"Dog"</SPAN>. Then, the <SPAN  CLASS="texttt">asList()</SPAN> method is used to convert the array into an array list.
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

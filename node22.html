@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>JavaServer Pages</TITLE>
+<META NAME="description" CONTENT="JavaServer Pages">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node23.html">
+<LINK REL="previous" HREF="node20.html">
+<LINK REL="next" HREF="node23.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html459"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node23.html">Swing application</A>
+<B> Up:</B> <A
+ HREF="node17.html">Special Classes</A>
+<B> Previous:</B> <A
+ HREF="node21.html">Example</A>
+ &nbsp; <B>  <A ID="tex2html460"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00473000000000000000">
+JavaServer Pages</A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">JavaServer Pages (JSP) are server-side Java EE components that generate responses, typically HTML pages, to HTTP requests from clients. JSPs embed Java code in an HTML page by using the special delimiters &lt;% and %&gt;. A JSP is compiled to a Java servlet, a Java application in its own right, the first time it is accessed. After that, the generated servlet creates the response.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The following would be a valid for loop in a JSP page:
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img34.svg"
+ ALT="\begin{lstlisting}
+&lt;p&gt;Counting to three:&lt;/p&gt;
+&lt;% for (int i=1; i&lt;4; i++) { %&gt;
+&lt;p&gt;This number is &lt;%= i %&gt;.&lt;/p&gt;
+&lt;% } %&gt;
+&lt;p&gt;OK.&lt;/p&gt;
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The output displayed in the user's web browser would be:
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img35.svg"
+ ALT="\begin{lstlisting}
+Counting to three:
+\par
+This number is 1.
+\par
+This number is 2.
+\par
+This number is 3.
+\par
+OK.
+\end{lstlisting}">
+<BR> 
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>

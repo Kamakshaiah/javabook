@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Java continue Statement</TITLE>
+<META NAME="description" CONTENT="Java continue Statement">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node192.html">
+<LINK REL="next" HREF="node195.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node195.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node175.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node193.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1192"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node195.html">Labeled continue Statement</A>
+<B> Up:</B> <A
+ HREF="node175.html">Control Flow and Decision</A>
+<B> Previous:</B> <A
+ HREF="node193.html">Labeled break Statement</A>
+ &nbsp; <B>  <A ID="tex2html1193"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00670000000000000000">
+Java <SPAN  CLASS="texttt">continue</SPAN> Statement</A>
+</H1><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The <SPAN  CLASS="texttt">continue</SPAN> statement in Java skips the current iteration of a loop (<SPAN  CLASS="texttt">for, while, do...while</SPAN>, etc) and the control of the program moves to the end of the loop. And, the test expression of a loop is evaluated. In the case of <SPAN  CLASS="texttt">for</SPAN> loop, the update statement is executed before the test expression. The <SPAN  CLASS="texttt">continue</SPAN> statement is almost always used in decision-making statements (if...else Statement). It's syntax is:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img356.svg"
+ ALT="\begin{lstlisting}
+class Test {
+public static void main(String[] args) {
+\par
+/...
+...&gt; 4 &amp;&amp; i &lt; 9) {
+continue;
+}
+System.out.println(i);
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img357.svg"
+ ALT="\begin{lstlisting}
+1
+2
+​​​​3
+4
+9
+10
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above program, we are using <SPAN  CLASS="texttt">for</SPAN> loop to print the value of <SPAN  CLASS="texttt">i</SPAN> in each iteration. To know how <SPAN  CLASS="texttt">for</SPAN> loop works, visit Java for loop. Here, notice the statement,
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img358.svg"
+ ALT="\begin{lstlisting}
+if (i &gt; 5 &amp;&amp; i &lt; 9) {
+continue;
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">This means when the value of <SPAN  CLASS="texttt">i</SPAN> becomes more than 4 and less then 9, the print statement inside the loop is skipped. Hence we get the output with values 5, 6, 7, and 8 skipped.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">The program below calculates the sum of 5 positive numbers entered by the user. If the user enters negative number or zero, it is skipped from the calculation. To take input from the user, we have used the <SPAN  CLASS="texttt">Scanner</SPAN> object. To learn more about<SPAN  CLASS="texttt">Scanner</SPAN>, visit Java <SPAN  CLASS="texttt">Scanner</SPAN>.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img359.svg"
+ ALT="\begin{lstlisting}
+import java.util.Scanner;
+\par
+class AssignmentOperator {
+pu...
+...r
+sum += number;
+}
+System.out.println(''Sum = '' + sum);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img360.svg"
+ ALT="\begin{lstlisting}
+Enter a number: 2.2
+Enter a number: 5.6
+Enter a number: 0
+Enter a number: -2.4
+Enter a number: -3
+Sum = 7.8
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<BR><HR>
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><A ID="tex2html1194"
+  HREF="node195.html">Labeled continue Statement</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node195.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node175.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node193.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1192"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node195.html">Labeled continue Statement</A>
+<B> Up:</B> <A
+ HREF="node175.html">Control Flow and Decision</A>
+<B> Previous:</B> <A
+ HREF="node193.html">Labeled break Statement</A>
+ &nbsp; <B>  <A ID="tex2html1193"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>How to use Deque?</TITLE>
+<META NAME="description" CONTENT="How to use Deque?">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node141.html">
+<LINK REL="previous" HREF="node139.html">
+<LINK REL="next" HREF="node141.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node141.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node139.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node139.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1006"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node141.html">Implementation of Deque in</A>
+<B> Up:</B> <A
+ HREF="node139.html">Deque Interface</A>
+<B> Previous:</B> <A
+ HREF="node139.html">Deque Interface</A>
+ &nbsp; <B>  <A ID="tex2html1007"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00595100000000000000">
+How to use Deque?</A>
+</H3><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In Java, we must import the <SPAN  CLASS="texttt">java.util.Deque</SPAN> package to use <SPAN  CLASS="texttt">Deque</SPAN>.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img263.svg"
+ ALT="\begin{lstlisting}
+// Array implementation of Deque
+Deque&lt;String&gt; animal1 = new ...
+...ementation of Deque
+Deque&lt;String&gt; animal2 = new LinkedList&lt;&gt;();
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here, we have created objects <SPAN  CLASS="texttt">animal1</SPAN> and <SPAN  CLASS="texttt">animal2</SPAN> of classes <SPAN  CLASS="texttt">ArrayDeque</SPAN> and <SPAN  CLASS="texttt">LinkedList</SPAN>, respectively. These objects can use the functionalities of the <SPAN  CLASS="texttt">Deque</SPAN> interface.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Since <SPAN  CLASS="texttt">Deque</SPAN> extends the <SPAN  CLASS="texttt">Queue</SPAN> interface, it inherits all the methods of the Queue interface. Besides methods available in the Queue interface, the <SPAN  CLASS="texttt">Deque</SPAN> interface also includes the following methods:
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<OL>
+<LI><SPAN  CLASS="texttt">addFirst()</SPAN> - Adds the specified element at the beginning of the deque. Throws an exception if the deque is full.
+</LI>
+<LI><SPAN  CLASS="texttt">addLast()</SPAN> - Adds the specified element at the end of the deque. Throws an exception if the deque is full.
+</LI>
+<LI><SPAN  CLASS="texttt">offerFirst()</SPAN> - Adds the specified element at the beginning of the deque. Returns false if the deque is full.
+</LI>
+<LI><SPAN  CLASS="texttt">offerLast()</SPAN> - Adds the specified element at the end of the deque. Returns false if the deque is full.
+</LI>
+<LI><SPAN  CLASS="texttt">getFirst()</SPAN> - Returns the first element of the deque. Throws an exception if the deque is empty.
+</LI>
+<LI><SPAN  CLASS="texttt">getLast()</SPAN> - Returns the last element of the deque. Throws an exception if the deque is empty.
+</LI>
+<LI><SPAN  CLASS="texttt">peekFirst()</SPAN> - Returns the first element of the deque. Returns null if the deque is empty.
+</LI>
+<LI><SPAN  CLASS="texttt">peekLast()</SPAN> - Returns the last element of the deque. Returns null if the deque is empty.
+</LI>
+<LI><SPAN  CLASS="texttt">removeFirst()</SPAN> - Returns and removes the first element of the deque. Throws an exception if the deque is empty.
+</LI>
+<LI><SPAN  CLASS="texttt">removeLast()</SPAN> - Returns and removes the last element of the deque. Throws an exception if the deque is empty.
+</LI>
+<LI><SPAN  CLASS="texttt">pollFirst()</SPAN> - Returns and removes the first element of the deque. Returns null if the deque is empty.
+</LI>
+<LI><SPAN  CLASS="texttt">pollLast()</SPAN> - Returns and removes the last element of the deque. Returns null if the deque is empty.
+
+<P>
+</LI>
+</OL><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node141.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node139.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node139.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1006"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node141.html">Implementation of Deque in</A>
+<B> Up:</B> <A
+ HREF="node139.html">Deque Interface</A>
+<B> Previous:</B> <A
+ HREF="node139.html">Deque Interface</A>
+ &nbsp; <B>  <A ID="tex2html1007"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

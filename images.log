@@ -1,0 +1,3856 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.14)  12 OCT 2020 20:41
+entering extended mode
+**./images.tex
+(images.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-09-03>
+(C:\texmf\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(C:\texmf\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count168
+\c@chapter=\count169
+\c@section=\count170
+\c@subsection=\count171
+\c@subsubsection=\count172
+\c@paragraph=\count173
+\c@subparagraph=\count174
+\c@figure=\count175
+\c@table=\count176
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (C:\texmf\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (C:\texmf\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(C:\texmf\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (C:\texmf\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(C:\texmf\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count177
+\Gm@cntv=\count178
+\c@Gm@tempcnt=\count179
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks16
+(C:\texmf\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\texmf\MiKTeX\tex/latex/t
+ools\verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks17
+\verbatim@line=\toks18
+\verbatim@in@stream=\read2
+) (C:\texmf\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count180
+\FV@InFile=\read3
+\FV@TabBox=\box45
+\c@FancyVerbLine=\count181
+\FV@StepNumber=\count182
+\FV@OutFile=\write3
+) (C:\texmf\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+(C:\texmf\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+) (C:\texmf\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+(C:\texmf\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\texmf\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (C:\texmf\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\texmf\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\texmf\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\texmf\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\texmf\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (C:\texmf\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen143
+\Hy@linkcounter=\count183
+\Hy@pagecounter=\count184
+(C:\texmf\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\texmf\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (C:\texmf\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count185
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count186
+(C:\texmf\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen144
+(C:\texmf\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(C:\texmf\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count187
+\Field@Width=\dimen145
+\Fld@charsize=\dimen146
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+(C:\texmf\MiKTeX\tex/generic/atbegshi\atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count188
+\c@Item=\count189
+\c@Hfootnote=\count190
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(C:\texmf\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+(C:\texmf\MiKTeX\tex/latex/atveryend\atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count191
+\c@bookmark@seq@number=\count192
+(C:\texmf\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+(C:\texmf\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip49
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 12.
+(C:\texmf\MiKTeX\tex/latex/glossaries/base\glossaries.sty
+Package: glossaries 2020/03/19 v4.46 (NLCT)
+(C:\texmf\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+(C:\texmf\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\texmf\MiKTeX\tex/generic/x
+keyval\xkvutils.tex
+\XKV@toks=\toks19
+\XKV@tempa@toks=\toks20
+)
+\XKV@depth=\count193
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\texmf\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+(C:\texmf\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count194
+)
+\@glsmfirst=\toks21
+\@glsmrest=\toks22
+) (C:\texmf\MiKTeX\tex/latex/textcase\textcase.sty
+Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
+) (C:\texmf\MiKTeX\tex/latex/xfor\xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (C:\texmf\MiKTeX\tex/latex/datatool\datatool-base.sty
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+(C:\texmf\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip50
+For additional information on amsmath, use the `?' option.
+(C:\texmf\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(C:\texmf\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen147
+)) (C:\texmf\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen148
+) (C:\texmf\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count195
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count196
+\leftroot@=\count197
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count198
+\DOTSCASE@=\count199
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box46
+\strutbox@=\box47
+\big@size=\dimen149
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count266
+\c@MaxMatrixCols=\count267
+\dotsspace@=\muskip17
+\c@parentequation=\count268
+\dspbrk@lvl=\count269
+\tag@help=\toks24
+\row@=\count270
+\column@=\count271
+\maxfields@=\count272
+\andhelp@=\toks25
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
+\@envbody=\toks26
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (C:\texmf\MiKTeX\tex/latex/substr\substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count273
+) (C:\texmf\MiKTeX\tex/latex/datatool\datatool-fp.sty
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+(C:\texmf\MiKTeX\tex/latex/fp\fp.sty
+Package: fp 1995/04/02
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (C:\texmf
+\MiKTeX\tex/latex/fp\defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count274
+) (C:\texmf\MiKTeX\tex/latex/fp\fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count275
+\FP@xia=\count276
+\FP@xib=\count277
+\FP@xfa=\count278
+\FP@xfb=\count279
+\FP@rega=\count280
+\FP@regb=\count281
+\FP@regs=\count282
+\FP@times=\count283
+) (C:\texmf\MiKTeX\tex/latex/fp\fp-addons.sty
+Package: fp-addons 1995/03/15
+) (C:\texmf\MiKTeX\tex/latex/fp\fp-snap.sty
+Package: fp-snap 1995/04/05
+) (C:\texmf\MiKTeX\tex/latex/fp\fp-exp.sty
+Package: fp-exp 1995/04/03
+) (C:\texmf\MiKTeX\tex/latex/fp\fp-trigo.sty
+Package: fp-trigo 1995/04/14
+) (C:\texmf\MiKTeX\tex/latex/fp\fp-pas.sty
+Package: fp-pas 1994/08/29
+) (C:\texmf\MiKTeX\tex/latex/fp\fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count284
+) (C:\texmf\MiKTeX\tex/latex/fp\fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (C:\texmf\MiKTeX\tex/latex/fp\fp-upn.sty
+Package: fp-upn 1996/10/21
+) (C:\texmf\MiKTeX\tex/latex/fp\fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks28
+\@dtl@tmpcount=\count285
+\dtl@tmplength=\skip53
+\dtl@sortresult=\count286
+\@dtl@numgrpsepcount=\count287
+\@dtl@datatype=\count288
+\dtl@codeA=\count289
+\dtl@codeB=\count290
+\@dtl@foreach@level=\count291
+) (C:\texmf\MiKTeX\tex/latex/glossaries/base\glossaries-compatible-307.sty
+Package: glossaries-compatible-307 2020/03/19 v4.46 (NLCT)
+)
+\gls@level=\count292
+\@gls@tmpb=\toks29
+\gls@tmplen=\skip54
+\glskeylisttok=\toks30
+\glslabeltok=\toks31
+\glsshorttok=\toks32
+\glslongtok=\toks33
+(C:\texmf\MiKTeX\tex/latex/glossaries/styles\glossary-hypernav.sty
+Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
+) (C:\texmf\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty
+Package: glossary-list 2020/03/19 v4.46 (NLCT)
+\glslistdottedwidth=\skip55
+) (C:\texmf\MiKTeX\tex/latex/glossaries/styles\glossary-long.sty
+Package: glossary-long 2020/03/19 v4.46 (NLCT)
+(C:\texmf\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count293
+\LTcapwidth=\dimen156
+\LT@head=\box48
+\LT@firsthead=\box49
+\LT@foot=\box50
+\LT@lastfoot=\box51
+\LT@cols=\count294
+\LT@rows=\count295
+\c@LT@tables=\count296
+\c@LT@chunks=\count297
+\LT@p@ftn=\toks34
+)
+\glsdescwidth=\skip60
+\glspagelistwidth=\skip61
+) (C:\texmf\MiKTeX\tex/latex/glossaries/styles\glossary-super.sty
+Package: glossary-super 2020/03/19 v4.46 (NLCT)
+(C:\texmf\MiKTeX\tex/latex/supertabular\supertabular.sty
+Package: supertabular 2020/02/02 v4.1g the supertabular environment
+\c@tracingst=\count298
+\ST@wd=\dimen157
+\ST@rightskip=\skip62
+\ST@leftskip=\skip63
+\ST@parfillskip=\skip64
+\ST@pageleft=\dimen158
+\ST@headht=\dimen159
+\ST@tailht=\dimen160
+\ST@pagesofar=\dimen161
+\ST@pboxht=\dimen162
+\ST@lineht=\dimen163
+\ST@prevht=\dimen164
+\ST@toadd=\dimen165
+\ST@dimen=\dimen166
+\ST@pbox=\box52
+)) (C:\texmf\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty
+Package: glossary-tree 2020/03/19 v4.46 (NLCT)
+\glstreeindent=\skip65
+)) (C:\texmf\MiKTeX\tex/latex/endnotes\endnotes.sty
+Package: endnotes 2020-01-02 endnotes package
+\c@endnote=\count299
+\endnotesep=\dimen167
+\@enotes=\write4
+) (C:\texmf\MiKTeX\tex/latex/parskip\parskip.sty
+Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
+) (C:\texmf\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count300
+\mult@box=\box53
+\multicol@leftmargin=\dimen168
+\c@unbalance=\count301
+\c@collectmore=\count302
+\doublecol@number=\count303
+\multicoltolerance=\count304
+\multicolpretolerance=\count305
+\full@width=\dimen169
+\page@free=\dimen170
+\premulticols=\dimen171
+\postmulticols=\dimen172
+\multicolsep=\skip66
+\multicolbaselineskip=\skip67
+\partial@page=\box54
+\last@line=\box55
+\maxbalancingoverflow=\dimen173
+\mult@rightbox=\box56
+\mult@grightbox=\box57
+\mult@gfirstbox=\box58
+\mult@firstbox=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\c@minrows=\count306
+\c@columnbadness=\count307
+\c@finalcolumnbadness=\count308
+\last@try=\dimen174
+\multicolovershoot=\dimen175
+\multicolundershoot=\dimen176
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
+\mc@col@check@num=\count309
+) (C:\texmf\MiKTeX\tex/latex/csquotes\csquotes.sty
+Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+\csq@reset=\count310
+\csq@gtype=\count311
+\csq@glevel=\count312
+\csq@qlevel=\count313
+\csq@maxlvl=\count314
+\csq@tshold=\count315
+\csq@ltx@everypar=\toks35
+(C:\texmf\MiKTeX\tex/latex/csquotes\csquotes.def
+File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+(C:\texmf\MiKTeX\tex/latex/csquotes\csquotes.cfg
+File: csquotes.cfg 
+)) (C:\texmf\MiKTeX\tex/latex/base\makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write5
+\openout5 = `images.idx'.
+
+Writing index file images.idx
+(C:\texmf\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\texmf\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+(C:\texmf\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (C:\texmf\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+(C:\texmf\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen177
+\Gin@req@width=\dimen178
+) (C:\texmf\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count316
+\lst@gtempboxa=\box99
+\lst@token=\toks36
+\lst@length=\count317
+\lst@currlwidth=\dimen179
+\lst@column=\count318
+\lst@pos=\count319
+\lst@lostspace=\dimen180
+\lst@width=\dimen181
+\lst@newlines=\count320
+\lst@lineno=\count321
+\lst@maxwidth=\dimen182
+(C:\texmf\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count322
+\lst@skipnumbers=\count323
+\lst@framebox=\box100
+) (C:\texmf\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+(C:\texmf\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(C:\texmf\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (C:\texmf\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\texmf\MiKTeX\tex/
+latex/l3kernel\expl3.sty
+Package: expl3 2020-09-03 L3 programming layer (loader) 
+(C:\texmf\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count324
+\l__pdf_internal_box=\box101
+))
+Package: xparse 2020-05-15 L3 Experimental document command parser
+(C:\texmf\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex
+\l__xparse_current_arg_int=\count325
+\g__xparse_grabber_int=\count326
+\l__xparse_m_args_int=\count327
+\l__xparse_v_nesting_int=\count328
+)) (C:\texmf\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count329
+\output=\toks37
+\linenoprevgraf=\count330
+\linenumbersep=\dimen183
+\linenumberwidth=\dimen184
+\c@linenumber=\count331
+\c@pagewiselinenumber=\count332
+\c@LN@truepage=\count333
+\c@internallinenumber=\count334
+\c@internallinenumbers=\count335
+\quotelinenumbersep=\dimen185
+\bframerule=\dimen186
+\bframesep=\dimen187
+\bframebox=\box102
+
+LaTeX Warning: Command \@parboxrestore  has changed.
+               Check if current package is valid.
+
+LaTeX Info: Redefining \\ on input line 3056.
+) (C:\texmf\MiKTeX\tex/latex/tools\afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks38
+\AP@partial=\box103
+\AP@footins=\box104
+) (C:\texmf\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+\glswrite=\write6
+\glo@main@file=\write7
+\openout7 = `images.glo'.
+
+Package glossaries Info: Writing glossary file images.glo on input line 61.
+\sizebox=\box105
+\lthtmlwrite=\write8
+(C:\texmf\MiKTeX\tex/latex/preview\preview.sty
+Package: preview 2017/04/24 11.91 (AUCTeX/preview-latex)
+(C:\texmf\MiKTeX\tex/generic/luatex85\luatex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+) (C:\texmf\MiKTeX\tex/latex/preview\prtightpage.def
+\PreviewBorder=\dimen188
+)
+\pr@snippet=\count336
+\pr@box=\box106
+\pr@output=\toks39
+)
+\lthtmlPageBox=\box107
+\lthtmlCropMarkHeight=\dimen189
+\lthtmlCropMarkDepth=\dimen190
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+(images.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
+\openout1 = `images.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside heightrounded 
+* h-part:(L,W,R)=(72.26999pt, 289.08002pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 469.75502pt, 72.26999pt)
+* \paperwidth=433.62pt
+* \paperheight=614.295pt
+* \textwidth=349.0pt
+* \textheight=491.29494pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=0.0pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=0.00003pt
+* \footskip=0.0pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box108
+Package hyperref Info: Link coloring ON on input line 158.
+(C:\texmf\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+(C:\texmf\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\texmf\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count337
+)
+LaTeX Info: Redefining \ref on input line 158.
+LaTeX Info: Redefining \pageref on input line 158.
+LaTeX Info: Redefining \nameref on input line 158.
+\@outlinefile=\write9
+\openout9 = `images.out'.
+
+(C:\texmf\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count338
+\scratchdimen=\dimen191
+\scratchbox=\box109
+\nofMPsegments=\count339
+\nofMParguments=\count340
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count341
+\MPscratchDim=\dimen192
+\MPnumerator=\count342
+\makeMPintoPDFobject=\count343
+\everyMPtoPDFconversion=\toks41
+) (C:\texmf\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+\c@lstlisting=\count344
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+
+latex2htmlLength hsize=349.0pt
+
+latex2htmlLength vsize=491.29494pt
+
+latex2htmlLength hoffset=0.0pt
+
+latex2htmlLength voffset=0.0pt
+
+latex2htmlLength topmargin=0.0pt
+
+latex2htmlLength topskip=0.00003pt
+
+latex2htmlLength headheight=0.0pt
+
+latex2htmlLength headsep=0.0pt
+
+latex2htmlLength parskip=6.0pt plus 2.0pt
+
+latex2htmlLength oddsidemargin=0.0pt
+
+latex2htmlLength evensidemargin=0.0pt
+
+! Undefined control sequence.
+\AP@ ->{\FloatBarrier 
+                      \par }
+l.176 \onecolumn
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 19
+4.
+
+
+:tex2html_wrap_inline2736:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2736:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+Preview: Tightpage -32891 -32891 32891 32891
+[1{C:/Users/kamakshaiah/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 20
+0.
+
+
+:tex2html_wrap_inline2738:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2738:lthtmlCropMarkDepth:=0.66666pt:1ex:=4.30554pt
+[2]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 20
+6.
+
+
+:tex2html_wrap_inline2740:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2740:lthtmlCropMarkDepth:=0.66666pt:1ex:=4.30554pt
+[3]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 21
+2.
+
+
+:tex2html_wrap_inline2742:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2742:lthtmlCropMarkDepth:=0.66666pt:1ex:=4.30554pt
+[4]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 21
+8.
+
+
+:tex2html_wrap_inline2744:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2744:lthtmlCropMarkDepth:=0.66666pt:1ex:=4.30554pt
+[5]
+
+:lstlisting85:lthtmlCropMarkHeight:=74.99998pt
+
+:lstlisting85:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[6]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 23
+7.
+
+
+:tex2html_wrap_inline2748:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2748:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[7]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.243 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 24
+3.
+
+
+:tex2html_wrap_inline2750:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2750:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[8]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.249 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 24
+9.
+
+
+:tex2html_wrap_inline2752:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2752:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[9]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.255 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 25
+5.
+
+
+:tex2html_wrap_inline2754:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2754:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[10]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.261 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 26
+1.
+
+
+:tex2html_wrap_inline2756:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2756:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[11]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.267 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 26
+7.
+
+
+:tex2html_wrap_inline2766:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2766:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[12]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.273 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 27
+3.
+
+
+:tex2html_wrap_inline2768:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2768:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[13]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 27
+9.
+
+
+:tex2html_wrap_inline2770:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2770:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[14]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.285 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 28
+5.
+
+
+:tex2html_wrap_inline2772:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2772:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[15]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.291 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 29
+1.
+
+
+:tex2html_wrap_inline2774:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2774:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[16]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 29
+7.
+
+
+:tex2html_wrap_inline2776:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2776:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[17]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 30
+3.
+
+
+:tex2html_wrap_inline2778:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2778:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[18]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.309 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 30
+9.
+
+
+:tex2html_wrap_inline2780:lthtmlCropMarkHeight:=9.44444pt
+
+:tex2html_wrap_inline2780:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[19]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.315 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 31
+5.
+
+
+:tex2html_wrap_inline2782:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2782:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[20]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.321 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 32
+1.
+
+
+:tex2html_wrap_inline2788:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2788:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[21]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 32
+7.
+
+
+:tex2html_wrap_inline2790:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2790:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[22]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.333 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 33
+3.
+
+
+:tex2html_wrap_inline2794:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2794:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[23]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 33
+9.
+
+
+:tex2html_wrap_inline2796:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2796:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[24]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.345 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 34
+5.
+
+
+:tex2html_wrap_inline2798:lthtmlCropMarkHeight:=10.42859pt
+
+:tex2html_wrap_inline2798:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[25]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 35
+1.
+
+
+:tex2html_wrap_inline2800:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2800:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[26]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.357 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 35
+7.
+
+
+:tex2html_wrap_inline2802:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2802:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[27]
+
+:lstlisting118:lthtmlCropMarkHeight:=568.99998pt
+
+:lstlisting118:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[28]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.426 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 42
+6.
+
+
+:tex2html_wrap_inline2804:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2804:lthtmlCropMarkDepth:=0.66666pt:1ex:=4.30554pt
+[29]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.432 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 43
+2.
+
+
+:tex2html_wrap_inline2806:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2806:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[30]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 43
+8.
+
+
+:tex2html_wrap_inline2808:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2808:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[31]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.444 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 44
+4.
+
+
+:tex2html_wrap_inline2814:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2814:lthtmlCropMarkDepth:=1.11111pt:1ex:=4.30554pt
+[32]
+
+:lstlisting140:lthtmlCropMarkHeight:=426.49998pt
+
+:lstlisting140:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[33]
+
+:lstlisting146:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting146:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[34]
+
+:lstlisting148:lthtmlCropMarkHeight:=103.49998pt
+
+:lstlisting148:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[35]
+
+:lstlisting153:lthtmlCropMarkHeight:=179.49998pt
+
+:lstlisting153:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[36]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.550 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 55
+0.
+
+
+:tex2html_wrap_inline2818:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2818:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[37]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.556 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 55
+6.
+
+
+:tex2html_wrap_inline2820:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2820:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[38]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.562 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 56
+2.
+
+
+:tex2html_wrap_inline2822:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2822:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[39]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.568 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 56
+8.
+
+
+:tex2html_wrap_inline2824:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2824:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[40]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.574 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 57
+4.
+
+
+:tex2html_wrap_inline2826:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2826:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[41]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.580 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 58
+0.
+
+
+:tex2html_wrap_inline2830:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2830:lthtmlCropMarkDepth:=0.66666pt:1ex:=4.30554pt
+[42]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.586 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 58
+6.
+
+
+:tex2html_wrap_inline2832:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2832:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[43]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.592 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 59
+2.
+
+
+:tex2html_wrap_inline2836:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2836:lthtmlCropMarkDepth:=0.78885pt:1ex:=4.30554pt
+[44]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.598 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 59
+8.
+
+
+:tex2html_wrap_inline2840:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2840:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[45]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.604 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 60
+4.
+
+
+:tex2html_wrap_inline2842:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2842:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[46]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.610 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 61
+0.
+
+
+:tex2html_wrap_inline2844:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2844:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[47]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.616 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 61
+6.
+
+
+:tex2html_wrap_inline2846:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2846:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[48]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.622 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 62
+2.
+
+
+:tex2html_wrap_inline2848:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2848:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[49]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.628 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 62
+8.
+
+
+:tex2html_wrap_inline2850:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2850:lthtmlCropMarkDepth:=0.66666pt:1ex:=4.30554pt
+[50]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.634 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 63
+4.
+
+
+:tex2html_wrap_inline2852:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2852:lthtmlCropMarkDepth:=0.66666pt:1ex:=4.30554pt
+[51]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.640 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 64
+0.
+
+
+:tex2html_wrap_inline2854:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2854:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[52]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.646 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 64
+6.
+
+
+:tex2html_wrap_inline2856:lthtmlCropMarkHeight:=10.42859pt
+
+:tex2html_wrap_inline2856:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[53]
+
+:lstlisting184:lthtmlCropMarkHeight:=350.49998pt
+
+:lstlisting184:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[54]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.692 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 69
+2.
+
+
+:tex2html_wrap_inline2858:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline2858:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[55]
+
+:lstlisting196:lthtmlCropMarkHeight:=625.99998pt
+
+:lstlisting196:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[56]
+
+:lstlisting226:lthtmlCropMarkHeight:=84.49998pt
+
+:lstlisting226:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[57]
+
+:lstlisting232:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting232:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[58]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.798 \lthtmlindisplaymathZ
+                           
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 79
+8.
+
+
+:tex2html_wrap_inline2860:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2860:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[59]
+
+:lstlisting244:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting244:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[60]
+
+:lstlisting250:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting250:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[61]
+
+:lstlisting318:lthtmlCropMarkHeight:=141.49998pt
+
+:lstlisting318:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[62]
+
+:lstlisting331:lthtmlCropMarkHeight:=84.49998pt
+
+:lstlisting331:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[63]
+
+:lstlisting334:lthtmlCropMarkHeight:=160.49998pt
+
+:lstlisting334:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[64]
+
+:lstlisting348:lthtmlCropMarkHeight:=226.99998pt
+
+:lstlisting348:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[65]
+
+:lstlisting368:lthtmlCropMarkHeight:=131.99998pt
+
+:lstlisting368:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[66]
+
+:lstlisting371:lthtmlCropMarkHeight:=169.99998pt
+
+:lstlisting371:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[67]
+
+:lstlisting383:lthtmlCropMarkHeight:=255.49998pt
+
+:lstlisting383:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[68]
+
+:lstlisting393:lthtmlCropMarkHeight:=312.49998pt
+
+:lstlisting393:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[69]
+
+:lstlisting398:lthtmlCropMarkHeight:=312.49998pt
+
+:lstlisting398:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[70]
+
+:lstlisting403:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting403:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[71]
+
+:lstlisting406:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting406:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[72]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1089 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 10
+89.
+
+
+:tex2html_wrap_inline2862:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2862:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[73]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1095 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 10
+95.
+
+
+:tex2html_wrap_inline2864:lthtmlCropMarkHeight:=9.44444pt
+
+:tex2html_wrap_inline2864:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[74]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1101 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 11
+01.
+
+
+:tex2html_wrap_inline2866:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2866:lthtmlCropMarkDepth:=1.11111pt:1ex:=4.30554pt
+[75]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1108 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 11
+08.
+
+
+:tex2html_wrap_inline2868:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2868:lthtmlCropMarkDepth:=1.11111pt:1ex:=4.30554pt
+[76]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1114 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 11
+14.
+
+
+:tex2html_wrap_inline2870:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2870:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[77]
+
+:lstlisting424:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting424:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[78]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1129 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 11
+29.
+
+
+:tex2html_wrap_inline2874:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2874:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[79]
+
+:lstlisting438:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting438:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[80]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1145 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 11
+45.
+
+
+:tex2html_wrap_inline2876:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2876:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[81]
+
+:lstlisting443:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting443:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[82]
+
+:lstlisting446:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting446:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[83]
+
+:lstlisting448:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting448:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[84]
+
+:lstlisting464:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting464:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[85]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1190 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 11
+90.
+
+
+:tex2html_wrap_inline2882:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2882:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[86]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1198 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 11
+98.
+
+
+:tex2html_wrap_inline2888:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2888:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[87]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1204 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 12
+04.
+
+
+:tex2html_wrap_inline2892:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2892:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[88]
+
+:lstlisting475:lthtmlCropMarkHeight:=84.49998pt
+
+:lstlisting475:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[89]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1225 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 12
+25.
+
+
+:tex2html_wrap_inline2896:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2896:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[90]
+
+:tex2html_wrap_inline2898:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_inline2898:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[91]
+
+:tex2html_wrap_inline2900:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_inline2900:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[92]
+
+:tex2html_wrap_inline2904:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline2904:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[93]
+
+:lstlisting481:lthtmlCropMarkHeight:=93.99998pt
+
+:lstlisting481:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[94]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1265 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 12
+65.
+
+
+:tex2html_wrap_inline2906:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2906:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[95]
+
+:tex2html_wrap_inline2908:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_inline2908:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[96]
+
+:tex2html_wrap_inline2910:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline2910:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[97]
+
+:lstlisting486:lthtmlCropMarkHeight:=93.99998pt
+
+:lstlisting486:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[98]
+
+:tex2html_wrap_inline2914:lthtmlCropMarkHeight:=14.14003pt
+
+:tex2html_wrap_inline2914:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[99]
+
+:tex2html_wrap_inline2916:lthtmlCropMarkHeight:=14.14003pt
+
+:tex2html_wrap_inline2916:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[100]
+
+:tex2html_wrap_inline2918:lthtmlCropMarkHeight:=14.14003pt
+
+:tex2html_wrap_inline2918:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[101]
+
+:lstlisting493:lthtmlCropMarkHeight:=84.49998pt
+
+:lstlisting493:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[102]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1332 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 13
+32.
+
+
+:tex2html_wrap_inline2920:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2920:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[103]
+
+:tex2html_wrap_inline2922:lthtmlCropMarkHeight:=14.14003pt
+
+:tex2html_wrap_inline2922:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[104]
+
+:tex2html_wrap_inline2924:lthtmlCropMarkHeight:=14.14003pt
+
+:tex2html_wrap_inline2924:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[105]
+
+:tex2html_wrap_inline2926:lthtmlCropMarkHeight:=14.14003pt
+
+:tex2html_wrap_inline2926:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[106]
+
+:lstlisting500:lthtmlCropMarkHeight:=84.49998pt
+
+:lstlisting500:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[107]
+
+:tex2html_wrap_inline2928:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_inline2928:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[108]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1377 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 13
+77.
+
+
+:tex2html_wrap_inline2930:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2930:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[109]
+
+:lstlisting506:lthtmlCropMarkHeight:=84.49998pt
+
+:lstlisting506:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[110]
+
+:lstlisting511:lthtmlCropMarkHeight:=93.99998pt
+
+:lstlisting511:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[111]
+
+:tex2html_wrap_inline2934:lthtmlCropMarkHeight:=12.94444pt
+
+:tex2html_wrap_inline2934:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.30554pt
+[112]
+
+:tex2html_wrap_inline2936:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_inline2936:lthtmlCropMarkDepth:=0.83333pt:1ex:=4.30554pt
+[113]
+
+:tex2html_wrap_inline2946:lthtmlCropMarkHeight:=13.51782pt
+
+:tex2html_wrap_inline2946:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[114]
+
+:tex2html_wrap_inline2948:lthtmlCropMarkHeight:=13.51782pt
+
+:tex2html_wrap_inline2948:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[115]
+
+:lstlisting522:lthtmlCropMarkHeight:=84.49998pt
+
+:lstlisting522:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[116]
+
+:tex2html_wrap_inline2952:lthtmlCropMarkHeight:=13.51782pt
+
+:tex2html_wrap_inline2952:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[117]
+
+:lstlisting528:lthtmlCropMarkHeight:=122.49998pt
+
+:lstlisting528:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[118]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1476 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 14
+76.
+
+
+:tex2html_wrap_inline2954:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2954:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[119]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1482 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 14
+82.
+
+
+:tex2html_wrap_inline2958:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2958:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[120]
+
+:lstlisting535:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting535:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[121]
+
+:lstlisting538:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting538:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[122]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1506 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 15
+06.
+
+
+:tex2html_wrap_inline2962:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2962:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[123]
+
+:tex2html_wrap_inline2966:lthtmlCropMarkHeight:=13.51782pt
+
+:tex2html_wrap_inline2966:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[124]
+
+:tex2html_wrap_inline2970:lthtmlCropMarkHeight:=13.51782pt
+
+:tex2html_wrap_inline2970:lthtmlCropMarkDepth:=1.94444pt:1ex:=4.30554pt
+[125]
+
+:lstlisting553:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting553:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[126]
+
+:tex2html_wrap_inline2972:lthtmlCropMarkHeight:=12.44444pt
+
+:tex2html_wrap_inline2972:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[127]
+
+:tex2html_wrap_inline2974:lthtmlCropMarkHeight:=12.94444pt
+
+:tex2html_wrap_inline2974:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[128]
+
+:lstlisting555:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting555:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[129]
+
+:lstlisting566:lthtmlCropMarkHeight:=150.99998pt
+
+:lstlisting566:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[130]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1581 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 15
+81.
+
+
+:tex2html_wrap_inline2976:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline2976:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[131]
+
+:tex2html_wrap_inline2978:lthtmlCropMarkHeight:=13.51782pt
+
+:tex2html_wrap_inline2978:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[132]
+
+:tex2html_wrap_inline2982:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline2982:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[133]
+
+:tex2html_wrap_inline2984:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline2984:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[134]
+
+:tex2html_wrap_inline2986:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline2986:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[135]
+
+:tex2html_wrap_inline2988:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline2988:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[136]
+
+:tex2html_wrap_inline2990:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline2990:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[137]
+
+:tex2html_wrap_inline2992:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline2992:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[138]
+
+:tex2html_wrap_inline2994:lthtmlCropMarkHeight:=13.51782pt
+
+:tex2html_wrap_inline2994:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[139]
+
+:tex2html_wrap_inline2996:lthtmlCropMarkHeight:=13.5pt
+
+:tex2html_wrap_inline2996:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+[140]
+
+:lstlisting584:lthtmlCropMarkHeight:=131.99998pt
+
+:lstlisting584:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[141]
+
+:lstlisting590:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting590:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[142]
+
+:lstlisting595:lthtmlCropMarkHeight:=150.99998pt
+
+:lstlisting595:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[143]
+
+:lstlisting607:lthtmlCropMarkHeight:=264.99998pt
+
+:lstlisting607:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[144]
+
+:lstlisting610:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting610:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[145]
+
+:lstlisting612:lthtmlCropMarkHeight:=141.49998pt
+
+:lstlisting612:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[146]
+
+:lstlisting626:lthtmlCropMarkHeight:=245.99998pt
+
+:lstlisting626:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[147]
+
+:lstlisting629:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting629:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[148]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1804 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 18
+04.
+
+
+:tex2html_wrap_inline2998:lthtmlCropMarkHeight:=10.2659pt
+
+:tex2html_wrap_inline2998:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[149]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1810 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 18
+10.
+
+
+:tex2html_wrap_inline3000:lthtmlCropMarkHeight:=10.2659pt
+
+:tex2html_wrap_inline3000:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[150]
+
+:lstlisting635:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting635:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[151]
+
+:lstlisting638:lthtmlCropMarkHeight:=131.99998pt
+
+:lstlisting638:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[152]
+
+:lstlisting641:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting641:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[153]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1859 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 18
+59.
+
+
+:tex2html_wrap_inline3004:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline3004:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[154]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1865 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 18
+65.
+
+
+:tex2html_wrap_inline3006:lthtmlCropMarkHeight:=11.55556pt
+
+:tex2html_wrap_inline3006:lthtmlCropMarkDepth:=1.77777pt:1ex:=4.30554pt
+[155]
+
+:tex2html_wrap_inline3008:lthtmlCropMarkHeight:=12.94444pt
+
+:tex2html_wrap_inline3008:lthtmlCropMarkDepth:=2.22223pt:1ex:=4.30554pt
+[156]
+
+:lstlisting657:lthtmlCropMarkHeight:=141.49998pt
+
+:lstlisting657:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[157]
+
+:lstlisting669:lthtmlCropMarkHeight:=122.49998pt
+
+:lstlisting669:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[158]
+
+:lstlisting676:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting676:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[159]
+
+:lstlisting680:lthtmlCropMarkHeight:=122.49998pt
+
+:lstlisting680:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[160]
+
+:lstlisting683:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting683:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[161]
+
+:lstlisting700:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting700:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[162]
+
+:lstlisting702:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting702:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[163]
+
+:lstlisting706:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting706:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[164]
+
+:lstlisting710:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting710:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[165]
+
+:lstlisting712:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting712:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[166]
+
+:lstlisting715:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting715:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[167]
+
+:lstlisting718:lthtmlCropMarkHeight:=93.99998pt
+
+:lstlisting718:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[168]
+
+:lstlisting723:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting723:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[169]
+
+:lstlisting725:lthtmlCropMarkHeight:=160.49998pt
+
+:lstlisting725:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[170]
+
+:lstlisting728:lthtmlCropMarkHeight:=74.99998pt
+
+:lstlisting728:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[171]
+
+:lstlisting731:lthtmlCropMarkHeight:=150.99998pt
+
+:lstlisting731:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[172]
+
+:lstlisting735:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting735:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[173]
+
+:lstlisting738:lthtmlCropMarkHeight:=150.99998pt
+
+:lstlisting738:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[174]
+
+:lstlisting742:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting742:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[175]
+
+:lstlisting744:lthtmlCropMarkHeight:=245.99998pt
+
+:lstlisting744:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[176]
+
+:lstlisting748:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting748:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[177]
+
+:lstlisting753:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting753:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[178]
+
+:lstlisting756:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting756:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[179]
+
+:lstlisting760:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting760:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[180]
+
+:lstlisting763:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting763:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[181]
+
+:lstlisting766:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting766:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[182]
+
+:lstlisting771:lthtmlCropMarkHeight:=169.99998pt
+
+:lstlisting771:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[183]
+
+:lstlisting776:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting776:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[184]
+
+:lstlisting780:lthtmlCropMarkHeight:=169.99998pt
+
+:lstlisting780:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[185]
+
+:lstlisting786:lthtmlCropMarkHeight:=93.99998pt
+
+:lstlisting786:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[186]
+
+:lstlisting788:lthtmlCropMarkHeight:=217.49998pt
+
+:lstlisting788:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[187]
+
+:lstlisting798:lthtmlCropMarkHeight:=131.99998pt
+
+:lstlisting798:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[188]
+
+:lstlisting805:lthtmlCropMarkHeight:=264.99998pt
+
+:lstlisting805:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[189]
+
+:lstlisting813:lthtmlCropMarkHeight:=141.49998pt
+
+:lstlisting813:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[190]
+
+:lstlisting816:lthtmlCropMarkHeight:=122.49998pt
+
+:lstlisting816:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[191]
+
+:lstlisting824:lthtmlCropMarkHeight:=160.49998pt
+
+:lstlisting824:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[192]
+
+:lstlisting832:lthtmlCropMarkHeight:=179.49998pt
+
+:lstlisting832:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[193]
+
+:lstlisting844:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting844:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[194]
+
+:lstlisting853:lthtmlCropMarkHeight:=236.49998pt
+
+:lstlisting853:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[195]
+
+:lstlisting856:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting856:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[196]
+
+:lstlisting869:lthtmlCropMarkHeight:=207.99998pt
+
+:lstlisting869:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[197]
+
+:lstlisting872:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting872:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[198]
+
+:lstlisting874:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting874:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[199]
+
+:lstlisting882:lthtmlCropMarkHeight:=283.99998pt
+
+:lstlisting882:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[200]
+
+:lstlisting888:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting888:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[201]
+
+:lstlisting890:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting890:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[202]
+
+:lstlisting895:lthtmlCropMarkHeight:=255.49998pt
+
+:lstlisting895:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[203]
+
+:lstlisting944:lthtmlCropMarkHeight:=150.99998pt
+
+:lstlisting944:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[204]
+
+:lstlisting968:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting968:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[205]
+
+:lstlisting996:lthtmlCropMarkHeight:=245.99998pt
+
+:lstlisting996:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[206]
+
+:lstlisting999:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting999:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[207]
+
+:lstlisting1002:lthtmlCropMarkHeight:=283.99998pt
+
+:lstlisting1002:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[208]
+
+:lstlisting1005:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting1005:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[209]
+
+:lstlisting1017:lthtmlCropMarkHeight:=141.49998pt
+
+:lstlisting1017:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[210]
+
+:lstlisting1020:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting1020:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[211]
+
+:lstlisting1024:lthtmlCropMarkHeight:=188.99998pt
+
+:lstlisting1024:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[212]
+
+:lstlisting1027:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1027:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[213]
+
+:lstlisting1034:lthtmlCropMarkHeight:=160.49998pt
+
+:lstlisting1034:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[214]
+
+:lstlisting1037:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1037:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[215]
+
+:lstlisting1039:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting1039:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[216]
+
+:lstlisting1047:lthtmlCropMarkHeight:=179.49998pt
+
+:lstlisting1047:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[217]
+
+:lstlisting1050:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1050:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[218]
+
+:lstlisting1055:lthtmlCropMarkHeight:=245.99998pt
+
+:lstlisting1055:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[219]
+
+:lstlisting1063:lthtmlCropMarkHeight:=169.99998pt
+
+:lstlisting1063:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[220]
+
+:lstlisting1066:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1066:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[221]
+
+:lstlisting1071:lthtmlCropMarkHeight:=188.99998pt
+
+:lstlisting1071:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[222]
+
+:lstlisting1074:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting1074:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[223]
+
+:lstlisting1078:lthtmlCropMarkHeight:=179.49998pt
+
+:lstlisting1078:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[224]
+
+:lstlisting1081:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1081:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[225]
+
+:lstlisting1085:lthtmlCropMarkHeight:=179.49998pt
+
+:lstlisting1085:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[226]
+
+:lstlisting1092:lthtmlCropMarkHeight:=207.99998pt
+
+:lstlisting1092:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[227]
+
+:lstlisting1095:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting1095:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[228]
+
+:lstlisting1098:lthtmlCropMarkHeight:=198.49998pt
+
+:lstlisting1098:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[229]
+
+:lstlisting1105:lthtmlCropMarkHeight:=169.99998pt
+
+:lstlisting1105:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[230]
+
+:lstlisting1108:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1108:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[231]
+
+:lstlisting1114:lthtmlCropMarkHeight:=207.99998pt
+
+:lstlisting1114:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[232]
+
+:lstlisting1117:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1117:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[233]
+
+:lstlisting1121:lthtmlCropMarkHeight:=236.49998pt
+
+:lstlisting1121:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[234]
+
+:lstlisting1124:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1124:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[235]
+
+:lstlisting1131:lthtmlCropMarkHeight:=217.49998pt
+
+:lstlisting1131:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[236]
+
+:lstlisting1135:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting1135:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[237]
+
+:lstlisting1142:lthtmlCropMarkHeight:=179.49998pt
+
+:lstlisting1142:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[238]
+
+:lstlisting1145:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1145:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[239]
+
+:lstlisting1174:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting1174:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[240]
+
+:lstlisting1176:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting1176:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[241]
+
+:lstlisting1189:lthtmlCropMarkHeight:=226.99998pt
+
+:lstlisting1189:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[242]
+
+:lstlisting1192:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1192:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[243]
+
+:lstlisting1199:lthtmlCropMarkHeight:=236.49998pt
+
+:lstlisting1199:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[244]
+
+:lstlisting1202:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1202:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[245]
+
+:lstlisting1210:lthtmlCropMarkHeight:=217.49998pt
+
+:lstlisting1210:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[246]
+
+:lstlisting1213:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting1213:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[247]
+
+:lstlisting1237:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting1237:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[248]
+
+:lstlisting1239:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting1239:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[249]
+
+:lstlisting1251:lthtmlCropMarkHeight:=150.99998pt
+
+:lstlisting1251:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[250]
+
+:lstlisting1254:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting1254:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[251]
+
+:lstlisting1258:lthtmlCropMarkHeight:=179.49998pt
+
+:lstlisting1258:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[252]
+
+:lstlisting1263:lthtmlCropMarkHeight:=188.99998pt
+
+:lstlisting1263:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[253]
+
+:lstlisting1266:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1266:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[254]
+
+:lstlisting1270:lthtmlCropMarkHeight:=179.49998pt
+
+:lstlisting1270:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[255]
+
+:lstlisting1273:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1273:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[256]
+
+:lstlisting1277:lthtmlCropMarkHeight:=179.49998pt
+
+:lstlisting1277:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[257]
+
+:lstlisting1280:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1280:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[258]
+
+:lstlisting1299:lthtmlCropMarkHeight:=103.49998pt
+
+:lstlisting1299:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[259]
+
+:lstlisting1322:lthtmlCropMarkHeight:=264.99998pt
+
+:lstlisting1322:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[260]
+
+:lstlisting1325:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting1325:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[261]
+
+:lstlisting1332:lthtmlCropMarkHeight:=217.49998pt
+
+:lstlisting1332:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[262]
+
+:lstlisting1344:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting1344:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[263]
+
+:lstlisting1369:lthtmlCropMarkHeight:=340.99998pt
+
+:lstlisting1369:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[264]
+
+:lstlisting1372:lthtmlCropMarkHeight:=84.49998pt
+
+:lstlisting1372:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[265]
+
+:lstlisting1382:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting1382:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[266]
+
+:lstlisting1413:lthtmlCropMarkHeight:=283.99998pt
+
+:lstlisting1413:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[267]
+
+:lstlisting1416:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting1416:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[268]
+
+:lstlisting1420:lthtmlCropMarkHeight:=245.99998pt
+
+:lstlisting1420:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[269]
+
+:lstlisting1423:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting1423:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[270]
+
+:lstlisting1434:lthtmlCropMarkHeight:=255.49998pt
+
+:lstlisting1434:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[271]
+
+:lstlisting1437:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1437:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[272]
+
+:lstlisting1447:lthtmlCropMarkHeight:=226.99998pt
+
+:lstlisting1447:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[273]
+
+:lstlisting1450:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting1450:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[274]
+
+:lstlisting1459:lthtmlCropMarkHeight:=207.99998pt
+
+:lstlisting1459:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[275]
+
+:lstlisting1462:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting1462:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[276]
+
+:lstlisting1470:lthtmlCropMarkHeight:=226.99998pt
+
+:lstlisting1470:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[277]
+
+:lstlisting1473:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting1473:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[278]
+
+:lstlisting1483:lthtmlCropMarkHeight:=226.99998pt
+
+:lstlisting1483:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[279]
+
+:lstlisting1486:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting1486:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[280]
+
+:lstlisting1499:lthtmlCropMarkHeight:=283.99998pt
+
+:lstlisting1499:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[281]
+
+:lstlisting1502:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting1502:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[282]
+
+:lstlisting1510:lthtmlCropMarkHeight:=179.49998pt
+
+:lstlisting1510:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[283]
+
+:lstlisting1513:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1513:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[284]
+
+:lstlisting1535:lthtmlCropMarkHeight:=350.49998pt
+
+:lstlisting1535:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[285]
+
+:lstlisting1540:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting1540:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[286]
+
+:lstlisting1548:lthtmlCropMarkHeight:=407.49998pt
+
+:lstlisting1548:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[287]
+
+:lstlisting1553:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting1553:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[288]
+
+:lstlisting1570:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1570:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[289]
+
+:lstlisting1601:lthtmlCropMarkHeight:=274.49998pt
+
+:lstlisting1601:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[290]
+
+:lstlisting1604:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting1604:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[291]
+
+:lstlisting1607:lthtmlCropMarkHeight:=264.99998pt
+
+:lstlisting1607:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[292]
+
+:lstlisting1610:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1610:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[293]
+
+:lstlisting1613:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting1613:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[294]
+
+:lstlisting1638:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1638:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[295]
+
+:lstlisting1659:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting1659:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[296]
+
+:lstlisting1663:lthtmlCropMarkHeight:=302.99998pt
+
+:lstlisting1663:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[297]
+
+:lstlisting1667:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting1667:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[298]
+
+:lstlisting1682:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1682:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[299]
+
+:lstlisting1698:lthtmlCropMarkHeight:=274.49998pt
+
+:lstlisting1698:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[300]
+
+:lstlisting1716:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1716:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[301]
+
+:lstlisting1737:lthtmlCropMarkHeight:=312.49998pt
+
+:lstlisting1737:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[302]
+
+:lstlisting1741:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting1741:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[303]
+
+:lstlisting1761:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1761:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[304]
+
+:lstlisting1777:lthtmlCropMarkHeight:=264.99998pt
+
+:lstlisting1777:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[305]
+
+:lstlisting1794:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting1794:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[306]
+
+:lstlisting1803:lthtmlCropMarkHeight:=131.99998pt
+
+:lstlisting1803:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[307]
+
+:lstlisting1806:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1806:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[308]
+
+:lstlisting1818:lthtmlCropMarkHeight:=122.49998pt
+
+:lstlisting1818:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[309]
+
+:lstlisting1828:lthtmlCropMarkHeight:=74.99998pt
+
+:lstlisting1828:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[310]
+
+:lstlisting1834:lthtmlCropMarkHeight:=160.49998pt
+
+:lstlisting1834:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[311]
+
+:lstlisting1848:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1848:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[312]
+
+:lstlisting1854:lthtmlCropMarkHeight:=150.99998pt
+
+:lstlisting1854:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[313]
+
+:lstlisting1866:lthtmlCropMarkHeight:=198.49998pt
+
+:lstlisting1866:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[314]
+
+:lstlisting1883:lthtmlCropMarkHeight:=350.49998pt
+
+:lstlisting1883:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[315]
+
+:lstlisting1891:lthtmlCropMarkHeight:=74.99998pt
+
+:lstlisting1891:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[316]
+
+:lstlisting1895:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting1895:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[317]
+
+:lstlisting1906:lthtmlCropMarkHeight:=112.99998pt
+
+:lstlisting1906:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[318]
+
+:lstlisting1911:lthtmlCropMarkHeight:=103.49998pt
+
+:lstlisting1911:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[319]
+
+:lstlisting1917:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting1917:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[320]
+
+:lstlisting1923:lthtmlCropMarkHeight:=160.49998pt
+
+:lstlisting1923:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[321]
+
+:lstlisting1944:lthtmlCropMarkHeight:=378.99998pt
+
+:lstlisting1944:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[322]
+
+:lstlisting1958:lthtmlCropMarkHeight:=559.49998pt
+
+:lstlisting1958:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[323]
+
+:lstlisting1961:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting1961:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[324]
+
+:lstlisting1965:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting1965:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[325]
+
+:lstlisting1974:lthtmlCropMarkHeight:=112.99998pt
+
+:lstlisting1974:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[326]
+
+:lstlisting1977:lthtmlCropMarkHeight:=112.99998pt
+
+:lstlisting1977:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[327]
+
+:lstlisting1991:lthtmlCropMarkHeight:=150.99998pt
+
+:lstlisting1991:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[328]
+
+:lstlisting1998:lthtmlCropMarkHeight:=131.99998pt
+
+:lstlisting1998:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[329]
+
+:lstlisting2006:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting2006:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[330]
+
+:lstlisting2012:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting2012:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[331]
+
+:lstlisting2017:lthtmlCropMarkHeight:=188.99998pt
+
+:lstlisting2017:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[332]
+
+:lstlisting2025:lthtmlCropMarkHeight:=122.49998pt
+
+:lstlisting2025:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[333]
+
+:lstlisting2029:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting2029:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[334]
+
+:lstlisting2032:lthtmlCropMarkHeight:=131.99998pt
+
+:lstlisting2032:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[335]
+
+:lstlisting2049:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting2049:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[336]
+
+:lstlisting2058:lthtmlCropMarkHeight:=141.49998pt
+
+:lstlisting2058:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[337]
+
+:lstlisting2074:lthtmlCropMarkHeight:=160.49998pt
+
+:lstlisting2074:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[338]
+
+:lstlisting2085:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting2085:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[339]
+
+:lstlisting2096:lthtmlCropMarkHeight:=207.99998pt
+
+:lstlisting2096:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[340]
+
+:lstlisting2099:lthtmlCropMarkHeight:=74.99998pt
+
+:lstlisting2099:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[341]
+
+:lstlisting2106:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting2106:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[342]
+
+:lstlisting2109:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting2109:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[343]
+
+:lstlisting2114:lthtmlCropMarkHeight:=150.99998pt
+
+:lstlisting2114:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[344]
+
+:lstlisting2117:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting2117:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[345]
+
+:lstlisting2122:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting2122:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[346]
+
+:lstlisting2128:lthtmlCropMarkHeight:=264.99998pt
+
+:lstlisting2128:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[347]
+
+:lstlisting2131:lthtmlCropMarkHeight:=74.99998pt
+
+:lstlisting2131:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[348]
+
+:lstlisting2135:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting2135:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[349]
+
+:lstlisting2142:lthtmlCropMarkHeight:=131.99998pt
+
+:lstlisting2142:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[350]
+
+:lstlisting2149:lthtmlCropMarkHeight:=198.49998pt
+
+:lstlisting2149:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[351]
+
+:lstlisting2152:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting2152:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[352]
+
+:lstlisting2155:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting2155:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[353]
+
+:lstlisting2161:lthtmlCropMarkHeight:=207.99998pt
+
+:lstlisting2161:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[354]
+
+:lstlisting2164:lthtmlCropMarkHeight:=84.49998pt
+
+:lstlisting2164:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[355]
+
+:lstlisting2171:lthtmlCropMarkHeight:=150.99998pt
+
+:lstlisting2171:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[356]
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5551 ​​​​3
+                    
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "8B.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5551 ​​​​3
+                    
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5551 ​​​​3
+                    
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5551 ​​​​3
+                    
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5551 ​​​​3
+                    
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+:lstlisting2174:lthtmlCropMarkHeight:=74.99998pt
+
+:lstlisting2174:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[357]
+
+:lstlisting2179:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting2179:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[358]
+
+:lstlisting2186:lthtmlCropMarkHeight:=245.99998pt
+
+:lstlisting2186:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[359]
+
+:lstlisting2189:lthtmlCropMarkHeight:=74.99998pt
+
+:lstlisting2189:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[360]
+
+:lstlisting2198:lthtmlCropMarkHeight:=169.99998pt
+
+:lstlisting2198:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[361]
+
+:lstlisting2201:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting2201:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[362]
+
+:lstlisting2205:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting2205:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[363]
+
+:lstlisting2209:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting2209:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[364]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5680 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 56
+80.
+
+
+:tex2html_wrap_inline3010:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline3010:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[365]
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5686 \lthtmlindisplaymathZ
+                            
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 56
+86.
+
+
+:tex2html_wrap_inline3012:lthtmlCropMarkHeight:=10.88889pt
+
+:tex2html_wrap_inline3012:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[366]
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5702     constant1, constant2, …,
+                                      constantN;
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A6.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5702     constant1, constant2, …,
+                                      constantN;
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+:lstlisting2301:lthtmlCropMarkHeight:=65.49998pt
+
+:lstlisting2301:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[367]
+
+:lstlisting2310:lthtmlCropMarkHeight:=46.49998pt
+
+:lstlisting2310:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[368]
+
+:lstlisting2316:lthtmlCropMarkHeight:=112.99998pt
+
+:lstlisting2316:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[369]
+
+:lstlisting2320:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting2320:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[370]
+
+:lstlisting2324:lthtmlCropMarkHeight:=55.99998pt
+
+:lstlisting2324:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[371]
+
+:lstlisting2326:lthtmlCropMarkHeight:=302.99998pt
+
+:lstlisting2326:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[372]
+
+:lstlisting2332:lthtmlCropMarkHeight:=27.49998pt
+
+:lstlisting2332:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[373]
+
+:lstlisting2342:lthtmlCropMarkHeight:=312.49998pt
+
+:lstlisting2342:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[374]
+
+:lstlisting2390:lthtmlCropMarkHeight:=74.99998pt
+
+:lstlisting2390:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[375]
+
+:lstlisting2405:lthtmlCropMarkHeight:=264.99998pt
+
+:lstlisting2405:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[376]
+
+:lstlisting2428:lthtmlCropMarkHeight:=150.99998pt
+
+:lstlisting2428:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[377]
+
+:lstlisting2432:lthtmlCropMarkHeight:=36.99998pt
+
+:lstlisting2432:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[378]
+
+:lstlisting2437:lthtmlCropMarkHeight:=236.49998pt
+
+:lstlisting2437:lthtmlCropMarkDepth:=0.0pt:1ex:=4.30554pt
+[379]
+
+Package glossaries Warning: No \printglossary or \printglossaries found. 
+(Remove \makeglossaries if you don't want any glossaries.) 
+This document will not have a glossary.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5949.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5949.
+(images.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5949.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5949.
+
+
+Package rerunfilecheck Warning: File `images.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `images.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5949.
+ ) 
+Here is how much of TeX's memory you used:
+ 18084 strings out of 481199
+ 273821 string characters out of 2919091
+ 1212495 words of memory out of 3000000
+ 30141 multiletter control sequences out of 15000+200000
+ 536513 words of font info for 36 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 60i,9n,95p,1010b,1229s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/texmf/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/texmf/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/texmf/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr5.pfb><C:/texmf/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
+texmf/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/texmf/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb><C:/texmf/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmtt10.pfb><C:/texmf/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on images.pdf (379 pages, 870252 bytes).
+PDF statistics:
+ 5187 PDF objects out of 6186 (max. 8388607)
+ 3277 named destinations out of 3580 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

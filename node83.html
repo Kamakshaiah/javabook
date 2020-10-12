@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>initialize a 2d array in Java</TITLE>
+<META NAME="description" CONTENT="initialize a 2d array in Java">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node84.html">
+<LINK REL="previous" HREF="node82.html">
+<LINK REL="next" HREF="node84.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node84.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node78.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node82.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html807"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node84.html">Copying Arrays Using Assignment</A>
+<B> Up:</B> <A
+ HREF="node78.html">Java Arrays</A>
+<B> Previous:</B> <A
+ HREF="node82.html">Multidimensional Arrays</A>
+ &nbsp; <B>  <A ID="tex2html808"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00575000000000000000">
+initialize a 2d array in Java</A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Here is how we can initialize a 2-dimensional array in Java.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img182.svg"
+ ALT="\begin{lstlisting}
+int[][] a = {
+{1, 2, 3},
+{4, 5, 6, 9},
+{7},
+};
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">As we can see, each element of the multidimensional array is an array itself. And also, unlike C/C++, each row of the multidimensional array in Java can be of different lengths.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img183.svg"
+ ALT="\begin{lstlisting}
+class MultidimensionalArray {
+public static void main(String...
+...
+System.out.println(''Length of row 3: '' + a[2].length);
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output for the above code block will be as follows.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img184.svg"
+ ALT="\begin{lstlisting}
+Length of row 1: 3
+Length of row 2: 4
+Length of row 3: 1
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In the above example, we are creating a multidimensional array named <SPAN  CLASS="texttt">a</SPAN>. Since each component of a multidimensional array is also an array (<SPAN  CLASS="texttt">a[0], a[1] and a[2]</SPAN> are also arrays). Here, we are using the length attribute to calculate the length of each row.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img185.svg"
+ ALT="\begin{lstlisting}
+class MultidimensionalArray {
+public static void main(String...
+... &lt; a[i].length; ++j) {
+System.out.println(a[i][j]);
+}
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output is as follows
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img186.svg"
+ ALT="\begin{lstlisting}
+1
+-2
+3
+-4
+-5
+6
+9
+7
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">We can also use the for...each loop to access elements of the multidimensional array. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img187.svg"
+ ALT="\begin{lstlisting}
+class MultidimensionalArray {
+public static void main(String...
+...r(int data: innerArray) {
+System.out.println(data);
+}
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output is as follows
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img186.svg"
+ ALT="\begin{lstlisting}
+1
+-2
+3
+-4
+-5
+6
+9
+7
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In the above example, we are have created a 2d array named <SPAN  CLASS="texttt">a</SPAN>. We then used for loop and <SPAN  CLASS="texttt">for...each</SPAN> loop to access each element of the array. Let's see how we can use a 3d array in Java. We can initialize a 3d array similar to the 2d array. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img188.svg"
+ ALT="\begin{lstlisting}
+// test is a 3d array
+int[][][] test = {
+{
+{1, -2, 3},
+{2, 3, 4}
+},
+{
+{-4, -5, 6, 9},
+{1},
+{2, 3}
+}
+};
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Basically, a 3d array is an array of 2d arrays. The rows of a 3d array can also vary in length just like in a 2d array.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img189.svg"
+ ALT="\begin{lstlisting}
+class ThreeArray {
+public static void main(String[] args) {
+...
+...r(int item: array1D) {
+System.out.println(item);
+}
+}
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output for the above program is as follows
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img190.svg"
+ ALT="\begin{lstlisting}
+1
+-2
+3
+2
+3
+4
+-4
+-5
+6
+9
+1
+2
+3
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node84.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node78.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node82.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html807"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node84.html">Copying Arrays Using Assignment</A>
+<B> Up:</B> <A
+ HREF="node78.html">Java Arrays</A>
+<B> Previous:</B> <A
+ HREF="node82.html">Multidimensional Arrays</A>
+ &nbsp; <B>  <A ID="tex2html808"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

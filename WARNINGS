@@ -1,0 +1,19 @@
+No implementation found for style `geometry'
+No implementation found for style `fancyvrb'
+No implementation found for style `glossaries'
+No implementation found for style `endnotes'
+No implementation found for style `parskip'
+No implementation found for style `csquotes'
+ppmquant is not available; need LaTeX for some image effects
+No implementation found for style `listings'
+No implementation found for style `xparse'
+No implementation found for style `lineno'
+No implementation found for style `afterpage'
+
+Java_Book.tex is newer than Java_Book.aux: Please rerun latex.
+
+Substitution of arg to newlabelxx delayed.
+
+? brace missing for \oldcontentsline
+
+? brace missing for \fontsize

@@ -1,0 +1,5949 @@
+\batchmode
+\documentclass{book}
+\RequirePackage{ifthen}
+
+
+
+
+\usepackage[paperheight=8.5in,paperwidth=6in,margin=1in,heightrounded]{geometry}
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true}
+\usepackage{glossaries}
+\usepackage{endnotes}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{csquotes}%
+\providecommand{\squeezeup}{\vspace{-3cm}}     
+\usepackage{makeidx}
+\makeindex
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{xparse}
+\usepackage{lineno}
+\usepackage{afterpage}
+\afterpage{\FloatBarrier}
+\usepackage{graphics}
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\lstdefinestyle{mystyle}{
+    language=Java,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize ,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+
+\lstset{style=mystyle}
+
+
+\makeglossaries
+
+
+\title{{\small {A CONCISE MANUAL ON}} \\JAVA PROGRAMMING}  
+
+
+\author{Kamakshaiah Musunuru \\\tiny{dr.m.kamakshaiah@gmail.com}}
+\date{}
+
+
+
+
+
+
+\makeatletter
+
+\makeatletter
+\count@=\the\catcode`\_ \catcode`\_=8 
+\newenvironment{tex2html_wrap}{}{}%
+\catcode`\<=12\catcode`\_=\count@
+\newcommand{\providedcommand}[1]{\expandafter\providecommand\csname #1\endcsname}%
+\newcommand{\renewedcommand}[1]{\expandafter\providecommand\csname #1\endcsname{}%
+  \expandafter\renewcommand\csname #1\endcsname}%
+\newcommand{\newedenvironment}[1]{\newenvironment{#1}{}{}\renewenvironment{#1}}%
+\let\newedcommand\renewedcommand
+\let\renewedenvironment\newedenvironment
+\makeatother
+\let\mathon=$
+\let\mathoff=$
+\ifx\AtBeginDocument\undefined \newcommand{\AtBeginDocument}[1]{}\fi
+\newbox\sizebox
+\setlength{\hoffset}{0pt}\setlength{\voffset}{0pt}
+\addtolength{\textheight}{\footskip}\setlength{\footskip}{0pt}
+\addtolength{\textheight}{\topmargin}\setlength{\topmargin}{0pt}
+\addtolength{\textheight}{\headheight}\setlength{\headheight}{0pt}
+\addtolength{\textheight}{\headsep}\setlength{\headsep}{0pt}
+\setlength{\textwidth}{349pt}
+\newwrite\lthtmlwrite
+\makeatletter
+\let\realnormalsize=\normalsize
+\global\topskip=2sp
+\def\preveqno{}\let\real@float=\@float \let\realend@float=\end@float
+\def\@float{\let\@savefreelist\@freelist\real@float}
+\def\liih@math{\ifmmode$\else\bad@math\fi}
+\def\end@float{\realend@float\global\let\@freelist\@savefreelist}
+\let\real@dbflt=\@dbflt \let\end@dblfloat=\end@float
+\let\@largefloatcheck=\relax
+\let\if@boxedmulticols=\iftrue
+\def\@dbflt{\let\@savefreelist\@freelist\real@dbflt}
+\def\adjustnormalsize{\def\normalsize{\mathsurround=0pt \realnormalsize
+ \parindent=0pt\abovedisplayskip=0pt\belowdisplayskip=0pt}%
+ \def\phantompar{\csname par\endcsname}\normalsize}%
+\def\lthtmltypeout#1{{\let\protect\string \immediate\write\lthtmlwrite{#1}}}%
+\usepackage[tightpage,active]{preview}
+\newbox\lthtmlPageBox
+\newdimen\lthtmlCropMarkHeight
+\newdimen\lthtmlCropMarkDepth
+\long\def\lthtmlTightVBoxA#1{\def\lthtmllabel{#1}
+    \setbox\lthtmlPageBox\vbox\bgroup\catcode`\_=8 }%
+\long\def\lthtmlTightVBoxZ{\egroup
+    \lthtmlCropMarkHeight=\ht\lthtmlPageBox \advance \lthtmlCropMarkHeight 6pt
+    \lthtmlCropMarkDepth=\dp\lthtmlPageBox
+    \lthtmltypeout{^^J:\lthtmllabel:lthtmlCropMarkHeight:=\the\lthtmlCropMarkHeight}%
+    \lthtmltypeout{^^J:\lthtmllabel:lthtmlCropMarkDepth:=\the\lthtmlCropMarkDepth:1ex:=\the \dimexpr 1ex}%
+    \begin{preview}\copy\lthtmlPageBox\end{preview}}%
+\long\def\lthtmlTightFBoxA#1{\def\lthtmllabel{#1}%
+    \adjustnormalsize\setbox\lthtmlPageBox=\vbox\bgroup %
+    \let\ifinner=\iffalse \let\)\liih@math %
+    \bgroup\catcode`\_=8 }%
+\long\def\lthtmlTightFBoxZ{\egroup
+    \@next\next\@currlist{}{\def\next{\voidb@x}}%
+    \expandafter\box\next\egroup %
+    \lthtmlCropMarkHeight=\ht\lthtmlPageBox \advance \lthtmlCropMarkHeight 6pt
+    \lthtmlCropMarkDepth=\dp\lthtmlPageBox
+    \lthtmltypeout{^^J:\lthtmllabel:lthtmlCropMarkHeight:=\the\lthtmlCropMarkHeight}%
+    \lthtmltypeout{^^J:\lthtmllabel:lthtmlCropMarkDepth:=\the\lthtmlCropMarkDepth:1ex:=\the \dimexpr 1ex}%
+    \begin{preview}\copy\lthtmlPageBox\end{preview}}%
+    \long\def\lthtmlinlinemathA#1#2\lthtmlindisplaymathZ{\lthtmlTightVBoxA{#1}{\hbox\bgroup#2\egroup}\lthtmlTightVBoxZ}
+    \def\lthtmlinlineA#1#2\lthtmlinlineZ{\lthtmlTightVBoxA{#1}{\hbox\bgroup#2\egroup}\lthtmlTightVBoxZ}
+    \long\def\lthtmldisplayA#1#2\lthtmldisplayZ{\lthtmlTightVBoxA{#1}{#2}\lthtmlTightVBoxZ}
+    \long\def\lthtmldisplayB#1#2\lthtmldisplayZ{\\edef\preveqno{(\theequation)}%
+        \lthtmlTightVBoxA{#1}{\let\@eqnnum\relax#2}\lthtmlTightVBoxZ}
+    \long\def\lthtmlfigureA#1{\let\@savefreelist\@freelist
+        \lthtmlTightFBoxA{#1}}
+    \long\def\lthtmlfigureZ{
+        \lthtmlTightFBoxZ\global\let\@freelist\@savefreelist}
+    \long\def\lthtmlpictureA#1{\let\@savefreelist\@freelist
+        \lthtmlTightVBoxA{#1}}
+    \long\def\lthtmlpictureZ{
+        \lthtmlTightVBoxZ\global\let\@freelist\@savefreelist}
+\def\lthtmlcheckvsize{\ifdim\ht\sizebox<\vsize 
+  \ifdim\wd\sizebox<\hsize\expandafter\hfill\fi \expandafter\vfill
+  \else\expandafter\vss\fi}%
+\providecommand{\selectlanguage}[1]{}%
+\makeatletter \tracingstats = 1 
+
+
+\begin{document}
+\pagestyle{empty}\thispagestyle{empty}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hsize=\the\hsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength vsize=\the\vsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hoffset=\the\hoffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength voffset=\the\voffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topmargin=\the\topmargin}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topskip=\the\topskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headheight=\the\headheight}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headsep=\the\headsep}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength parskip=\the\parskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength oddsidemargin=\the\oddsidemargin}\lthtmltypeout{}%
+\makeatletter
+\if@twoside\lthtmltypeout{latex2htmlLength evensidemargin=\the\evensidemargin}%
+\else\lthtmltypeout{latex2htmlLength evensidemargin=\the\oddsidemargin}\fi%
+\lthtmltypeout{}%
+\makeatother
+\setcounter{page}{1}
+\onecolumn
+
+% !!! IMAGES START HERE !!!
+
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2736}%
+$\lstinline{printf}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2738}%
+$\lstinline{(//)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2740}%
+$\lstinline{/*}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2742}%
+$\lstinline{*/}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2744}%
+$\lstinline{/**}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting85}%
+\begin{lstlisting}
+public class HelloWorldApp {
+    public static void main(String[] args) {
+        System.out.println("Hello World!"); // Prints the string to the console.
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2748}%
+$\lstinline{.java}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2750}%
+$\lstinline{HelloWorldApp.java}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2752}%
+$\lstinline{.class}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2754}%
+$\lstinline{HelloWorldApp.class}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2756}%
+$\lstinline{public}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2766}%
+$\lstinline{private}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2768}%
+$\lstinline{protected}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2770}%
+$\lstinline{SecurityException}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2772}%
+$\lstinline{static}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2774}%
+$\lstinline{void}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2776}%
+$\lstinline{System.exit()}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2778}%
+$\lstinline{String}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2780}%
+$\lstinline{args}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2782}%
+$\lstinline{public static void main(String... args)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2788}%
+$\lstinline{public static void main(String[])}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2790}%
+$\lstinline{String[] args}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2794}%
+$\lstinline{main}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2796}%
+$\lstinline{System}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2798}%
+$\lstinline{out}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2800}%
+$\lstinline{PrintStream}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2802}%
+$\lstinline{println(String)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting118}%
+\begin{lstlisting}
+// This is an example of a single line comment using two slashes
+\par
+/*
+ * This is an example of a multiple line comment using the slash and asterisk.
+ * This type of comment can be used to hold a lot of information or deactivate
+ * code, but it is very important to remember to close the comment.
+ */
+\par
+package fibsandlies;
+\par
+import java.util.Map;
+import java.util.HashMap;
+\par
+/**
+ * This is an example of a Javadoc comment; Javadoc can compile documentation
+ * from this text. Javadoc comments must immediately precede the class, method,
+ * or field being documented.
+ * @author Wikipedia Volunteers
+ */
+public class FibCalculator extends Fibonacci implements Calculator {
+    private static Map<Integer, Integer> memoized = new HashMap<>();
+\par
+/*
+     * The main method written as follows is used by the JVM as a starting point
+     * for the program.
+     */
+    public static void main(String[] args) {
+        memoized.put(1, 1);
+        memoized.put(2, 1);
+        System.out.println(fibonacci(12)); // Get the 12th Fibonacci number and print to console
+    }
+\par
+/**
+     * An example of a method written in Java, wrapped in a class.
+     * Given a non-negative number FIBINDEX, returns
+     * the Nth Fibonacci number, where N equals FIBINDEX.
+     * 
+     * @param fibIndex The index of the Fibonacci number
+     * @return the Fibonacci number
+     */
+    public static int fibonacci(int fibIndex) {
+        if (memoized.containsKey(fibIndex)) return memoized.get(fibIndex);
+        else {
+            int answer = fibonacci(fibIndex - 1) + fibonacci(fibIndex - 2);
+            memoized.put(fibIndex, answer);
+            return answer;
+        }
+    }
+}
+\par
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2804}%
+$\lstinline{service()}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2806}%
+$\lstinline{HttpServlet}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2808}%
+$\lstinline{GenericServlet}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2814}%
+$\lstinline{doGet(), doPost(), doPut(), doDelete()}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting140}%
+\begin{lstlisting}
+import java.io.IOException;
+\par
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+\par
+public class ServletLifeCycleExample extends HttpServlet {
+\par
+private Integer sharedCounter;                 
+\par
+@Override
+    public void init(final ServletConfig config) throws ServletException {
+        super.init(config);
+        getServletContext().log("init() called");
+        sharedCounter = 0;
+    }
+\par
+@Override
+    protected void service(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+        getServletContext().log("service() called");
+\par
+int localCounter;                       
+\par
+synchronized (sharedCounter) {
+              sharedCounter++;                  
+\par
+localCounter = sharedCounter;       
+        }
+\par
+response.getWriter().write("Incrementing the count to " + localCounter);  // accessing a local variable
+    }
+\par
+@Override
+    public void destroy() {
+        getServletContext().log("destroy() called");
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting146}%
+\begin{lstlisting}
+<p>Counting to three:</p>
+<% for (int i=1; i<4; i++) { %>
+    <p>This number is <%= i %>.</p>
+<% } %>
+<p>OK.</p>
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting148}%
+\begin{lstlisting}
+Counting to three:
+\par
+This number is 1.
+\par
+This number is 2.
+\par
+This number is 3.
+\par
+OK.
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting153}%
+\begin{lstlisting}
+// Hello.java (Java SE 5)
+import javax.swing.*;
+\par
+public class Hello extends JFrame {
+    public Hello() {
+        super("hello");
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.add(new JLabel("Hello, world!"));
+        this.pack();
+        this.setVisible(true);
+    }
+\par
+public static void main(final String[] args) {
+        new Hello();
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2818}%
+$\lstinline{import}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2820}%
+$\lstinline{javax.swing}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2822}%
+$\lstinline{Hello}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2824}%
+$\lstinline{extends}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2826}%
+$\lstinline{JFrame}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2830}%
+$\lstinline{Hello()}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2832}%
+$\lstinline{setDefaultCloseOperation(int)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2836}%
+$\lstinline{WindowConstants.EXIT_ON_CLOSE}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2840}%
+$\lstinline{JLabel}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2842}%
+$\lstinline{add(Component)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2844}%
+$\lstinline{Container}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2846}%
+$\lstinline{pack()}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2848}%
+$\lstinline{Window}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2850}%
+$\lstinline{main()}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2852}%
+$\lstinline{setVisible(boolean)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2854}%
+$\lstinline{Component}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2856}%
+$\lstinline{true}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting184}%
+\begin{lstlisting}
+import java.awt.FlowLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.WindowConstants;
+import javax.swing.SwingUtilities;
+\par
+public class SwingExample implements Runnable {
+\par
+@Override
+    public void run() {
+        // Create the window
+        JFrame f = new JFrame("Hello, !");
+        // Sets the behavior for when the window is closed
+        f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        // Add a layout manager so that the button is not placed on top of the label
+        f.setLayout(new FlowLayout());
+        // Add a label and a button
+        f.add(new JLabel("Hello, world!"));
+        f.add(new JButton("Press me!"));
+        // Arrange the components inside the window
+        f.pack();
+        // By default, the window is not visible. Make it visible.
+        f.setVisible(true);
+    }
+\par
+public static void main(String[] args) {
+        SwingExample se = new SwingExample();
+        // Schedules the application to be run at the correct time in the event queue.
+        SwingUtilities.invokeLater(se);
+    }
+\par
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2858}%
+$\lstinline{SwingUtilities.invokeLater(Runnable))}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting196}%
+\begin{lstlisting}
+package javafxtuts;
+\par
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+\par
+public class JavaFxTuts extends Application {
+    public JavaFxTuts() {
+        //Optional constructor
+    }
+    @Override
+    public void init() {
+         //By default this does nothing, but it
+         //can carry out code to set up your app.
+         //It runs once before the start method,
+         //and after the constructor.
+    }
+\par
+@Override
+    public void start(Stage primaryStage) {
+        // Creating the Java button
+        final Button button = new Button();
+        // Setting text to button
+        button.setText("Hello World");
+        // Registering a handler for button
+        button.setOnAction((ActionEvent event) -> {
+            // Printing Hello World! to the console
+            System.out.println("Hello World!");
+        });
+        // Initializing the StackPane class
+        final StackPane root = new StackPane();
+        // Adding all the nodes to the StackPane
+        root.getChildren().add(button);
+        // Creating a scene object
+        final Scene scene = new Scene(root, 300, 250);
+        // Adding the title to the window (primaryStage)
+        primaryStage.setTitle("Hello World!");
+        primaryStage.setScene(scene);
+        // Show the window(primaryStage)
+        primaryStage.show();
+    }
+    @Override
+    public void stop() {
+        //By default this does nothing
+        //It runs if the user clicks the go-away button
+        //closing the window or if Platform.exit() is called.
+        //Use Platform.exit() instead of System.exit(0).
+        //This is where you should offer to save any unsaved
+        //stuff that the user may have generated.
+    }
+\par
+/**
+     * Main function that opens the "Hello World!" window
+     * 
+     * @param arguments the command line arguments
+     */
+    public static void main(final String[] arguments) {
+        launch(arguments);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting226}%
+\begin{lstlisting}
+// Your First Program
+\par
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting232}%
+\begin{lstlisting}
+javac HelloWorld.java
+java HelloWorld
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2860}%
+$\lstinline{java HelloWorld}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting244}%
+\begin{lstlisting}
+class HelloWorld {
+... .. ...
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting250}%
+\begin{lstlisting}
+public static void main(String[] args) {
+... .. ...
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting318}%
+\begin{lstlisting}
+E:\work\java\eclipse\HelloWorld\src>dir
+ Volume in drive E has no label.
+ Volume Serial Number is ####-####
+\par
+Directory of E:\work\java\eclipse\HelloWorld\src
+.
+..
+179 helloworld.java
+		p1
+		p2
+\par
+1 File(s)            179 bytes
+    4 Dir(s)  85,037,547,520 bytes free
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting331}%
+\begin{lstlisting}
+// package p1 
+package p1;
+\par
+public class A {
+	public void display(){
+		System.out.println("Class A is called here!");
+	}	
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting334}%
+\begin{lstlisting}
+// package p2 
+package p2;
+import p1.*;
+\par
+public class B {
+\par
+static void display(){
+		System.out.println("This is class B!");
+	}
+	public static void main(String[] args){
+		A obj = new A();
+		obj.display();
+		display();
+	}
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting348}%
+\begin{lstlisting}
+//Java program to illustrate error while  
+//using class from different package with 
+//private modifier 
+package p1; 
+\par
+class A 
+{ 
+   private void display() 
+    { 
+        System.out.println("This is class A of p1"); 
+    } 
+} 
+\par
+class B 
+{ 
+   public static void main(String args[]) 
+      { 
+          A obj = new A(); 
+          //trying to access private method of another class 
+          obj.display(); 
+      } 
+} 
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting368}%
+\begin{lstlisting}
+//Java program to illustrate 
+//protected modifier 
+package p1; 
+\par
+//Class A 
+public class A 
+{ 
+   protected void display() 
+    { 
+        System.out.println("This is class A of p1"); 
+    } 
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting371}%
+\begin{lstlisting}
+//Java program to illustrate 
+//protected modifier 
+package p2; 
+import p1.*; //importing all classes in package p1 
+\par
+//Class B is subclass of A 
+class B extends A 
+// class inheritance
+{ 
+   public static void main(String args[]) 
+   {   
+       B obj = new B();   
+       obj.display();   
+   }   
+\par
+} 
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting383}%
+\begin{lstlisting}
+package teststatic;
+\par
+public class TestStatic {
+\par
+static void callStatic(){
+		System.out.println("Static method called in main method!");
+	}
+\par
+void callNonStatic(){
+		System.out.println("Non-static method called in main method! using 'instance'");
+	}
+\par
+public static void main(String[] args) {
+\par
+// this static method
+		callStatic();
+\par
+// this is non-staic method
+		TestStatic obj = new TestStatic();
+		obj.callNonStatic();
+		// this is also possible
+		obj.callStatic();
+	}
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting393}%
+\begin{lstlisting}
+package teststatic;
+\par
+class Parent { 
+    void show() 
+    { 
+        System.out.println("Parent"); 
+    } 
+} 
+\par
+// Parent inherit in Child class 
+class Child extends Parent { 
+\par
+// override show() of Parent 
+    void show() 
+    { 
+        System.out.println("Child"); 
+    } 
+} 
+\par
+class TestStatic { 
+    public static void main(String[] args) 
+    { 
+        Parent p = new Parent(); 
+        // calling Parent's show() 
+        p.show(); 
+\par
+Parent c = new Child(); 
+        // calling Child's show() 
+        c.show(); 
+    } 
+} 
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting398}%
+\begin{lstlisting}
+package teststatic;
+\par
+class Parent { 
+    static void show() 
+    { 
+        System.out.println("Parent"); 
+    } 
+} 
+\par
+// Parent inherit in Child class 
+class Child extends Parent { 
+\par
+// override show() of Parent 
+    void show() 
+    { 
+        System.out.println("Child"); 
+    } 
+} 
+\par
+class TestStatic { 
+    public static void main(String[] args) 
+    { 
+        Parent p = new Parent(); 
+        // calling Parent's show() 
+        p.show(); 
+\par
+Parent c = new Child(); 
+        // calling Child's show() 
+        c.show(); 
+    } 
+} 
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting403}%
+\begin{lstlisting}
+Multiple markers at this line
+	- This instance method cannot override the static method 
+	 from Parent
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting406}%
+\begin{lstlisting}
+int score;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2862}%
+$\lstinline{int}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2864}%
+$\lstinline{score}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2866}%
+$\lstinline{int, for, class}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2868}%
+$\lstinline{true, false}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2870}%
+$\lstinline{null}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting424}%
+\begin{lstlisting}
+int float;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2874}%
+$\lstinline{float}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting438}%
+\begin{lstlisting}
+int speedLimit = 80;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2876}%
+$\lstinline{speedLimit}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting443}%
+\begin{lstlisting}
+int speedLimit;
+speedLimit = 80;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting446}%
+\begin{lstlisting}
+int speedLimit = 80;
+... ... ...
+speedLimit = 90; 
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting448}%
+\begin{lstlisting}
+int speedLimit = 80;
+... ... ...
+float speedLimit;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting464}%
+\begin{lstlisting}
+int speed;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2882}%
+$\lstinline{speed}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2888}%
+$\lstinline{boolean}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2892}%
+$\lstinline{false}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting475}%
+\begin{lstlisting}
+class BooleanExample {
+    public static void main(String[] args) {
+\par
+boolean flag = true;
+        System.out.println(flag);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2896}%
+$\lstinline{byte}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2898}%
+$-128$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2900}%
+$127$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2904}%
+$[-128, 127]$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting481}%
+\begin{lstlisting}
+class ByteExample {
+    public static void main(String[] args) {
+\par
+byte range;
+        range = 124;
+        System.out.println(range);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2906}%
+$\lstinline{short}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2908}%
+$-32768 to 32767$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2910}%
+$[-32768, 32767]$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting486}%
+\begin{lstlisting}
+class ShortExample {
+    public static void main(String[] args) {
+\par
+short temperature;
+        temperature = -200;
+        System.out.println(temperature);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2914}%
+$-2^31$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2916}%
+$2^{31}-1$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2918}%
+$2^{32}-1$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting493}%
+\begin{lstlisting}
+class IntExample {
+    public static void main(String[] args) {
+\par
+int range = -4250000;
+        System.out.println(range);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2920}%
+$\lstinline{long}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2922}%
+$-2^63$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2924}%
+$2^{63}-1$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2926}%
+$2^{64}-1$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting500}%
+\begin{lstlisting}
+class LongExample {
+    public static void main(String[] args) {
+\par
+long range = -42332200000L;
+        System.out.println(range);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2928}%
+$-42332200000$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2930}%
+$\lstinline{double}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting506}%
+\begin{lstlisting}
+class DoubleExample {
+    public static void main(String[] args) {
+\par
+double number = -42.3;
+        System.out.println(number);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting511}%
+\begin{lstlisting}
+class FloatExample {
+    public static void main(String[] args) {
+\par
+float number = -42.3f;
+        System.out.println(number);
+    }
+}
+\par
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2934}%
+$-42.3f$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2936}%
+$-42.3$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2946}%
+$'\symbol{92}u0000'$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2948}%
+$'\symbol{92}uffff'$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting522}%
+\begin{lstlisting}
+class CharExample {
+    public static void main(String[] args) {
+\par
+char letter = '\u0051';
+        System.out.println(letter);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2952}%
+$'\symbol{92}u0051'$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting528}%
+\begin{lstlisting}
+class CharExample {
+    public static void main(String[] args) {
+\par
+char letter1 = '9';
+        System.out.println(letter1);
+\par
+char letter2 = 65;
+        System.out.println(letter2);
+\par
+}
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2954}%
+$\lstinline{letter1}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2958}%
+$\lstinline{letter2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting535}%
+\begin{lstlisting}
+myString = "Programming is awesome";
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting538}%
+\begin{lstlisting}
+boolean flag = false;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2962}%
+$\lstinline{flag}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2966}%
+$1.5, 4, true, '\symbol{92}u0050'$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2970}%
+$-5, 'a', true$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting553}%
+\begin{lstlisting}
+// Error! literal 42332200000 of type int is out of range
+int myVariable1 = 42332200000;// 42332200000L is of type long, and it's not out of range
+long myVariable2 = 42332200000L;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2972}%
+$0x$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2974}%
+$0b$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting555}%
+\begin{lstlisting}
+// decimal
+int decNumber = 34;
+int hexNumber = 0x2F; // 0x represents hexadecimal
+int binNumber = 0b10010; // 0b represents binary
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting566}%
+\begin{lstlisting}
+class DoubleExample {
+    public static void main(String[] args) {
+\par
+double myDouble = 3.4;
+        float myFloat = 3.4F;
+\par
+// 3.445*10^2
+        double myDoubleScientific = 3.445e2;
+\par
+System.out.println(myDouble);
+        System.out.println(myFloat);
+        System.out.println(myDoubleScientific);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2976}%
+$\lstinline{char}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2978}%
+$'a', '\symbol{92}u0111'$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2982}%
+$\symbol{92}b$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2984}%
+$\symbol{92}t$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2986}%
+$\symbol{92}n$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2988}%
+$\symbol{92}f$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2990}%
+$\symbol{92}r$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2992}%
+$\symbol{92}"$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2994}%
+$\symbol{92}'$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2996}%
+$\symbol{92}\symbol{92}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting584}%
+\begin{lstlisting}
+class DoubleExample {
+    public static void main(String[] args) {
+\par
+char myChar = 'g';
+        char newLine = '\n';
+        String myString = "Java 8";
+\par
+System.out.println(myChar);
+        System.out.println(newLine);
+        System.out.println(myString);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting590}%
+\begin{lstlisting}
+int age;
+age = 5;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting595}%
+\begin{lstlisting}
+class AssignmentOperator {
+    public static void main(String[] args) {
+\par
+int number1, number2;
+\par
+// Assigning 5 to number1 
+        number1 = 5;
+        System.out.println(number1);
+\par
+// Assigning value of variable number2 to number1
+        number2 = number1;
+        System.out.println(number2);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting607}%
+\begin{lstlisting}
+class ArithmeticOperator {
+    public static void main(String[] args) {
+\par
+double number1 = 12.5, number2 = 3.5, result;
+\par
+// Using addition operator
+        result = number1 + number2;
+        System.out.println("number1 + number2 = " + result);
+\par
+// Using subtraction operator
+        result = number1 - number2;
+        System.out.println("number1 - number2 = " + result);
+\par
+// Using multiplication operator
+        result = number1 * number2;
+        System.out.println("number1 * number2 = " + result);
+\par
+// Using division operator
+        result = number1 / number2;
+        System.out.println("number1 / number2 = " + result);
+\par
+// Using remainder operator
+        result = number1 % number2;
+        System.out.println("number1 % number2 = " + result);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting610}%
+\begin{lstlisting}
+result = number1 + 5.2;
+result = 2.3 + 4.5;
+number2 = number1 -2.9;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting612}%
+\begin{lstlisting}
+class ArithmeticOperator {
+    public static void main(String[] args) {
+\par
+String start, middle, end, result;
+\par
+start = "Talk is cheap. ";
+        middle = "Show me the code. ";
+        end = "- Linus Torvalds";
+\par
+result = start + middle + end;
+        System.out.println(result);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting626}%
+\begin{lstlisting}
+class UnaryOperator {
+    public static void main(String[] args) {
+\par
+double number = 5.2, resultNumber;
+        boolean flag = false;
+\par
+System.out.println("+number = " + +number);
+        // number is equal to 5.2 here.
+\par
+System.out.println("-number = " + -number);
+        // number is equal to 5.2 here.
+\par
+// ++number is equivalent to number = number + 1
+        System.out.println("number = " + ++number);
+        // number is equal to 6.2 here.
+\par
+// -- number is equivalent to number = number - 1
+        System.out.println("number = " + --number);
+        // number is equal to 5.2 here.
+\par
+System.out.println("!flag = " + !flag);
+        // flag is still false.
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting629}%
+\begin{lstlisting}
++number = 5.2
+-number = -5.2
+number = 6.2
+number = 5.2
+!flag = true
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline2998}%
+$\lstinline{++}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3000}%
+$\lstinline{--}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting635}%
+\begin{lstlisting}
+int myInt = 5;
+++myInt   // myInt becomes 6
+myInt++   // myInt becomes 7
+--myInt   // myInt becomes 6
+myInt--   // myInt becomes 5
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting638}%
+\begin{lstlisting}
+class UnaryOperator {
+    public static void main(String[] args) {
+\par
+double number = 5.2;
+\par
+System.out.println(number++);
+        System.out.println(number);
+\par
+System.out.println(++number);
+        System.out.println(number);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting641}%
+\begin{lstlisting}
+5.2
+6.2
+7.2
+7.2
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3004}%
+$\lstinline{System.out.println(number++);}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3006}%
+$\lstinline{System.out.println(number);}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3008}%
+$\texttt{System.out.println(++number);}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting657}%
+\begin{lstlisting}
+class RelationalOperator {
+    public static void main(String[] args) {
+\par
+int number1 = 5, number2 = 6;
+\par
+if (number1 > number2) {
+            System.out.println("number1 is greater than number2.");
+        }
+        else {
+            System.out.println("number2 is greater than number1.");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting669}%
+\begin{lstlisting}
+class instanceofOperator {
+    public static void main(String[] args) {
+\par
+String test = "asdf";
+        boolean result;
+\par
+result = test instanceof String;
+        System.out.println("Is test an object of String? " + result);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting676}%
+\begin{lstlisting}
+result = objectName instanceof className;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting680}%
+\begin{lstlisting}
+class Main {
+    public static void main (String[] args) {
+        String name = "Programiz";
+        Integer age = 22;
+\par
+System.out.println("Is name an instance of String: "+ (name instanceof String));
+        System.out.println("Is age an instance of Integer: "+ (age instanceof Integer));
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting683}%
+\begin{lstlisting}
+Is name an instance of String: true
+Is age an instance of Integer: true
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting700}%
+\begin{lstlisting}
+String[] array = new String[100];
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting702}%
+\begin{lstlisting}
+dataType[] arrayName;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting706}%
+\begin{lstlisting}
+double[] data;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting710}%
+\begin{lstlisting}
+// declare an array
+double[] data;
+\par
+// allocate memory
+data = new Double[10];
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting712}%
+\begin{lstlisting}
+double[] data = new double[10];
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting715}%
+\begin{lstlisting}
+//declare and initialize and array
+int[] age = {12, 4, 5, 2, 5};
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting718}%
+\begin{lstlisting}
+// declare an array
+int[] age = new int[5];
+\par
+// initialize array
+age[0] = 12;
+age[1] = 4;
+age[2] = 5;
+..
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting723}%
+\begin{lstlisting}
+// access array elements
+array[index]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting725}%
+\begin{lstlisting}
+class Main {
+ public static void main(String[] args) {
+\par
+// create an array
+   int[] age = {12, 4, 5, 2, 5};
+\par
+// access each array elements
+   System.out.println("Accessing Elements of Array:");
+   System.out.println("First Element: " + age[0]);
+   System.out.println("Second Element: " + age[1]);
+   System.out.println("Third Element: " + age[2]);
+   System.out.println("Fourth Element: " + age[3]);
+   System.out.println("Fifth Element: " + age[4]);
+ }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting728}%
+\begin{lstlisting}
+Accessing Elements of Array:
+First Element: 12
+Second Element: 4
+Third Element: 5
+Fourth Element: 2
+Fifth Element: 5
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting731}%
+\begin{lstlisting}
+class Main {
+ public static void main(String[] args) {
+\par
+// create an array
+   int[] age = {12, 4, 5};
+\par
+// loop through the array
+   // using for loop
+   System.out.println("Using for Loop:");
+   for(int i = 0; i < age.length; i++) {
+     System.out.println(age[i]);
+   }
+ }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting735}%
+\begin{lstlisting}
+Using for Loop:
+12
+4
+5
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting738}%
+\begin{lstlisting}
+class Main {
+ public static void main(String[] args) {
+\par
+// create an array
+   int[] age = {12, 4, 5};
+\par
+// loop through the array
+   // using for loop
+   System.out.println("Using for-each Loop:");
+   for(int a : age) {
+     System.out.println(a);
+   }
+ }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting742}%
+\begin{lstlisting}
+Using for-each Loop:
+12
+4
+5
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting744}%
+\begin{lstlisting}
+class Main {
+ public static void main(String[] args) {
+\par
+int[] numbers = {2, -9, 0, 5, 12, -25, 22, 9, 8, 12};
+   int sum = 0;
+   Double average;
+\par
+// access all elements using for each loop
+   // add each element in sum
+   for (int number: numbers) {
+     sum += number;
+   }
+\par
+// get the total number of elements
+   int arrayLength = numbers.length;
+\par
+// calculate the average
+   // convert the average from int to double
+   average =  ((double)sum / (double)arrayLength);
+\par
+System.out.println("Sum = " + sum);
+   System.out.println("Average = " + average);
+ }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting748}%
+\begin{lstlisting}
+Sum = 36
+Average = 3.6
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting753}%
+\begin{lstlisting}
+average = ((double)sum / (double)arrayLength);
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting756}%
+\begin{lstlisting}
+double[][] matrix = {{1.2, 4.3, 4.0}, 
+      {4.1, -1.1}
+};
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting760}%
+\begin{lstlisting}
+int[][] a = new int[3][4];
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting763}%
+\begin{lstlisting}
+String[][][] data = new String[3][4][2];
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting766}%
+\begin{lstlisting}
+int[][] a = {
+      {1, 2, 3}, 
+      {4, 5, 6, 9}, 
+      {7}, 
+};
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting771}%
+\begin{lstlisting}
+class MultidimensionalArray {
+    public static void main(String[] args) {
+\par
+// create a 2d array
+        int[][] a = {
+            {1, 2, 3}, 
+            {4, 5, 6, 9}, 
+            {7}, 
+        };
+\par
+// calculate the length of each row
+        System.out.println("Length of row 1: " + a[0].length);
+        System.out.println("Length of row 2: " + a[1].length);
+        System.out.println("Length of row 3: " + a[2].length);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting776}%
+\begin{lstlisting}
+Length of row 1: 3
+Length of row 2: 4
+Length of row 3: 1
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting780}%
+\begin{lstlisting}
+class MultidimensionalArray {
+    public static void main(String[] args) {
+\par
+int[][] a = {
+            {1, -2, 3}, 
+            {-4, -5, 6, 9}, 
+            {7}, 
+        };
+\par
+for (int i = 0; i < a.length; ++i) {
+            for(int j = 0; j < a[i].length; ++j) {
+                System.out.println(a[i][j]);
+            }
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting786}%
+\begin{lstlisting}
+1
+-2
+3
+-4
+-5
+6
+9
+7
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting788}%
+\begin{lstlisting}
+class MultidimensionalArray {
+    public static void main(String[] args) {
+\par
+// create a 2d array
+        int[][] a = {
+            {1, -2, 3}, 
+            {-4, -5, 6, 9}, 
+            {7}, 
+        };
+\par
+// first for...each loop access the individual array
+        // inside the 2d array
+        for (int[] innerArray: a) {
+            // second for...each loop access each element inside the row
+            for(int data: innerArray) {
+                System.out.println(data);
+            }
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting798}%
+\begin{lstlisting}
+// test is a 3d array
+int[][][] test = {
+        {
+          {1, -2, 3}, 
+          {2, 3, 4}
+        }, 
+        { 
+          {-4, -5, 6, 9}, 
+          {1}, 
+          {2, 3}
+        } 
+};
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting805}%
+\begin{lstlisting}
+class ThreeArray {
+    public static void main(String[] args) {
+\par
+// create a 3d array
+        int[][][] test = {
+            {
+              {1, -2, 3}, 
+              {2, 3, 4}
+            }, 
+            { 
+              {-4, -5, 6, 9}, 
+              {1}, 
+              {2, 3}
+            } 
+        };
+\par
+// for..each loop to iterate through elements of 3d array
+        for (int[][] array2D: test) {
+            for (int[] array1D: array2D) {
+                for(int item: array1D) {
+                    System.out.println(item);
+                }
+            }
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting813}%
+\begin{lstlisting}
+1
+-2
+3
+2
+3
+4
+-4
+-5
+6
+9
+1
+2
+3
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting816}%
+\begin{lstlisting}
+class Main {
+    public static void main(String[] args) {
+\par
+int [] numbers = {1, 2, 3, 4, 5, 6};
+        int [] positiveNumbers = numbers;    // copying arrays
+\par
+for (int number: positiveNumbers) {
+            System.out.print(number + ", ");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting824}%
+\begin{lstlisting}
+class Main {
+    public static void main(String[] args) {
+\par
+int [] numbers = {1, 2, 3, 4, 5, 6};
+        int [] positiveNumbers = numbers;    // copying arrays
+\par
+// change value of first array
+        numbers[0] = -1;
+\par
+// printing the second array
+        for (int number: positiveNumbers) {
+            System.out.print(number + ", ");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting832}%
+\begin{lstlisting}
+import java.util.Arrays;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+int [] source = {1, 2, 3, 4, 5, 6};
+        int [] destination = new int[6];
+\par
+// iterate and copy elements from source to destination
+        for (int i = 0; i < source.length; ++i) {
+            destination[i] = source[i];
+        }
+\par
+// converting array to string
+        System.out.println(Arrays.toString(destination));
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting844}%
+\begin{lstlisting}
+arraycopy(Object src, int srcPos,Object dest, int destPos, int length)
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting853}%
+\begin{lstlisting}
+// To use Arrays.toString() method
+import java.util.Arrays;
+\par
+class Main {
+    public static void main(String[] args) {
+        int[] n1 = {2, 3, 12, 4, 12, -2};
+\par
+int[] n3 = new int[5];
+\par
+// Creating n2 array of having length of n1 array
+        int[] n2 = new int[n1.length];
+\par
+// copying entire n1 array to n2
+        System.arraycopy(n1, 0, n2, 0, n1.length);
+        System.out.println("n2 = " + Arrays.toString(n2));  
+\par
+// copying elements from index 2 on n1 array
+        // copying element to index 1 of n3 array
+        // 2 elements will be copied
+        System.arraycopy(n1, 2, n3, 1, 2);
+        System.out.println("n3 = " + Arrays.toString(n3));  
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting856}%
+\begin{lstlisting}
+n2 = [2, 3, 12, 4, 12, -2]
+n3 = [0, 12, 4, 0, 0]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting869}%
+\begin{lstlisting}
+// To use toString() and copyOfRange() method
+import java.util.Arrays;
+\par
+class ArraysCopy {
+    public static void main(String[] args) {
+\par
+int[] source = {2, 3, 12, 4, 12, -2};
+\par
+// copying entire source array to destination
+        int[] destination1 = Arrays.copyOfRange(source, 0, source.length);      
+        System.out.println("destination1 = " + Arrays.toString(destination1)); 
+\par
+// copying from index 2 to 5 (5 is not included) 
+        int[] destination2 = Arrays.copyOfRange(source, 2, 5); 
+        System.out.println("destination2 = " + Arrays.toString(destination2));   
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting872}%
+\begin{lstlisting}
+destination1 = [2, 3, 12, 4, 12, -2]
+destination2 = [12, 4, 12]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting874}%
+\begin{lstlisting}
+int[] destination1 = Arrays.copyOfRange(source, 0, source.length);
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting882}%
+\begin{lstlisting}
+import java.util.Arrays;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+int[][] source = {
+              {1, 2, 3, 4}, 
+              {5, 6},
+              {0, 2, 42, -4, 5}
+              };
+\par
+int[][] destination = new int[source.length][];
+\par
+for (int i = 0; i < destination.length; ++i) {
+\par
+// allocating space for each row of destination array
+            destination[i] = new int[source[i].length];
+\par
+for (int j = 0; j < destination[i].length; ++j) {
+                destination[i][j] = source[i][j];
+            }
+        }
+\par
+// displaying destination array
+        System.out.println(Arrays.deepToString(destination));  
+\par
+}
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting888}%
+\begin{lstlisting}
+[[1, 2, 3, 4], [5, 6], [0, 2, 42, -4, 5]]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting890}%
+\begin{lstlisting}
+System.out.println(Arrays.deepToString(destination);
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting895}%
+\begin{lstlisting}
+import java.util.Arrays;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+int[][] source = {
+              {1, 2, 3, 4}, 
+              {5, 6},
+              {0, 2, 42, -4, 5}
+              };
+\par
+int[][] destination = new int[source.length][];
+\par
+for (int i = 0; i < source.length; ++i) {
+\par
+// allocating space for each row of destination array
+             destination[i] = new int[source[i].length];
+             System.arraycopy(source[i], 0, destination[i], 0, destination[i].length);
+        }
+\par
+// displaying destination array
+        System.out.println(Arrays.deepToString(destination));      
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting944}%
+\begin{lstlisting}
+// The Collections framework is defined in the java.util package
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args){
+        ArrayList<String> animals = new ArrayList<>();
+        // Add elements
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+\par
+System.out.println("ArrayList: " + animals);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting968}%
+\begin{lstlisting}
+// ArrayList implementation of List
+List<String> list1 = new ArrayList<>();
+\par
+// LinkedList implementation of List
+List<String> list2 = new LinkedList<>();
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting996}%
+\begin{lstlisting}
+import java.util.List;
+import java.util.ArrayList;
+\par
+class Main {
+\par
+public static void main(String[] args) {
+        // Creating list using the ArrayList class
+        List<Integer> numbers = new ArrayList<>();
+\par
+// Add elements to the list
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        System.out.println("List: " + numbers);
+\par
+// Access element from the list
+        int number = numbers.get(2);
+        System.out.println("Accessed Element: " + number);
+\par
+// Remove element from the list
+        int removedNumber = numbers.remove(1);
+        System.out.println("Removed Element: " + removedNumber);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting999}%
+\begin{lstlisting}
+List: [1, 2, 3]
+Accessed Element: 3
+Removed Element: 2
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1002}%
+\begin{lstlisting}
+import java.util.List;
+import java.util.LinkedList;
+\par
+class Main {
+\par
+public static void main(String[] args) {
+        // Creating list using the LinkedList class
+        List<Integer> numbers = new LinkedList<>();
+\par
+// Add elements to the list
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        System.out.println("List: " + numbers);
+\par
+// Access element from the list
+        int number = numbers.get(2);
+        System.out.println("Accessed Element: " + number);
+\par
+// Using the indexOf() method
+        int index = numbers.indexOf(2);
+        System.out.println("Position of 3 is " + index);
+\par
+// Remove element from the list
+        int removedNumber = numbers.remove(1);
+        System.out.println("Removed Element: " + removedNumber);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1005}%
+\begin{lstlisting}
+List: [1, 2, 3]
+Accessed Element: 3
+Position of 3 is 1
+Removed Element: 2
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1017}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args){
+        ArrayList<String> animals = new ArrayList<>();
+\par
+// Add elements
+        animals.add(0,"Dog");
+        animals.add(1,"Cat");
+        animals.add(2,"Horse");
+        System.out.println("ArrayList: " + animals);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1020}%
+\begin{lstlisting}
+ArrayList: [Dog, Cat, Horse]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1024}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args){
+        ArrayList<String> mammals = new ArrayList<>();
+        mammals.add("Dog");
+        mammals.add("Cat");
+        mammals.add("Horse");
+        System.out.println("Mammals: " + mammals);
+\par
+ArrayList<String> animals = new ArrayList<>();
+        animals.add("Crocodile");
+\par
+// Add all elements of mammals in animals
+        animals.addAll(mammals);
+        System.out.println("Animals: " + animals);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1027}%
+\begin{lstlisting}
+Mammals: [Dog, Cat, Horse]
+Animals: [Crocodile, Dog, Cat, Horse]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1034}%
+\begin{lstlisting}
+import java.util.ArrayList;
+import java.util.Arrays;
+\par
+class Main {
+    public static void main(String[] args) {
+        // Creating an array list
+        ArrayList<String> animals = new ArrayList<>(Arrays.asList("Cat", "Cow", "Dog"));
+        System.out.println("ArrayList: " + animals);
+\par
+// Access elements of the array list
+        String element = animals.get(1);
+        System.out.println("Accessed Element: " + element);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1037}%
+\begin{lstlisting}
+ArrayList: [Cat, Cow, Dog]
+Accessed Elemenet: Cow
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1039}%
+\begin{lstlisting}
+new ArrayList<>(Arrays.asList(("Cat", "Cow", "Dog"));
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1047}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String> animals= new ArrayList<>();
+\par
+// Add elements in the array list
+        animals.add("Dog");
+        animals.add("Horse");
+        animals.add("Cat");
+        System.out.println("ArrayList: " + animals);
+\par
+// Get the element from the array list
+        String str = animals.get(0);
+        System.out.print("Element at index 0: " + str);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1050}%
+\begin{lstlisting}
+ArrayList: [Dog, Horse, Cat]
+Element at index 0: Dog
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1055}%
+\begin{lstlisting}
+import java.util.ArrayList;
+import java.util.Iterator;
+\par
+class Main {
+    public static void main(String[] args){
+        ArrayList<String> animals = new ArrayList<>();
+\par
+// Add elements in the array list
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+        animals.add("Zebra");
+\par
+// Create an object of Iterator
+        Iterator<String> iterate = animals.iterator();
+        System.out.print("ArrayList: ");
+\par
+// Use methods of Iterator to access elements
+        while(iterate.hasNext()){
+            System.out.print(iterate.next());
+            System.out.print(", ");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1063}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String> animals= new ArrayList<>();
+        // Add elements in the array list
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+        System.out.println("ArrayList: " + animals);
+\par
+// Change the element of the array list
+        animals.set(2, "Zebra");
+        System.out.println("Modified ArrayList: " + animals);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1066}%
+\begin{lstlisting}
+ArrayList: [Dog, Cat, Horse]
+Modified ArrayList: [Dog, Cat, Zebra]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1071}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String> animals = new ArrayList<>();
+\par
+// Add elements in the array list
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+        System.out.println("Initial ArrayList: " + animals);
+\par
+// Remove element from index 2
+        String str = animals.remove(2);
+        System.out.println("Final ArrayList: " + animals);
+        System. out.println("Removed Element: " + str);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1074}%
+\begin{lstlisting}
+Initial ArrayList: [Dog, Cat, Horse]
+Final ArrayList: [Dog, Cat]
+Removed Element: Horse
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1078}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String> animals = new ArrayList<>();
+\par
+// Add elements in the ArrayList
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+        System.out.println("Initial ArrayList: " + animals);
+\par
+// Remove all the elements
+        animals.removeAll(animals);
+        System.out.println("Final ArrayList: " + animals);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1081}%
+\begin{lstlisting}
+Initial ArrayList: [Dog, Cat, Horse]
+Final ArrayList: []
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1085}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String> animals= new ArrayList<>();
+\par
+// Add elements in the array list
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+        System.out.println("Initial ArrayList: " + animals);
+\par
+// Remove all the elements
+        animals.clear();
+        System.out.println("Final ArrayList: " + animals);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1092}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args) {
+        // Creating an array list
+        ArrayList<String> animals = new ArrayList<>();
+        animals.add("Cow");
+        animals.add("Cat");
+        animals.add("Dog");
+        System.out.println("ArrayList: " + animals);
+\par
+// Using for loop
+        System.out.println("Accessing individual elements: ");
+\par
+for(int i = 0; i < animals.size(); i++) {
+            System.out.print(animals.get(i));
+            System.out.print(", ");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1095}%
+\begin{lstlisting}
+ArrayList: [Cow, Cat, Dog]
+Accessing individual elements:
+Cow, Cat, Dog,
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1098}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args) {
+        // Creating an array list
+        ArrayList<String> animals = new ArrayList<>();
+        animals.add("Cow");
+        animals.add("Cat");
+        animals.add("Dog");
+        System.out.println("ArrayList: " + animals);
+\par
+// Using forEach loop
+        System.out.println("Accessing individual elements:  ");
+        for(String animal : animals) {
+            System.out.print(animal);
+            System.out.print(", ");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1105}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String> animals= new ArrayList<>();
+\par
+// Adding elements in the arrayList
+        animals.add("Dog");
+        animals.add("Horse");
+        animals.add("Cat");
+        System.out.println("ArrayList: " + animals);
+\par
+// getting the size of the arrayList
+        System.out.println("Size: " + animals.size());
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1108}%
+\begin{lstlisting}
+ArrayList: [Dog, Horse, Cat]
+Size: 3
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1114}%
+\begin{lstlisting}
+import java.util.ArrayList;
+import java.util.Collections;
+\par
+class Main {
+    public static void main(String[] args){
+        ArrayList<String> animals= new ArrayList<>();
+\par
+// Add elements in the array list
+        animals.add("Horse");
+        animals.add("Zebra");
+        animals.add("Dog");
+        animals.add("Cat");
+\par
+System.out.println("Unsorted ArrayList: " + animals);
+\par
+// Sort the array list
+        Collections.sort(animals);
+        System.out.println("Sorted ArrayList: " + animals);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1117}%
+\begin{lstlisting}
+Unsorted ArrayList: [Horse, Zebra, Dog, Cat]
+Sorted ArrayList: [Cat, Dog, Horse, Zebra]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1121}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String> animals= new ArrayList<>();
+\par
+// Add elements in the array list
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+        System.out.println("ArrayList: " + animals);
+\par
+// Create a new array of String type
+        String[] arr = new String[animals.size()];
+\par
+// Convert ArrayList into an array
+        animals.toArray(arr);
+        System.out.print("Array: ");
+        for(String item:arr) {
+            System.out.print(item+", ");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1124}%
+\begin{lstlisting}
+ArrayList: [Dog, Cat, Horse]
+Array: Dog, Cat, Horse,
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1131}%
+\begin{lstlisting}
+import java.util.ArrayList;
+import java.util.Arrays;
+\par
+class Main {
+    public static void main(String[] args) {
+        // Create an array of String type
+        String[] arr = {"Dog", "Cat", "Horse"};
+        System.out.print("Array: ");
+\par
+// Print array
+        for(String str: arr) {
+            System.out.print(str);
+            System.out.print(" ");
+        }
+\par
+// Create an ArrayList from an array
+        ArrayList<String> animals = new ArrayList<>(Arrays.asList(arr));
+        System.out.println("\nArrayList: " + animals);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1135}%
+\begin{lstlisting}
+Array: Dog, Cat, Horse
+ArrayList: [Dog, Cat, Horse]
+\par
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1142}%
+\begin{lstlisting}
+import java.util.ArrayList;
+\par
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String> animals = new ArrayList<>();
+\par
+// Add elements in the ArrayList
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+        System.out.println("ArrayList: " + animals);
+\par
+// Convert ArrayList into an String
+        String str = animals.toString();
+        System.out.println("String: " + str);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1145}%
+\begin{lstlisting}
+ArrayList: [Dog, Cat, Horse]
+String: [Dog, Cat, Horse]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1174}%
+\begin{lstlisting}
+Vector<Type> vector = new Vector<>();
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1176}%
+\begin{lstlisting}
+// create Integer type linked list
+Vector<Integer> vector= new Vector<>();
+\par
+// create String type linked list
+Vector<String> vector= new Vector<>();
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1189}%
+\begin{lstlisting}
+import java.util.Vector;
+\par
+class Main {
+    public static void main(String[] args) {
+        Vector<String> mammals= new Vector<>();
+\par
+// Using the add() method
+        mammals.add("Dog");
+        mammals.add("Horse");
+\par
+// Using index number
+        mammals.add(2, "Cat");
+        System.out.println("Vector: " + mammals);
+\par
+// Using addAll()
+        Vector<String> animals = new Vector<>();
+        animals.add("Crocodile");
+\par
+animals.addAll(mammals);
+        System.out.println("New Vector: " + animals);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1192}%
+\begin{lstlisting}
+Vector: [Dog, Horse, Cat]
+New Vector: [Crocodile, Dog, Horse, Cat]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1199}%
+\begin{lstlisting}
+import java.util.Iterator;
+import java.util.Vector;
+\par
+class Main {
+    public static void main(String[] args) {
+        Vector<String> animals= new Vector<>();
+        animals.add("Dog");
+        animals.add("Horse");
+        animals.add("Cat");
+\par
+// Using get()
+        String element = animals.get(2);
+        System.out.println("Element at index 2: " + element);
+\par
+// Using iterator()
+        Iterator<String> iterate = animals.iterator();
+        System.out.print("Vector: ");
+        while(iterate.hasNext()) {
+            System.out.print(iterate.next());
+            System.out.print(", ");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1202}%
+\begin{lstlisting}
+Element at index 2: Cat
+Vector: Dog, Horse, Cat,
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1210}%
+\begin{lstlisting}
+import java.util.Vector;
+\par
+class Main {
+    public static void main(String[] args) {
+        Vector<String> animals= new Vector<>();
+        animals.add("Dog");
+        animals.add("Horse");
+        animals.add("Cat");
+\par
+System.out.println("Initial Vector: " + animals);
+\par
+// Using remove()
+        String element = animals.remove(1);
+        System.out.println("Removed Element: " + element);
+        System.out.println("New Vector: " + animals);
+\par
+// Using clear()
+        animals.clear();
+        System.out.println("Vector after clear(): " + animals);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1213}%
+\begin{lstlisting}
+Initial Vector: [Dog, Horse, Cat]
+Removed Element: Horse
+New Vector: [Dog, Cat]
+Vector after clear(): []
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1237}%
+\begin{lstlisting}
+Stack<Type> stacks = new Stack<>();
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1239}%
+\begin{lstlisting}
+// Create Integer type stack
+Stack<Integer> stacks = new Stack<>();
+\par
+// Create String type stack
+Stack<String> stacks = new Stack<>();
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1251}%
+\begin{lstlisting}
+import java.util.Stack;
+\par
+class Main {
+    public static void main(String[] args) {
+        Stack<String> animals= new Stack<>();
+\par
+// Add elements to Stack
+        animals.push("Dog");
+        animals.push("Horse");
+        animals.push("Cat");
+\par
+System.out.println("Stack: " + animals);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1254}%
+\begin{lstlisting}
+Stack: [Dog, Horse, Cat]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1258}%
+\begin{lstlisting}
+import java.util.Stack;
+\par
+class Main {
+    public static void main(String[] args) {
+        Stack<String> animals= new Stack<>();
+\par
+// Add elements to Stack
+        animals.push("Dog");
+        animals.push("Horse");
+        animals.push("Cat");
+        System.out.println("Initial Stack: " + animals);
+\par
+// Remove element stacks
+        String element = animals.pop();
+        System.out.println("Removed Element: " + element);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1263}%
+\begin{lstlisting}
+import java.util.Stack;
+\par
+class Main {
+    public static void main(String[] args) {
+        Stack<String> animals= new Stack<>();
+\par
+// Add elements to Stack
+        animals.push("Dog");
+        animals.push("Horse");
+        animals.push("Cat");
+        System.out.println("Stack: " + animals);
+\par
+// Access element from the top
+        String element = animals.peek();
+        System.out.println("Element at top: " + element);
+\par
+}
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1266}%
+\begin{lstlisting}
+Stack: [Dog, Horse, Cat]
+Element at top: Cat
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1270}%
+\begin{lstlisting}
+import java.util.Stack;
+\par
+class Main {
+    public static void main(String[] args) {
+        Stack<String> animals= new Stack<>();
+\par
+// Add elements to Stack
+        animals.push("Dog");
+        animals.push("Horse");
+        animals.push("Cat");
+        System.out.println("Stack: " + animals);
+\par
+// Search an element
+        int position = animals.search("Horse");
+        System.out.println("Position of Horse: " + position);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1273}%
+\begin{lstlisting}
+Stack: [Dog, Horse, Cat]
+Position of Horse: 2
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1277}%
+\begin{lstlisting}
+import java.util.Stack;
+\par
+class Main {
+    public static void main(String[] args) {
+        Stack<String> animals= new Stack<>();
+\par
+// Add elements to Stack
+        animals.push("Dog");
+        animals.push("Horse");
+        animals.push("Cat");
+        System.out.println("Stack: " + animals);
+\par
+// Check if stack is empty
+        boolean result = animals.empty();
+        System.out.println("Is the stack empty? " + result);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1280}%
+\begin{lstlisting}
+Stack: [Dog, Horse, Cat]
+Is the stack empty? false
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1299}%
+\begin{lstlisting}
+// LinkedList implementation of Queue
+Queue<String> animal1 = new LinkedList<>();
+\par
+// Array implementation of Queue
+Queue<String> animal2 = new ArrayDeque<>();
+\par
+// Priority Queue implementation of Queue
+Queue<String> animal3 = new PriorityQueue<>();
+\par
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1322}%
+\begin{lstlisting}
+import java.util.Queue;
+import java.util.LinkedList;
+\par
+class Main {
+\par
+public static void main(String[] args) {
+        // Creating Queue using the LinkedList class
+        Queue<Integer> numbers = new LinkedList<>();
+\par
+// offer elements to the Queue
+        numbers.offer(1);
+        numbers.offer(2);
+        numbers.offer(3);
+        System.out.println("Queue: " + numbers);
+\par
+// Access elements of the Queue
+        int accessedNumber = numbers.peek();
+        System.out.println("Accessed Element: " + accessedNumber);
+\par
+// Remove elements from the Queue
+        int removedNumber = numbers.poll();
+        System.out.println("Removed Element: " + removedNumber);
+\par
+System.out.println("Updated Queue: " + numbers);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1325}%
+\begin{lstlisting}
+Queue: [1, 2, 3]
+Accessed Element: 1
+Removed Element: 1
+Updated Queue: [2, 3]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1332}%
+\begin{lstlisting}
+import java.util.PriorityQueue;
+import java.util.Iterator;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+// Creating a priority queue
+        PriorityQueue<Integer> numbers = new PriorityQueue<>();
+        numbers.add(4);
+        numbers.add(2);
+        numbers.add(1);
+        System.out.print("PriorityQueue using iterator(): ");
+\par
+//Using the iterator() method
+        Iterator<Integer> iterate = numbers.iterator();
+        while(iterate.hasNext()) {
+            System.out.print(iterate.next());
+            System.out.print(", ");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1344}%
+\begin{lstlisting}
+// Array implementation of Deque
+Deque<String> animal1 = new ArrayDeque<>();
+\par
+// LinkedList implementation of Deque
+Deque<String> animal2 = new LinkedList<>();
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1369}%
+\begin{lstlisting}
+import java.util.Deque;
+import java.util.ArrayDeque;
+\par
+class Main {
+\par
+public static void main(String[] args) {
+        // Creating Deque using the ArrayDeque class
+        Deque<Integer> numbers = new ArrayDeque<>();
+\par
+// add elements to the Deque
+        numbers.offer(1);
+        numbers.offerLast(2);
+        numbers.offerFirst(3);
+        System.out.println("Deque: " + numbers);
+\par
+// Access elements of the Deque
+        int firstElement = numbers.peekFirst();
+        System.out.println("First Element: " + firstElement);
+\par
+int lastElement = numbers.peekLast();
+        System.out.println("Last Element: " + lastElement);
+\par
+// Remove elements from the Deque
+        int removedNumber1 = numbers.pollFirst();
+        System.out.println("Removed First Element: " + removedNumber1);
+\par
+int removedNumber2 = numbers.pollLast();
+        System.out.println("Removed Last Element: " + removedNumber2);
+\par
+System.out.println("Updated Deque: " + numbers);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1372}%
+\begin{lstlisting}
+Deque: [3, 1, 2]
+First Element: 3
+Last Element: 2
+Removed First Element: 3
+Removed Last Element: 2
+Updated Deque: [1]
+\par
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1382}%
+\begin{lstlisting}
+// Map implementation using HashMap
+Map<Key, Value> numbers = new HashMap<>();
+\par
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1413}%
+\begin{lstlisting}
+import java.util.Map;
+import java.util.HashMap;
+\par
+class Main {
+\par
+public static void main(String[] args) {
+        // Creating a map using the HashMap
+        Map<String, Integer> numbers = new HashMap<>();
+\par
+// Insert elements to the map
+        numbers.put("One", 1);
+        numbers.put("Two", 2);
+        System.out.println("Map: " + numbers);
+\par
+// Access keys of the map
+        System.out.println("Keys: " + numbers.keySet());
+\par
+// Access values of the map
+        System.out.println("Values: " + numbers.values());
+\par
+// Access entries of the map
+        System.out.println("Entries: " + numbers.entrySet());
+\par
+// Remove Elements from the map
+        int value = numbers.remove("Two");
+        System.out.println("Removed Value: " + value);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1416}%
+\begin{lstlisting}
+Map: {One=1, Two=2}
+Keys: [One, Two]
+Values: [1, 2]
+Entries: [One=1, Two=2]
+Removed Value: 2
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1420}%
+\begin{lstlisting}
+import java.util.Map;
+import java.util.TreeMap;
+\par
+class Main {
+\par
+public static void main(String[] args) {
+        // Creating Map using TreeMap
+        Map<String, Integer> values = new TreeMap<>();
+\par
+// Insert elements to map
+        values.put("Second", 2);
+        values.put("First", 1);
+        System.out.println("Map using TreeMap: " + values);
+\par
+// Replacing the values
+        values.replace("First", 11);
+        values.replace("Second", 22);
+        System.out.println("New Map: " + values);
+\par
+// Remove elements from the map
+        int removedValue = values.remove("First");
+        System.out.println("Removed Value: " + removedValue);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1423}%
+\begin{lstlisting}
+Map using TreeMap: {First=1, Second=2}
+New Map: {First=11, Second=22}
+Removed Value: 11
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1434}%
+\begin{lstlisting}
+import java.util.HashMap;
+\par
+class Main {
+    public static void main(String[] args) {
+        // Creating HashMap of even numbers
+        HashMap<String, Integer> evenNumbers = new HashMap<>();
+\par
+// Using put()
+        evenNumbers.put("Two", 2);
+        evenNumbers.put("Four", 4);
+\par
+// Using putIfAbsent()
+        evenNumbers.putIfAbsent("Six", 6);
+        System.out.println("HashMap of even numbers: " + evenNumbers);
+\par
+//Creating HashMap of numbers
+        HashMap<String, Integer> numbers = new HashMap<>();
+        numbers.put("One", 1);
+\par
+// Using putAll()
+        numbers.putAll(evenNumbers);
+        System.out.println("HashMap of numbers: " + numbers);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1437}%
+\begin{lstlisting}
+HashMap of even numbers: {Six=6, Four=4, Two=2}
+HashMap of numbers: {Six=6, One=1, Four=4, Two=2}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1447}%
+\begin{lstlisting}
+import java.util.HashMap;
+\par
+class Main {
+    public static void main(String[] args) {
+        HashMap<String, Integer> numbers = new HashMap<>();
+\par
+numbers.put("One", 1);
+        numbers.put("Two", 2);
+        numbers.put("Three", 3);
+        System.out.println("HashMap: " + numbers);
+\par
+// Using entrySet()
+        System.out.println("Key/Value mappings: " + numbers.entrySet());
+\par
+// Using keySet()
+        System.out.println("Keys: " + numbers.keySet());
+\par
+// Using values()
+        System.out.println("Values: " + numbers.values());
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1450}%
+\begin{lstlisting}
+HashMap: {One=1, Two=2, Three=3}
+Key/Value mappings: [One=1, Two=2, Three=3]
+Keys: [One, Two, Three]
+Values: [1, 2, 3]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1459}%
+\begin{lstlisting}
+import java.util.HashMap;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+HashMap<String, Integer> numbers = new HashMap<>();
+        numbers.put("One", 1);
+        numbers.put("Two", 2);
+        numbers.put("Three", 3);
+        System.out.println("HashMap: " + numbers);
+\par
+// Using get()
+        int value1 = numbers.get("Three");
+        System.out.println("Returned Number: " + value1);
+\par
+// Using getOrDefault()
+        int value2 = numbers.getOrDefault("Five", 5);
+        System.out.println("Returned Number: " + value2);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1462}%
+\begin{lstlisting}
+HashMap: {One=1, Two=2, Three=3}
+Returned Number: 3
+Returned Number: 5
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1470}%
+\begin{lstlisting}
+import java.util.HashMap;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+HashMap<String, Integer> numbers = new HashMap<>();
+        numbers.put("One", 1);
+        numbers.put("Two", 2);
+        numbers.put("Three", 3);
+        System.out.println("HashMap: " + numbers);
+\par
+// remove method with single parameter
+        int value = numbers.remove("Two");
+        System.out.println("Removed value: " + value);
+\par
+// remove method with two parameters
+        boolean result = numbers.remove("Three", 3);
+        System.out.println("Is the entry Three removed? " + result);
+\par
+System.out.println("Updated HashMap: " + numbers);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1473}%
+\begin{lstlisting}
+HashMap: {One=1, Two=2, Three=3}
+Removed value: 2
+Is the entry Three removed? True
+Updated HashMap: {One=1}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1483}%
+\begin{lstlisting}
+import java.util.HashMap;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+HashMap<String, Integer> numbers = new HashMap<>();
+        numbers.put("First", 1);
+        numbers.put("Second", 2);
+        numbers.put("Third", 3);
+        System.out.println("Original HashMap: " + numbers);
+\par
+// Using replace()
+        numbers.replace("Second", 22);
+        numbers.replace("Third", 3, 33);
+        System.out.println("HashMap using replace(): " + numbers);
+\par
+// Using replaceAll()
+        numbers.replaceAll((key, oldValue) -> oldValue + 2);
+        System.out.println("HashMap using replaceAll(): " + numbers);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1486}%
+\begin{lstlisting}
+Original HashMap: {Second=2, Third=3, First=1}
+HashMap using replace: {Second=22, Third=33, First=1}
+HashMap using replaceAll: {Second=24, Third=35, First=3}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1499}%
+\begin{lstlisting}
+import java.util.HashMap;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+HashMap<String, Integer> numbers = new HashMap<>();
+        numbers.put("First", 1);
+        numbers.put("Second", 2);
+        System.out.println("Original HashMap: " + numbers);
+\par
+// Using compute()
+        numbers.compute("First", (key, oldValue) -> oldValue + 2);
+        numbers.compute("Second", (key, oldValue) -> oldValue + 1);
+        System.out.println("HashMap using compute(): " + numbers);
+\par
+// Using computeIfAbsent()
+        numbers.computeIfAbsent("Three", key -> 5);
+        System.out.println("HashMap using computeIfAbsent(): " + numbers);
+\par
+// Using computeIfPresent()
+        numbers.computeIfPresent("Second", (key, oldValue) -> oldValue * 2);
+        System.out.println("HashMap using computeIfPresent(): " + numbers);
+    }
+}
+\par
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1502}%
+\begin{lstlisting}
+Original HashMap: {Second=2, First=1}
+HashMap using compute(): {Second=3, First=3}
+HashMap using computeIfAbsent(): {Second=3 First=3, Three=5}
+HashMap using computeIfPresent(): {Second=6, First=3, three=5}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1510}%
+\begin{lstlisting}
+import java.util.HashMap;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+HashMap<String, Integer> numbers = new HashMap<>();
+        numbers.put("First", 1);
+        numbers.put("Second", 2);
+        System.out.println("Original HashMap: " + numbers);
+\par
+// Using merge() Method
+        numbers.merge("First", 4, (oldValue, newValue) -> oldValue + newValue);
+        System.out.println("New HashMap: " + numbers);
+    }
+}
+\par
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1513}%
+\begin{lstlisting}
+Original HashMap: {Second=2, First=1}
+New HashMap: {Second=2, First=5}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1535}%
+\begin{lstlisting}
+import java.util.HashMap;
+import java.util.Map.Entry;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+// Creating a HashMap
+        HashMap<String, Integer> numbers = new HashMap<>();
+        numbers.put("One", 1);
+        numbers.put("Two", 2);
+        numbers.put("Three", 3);
+        System.out.println("HashMap: " + numbers);
+\par
+// Accessing the key/value pair
+        System.out.print("Entries: ");
+        for(Entry<String, Integer> entry: numbers.entrySet()) {
+            System.out.print(entry);
+            System.out.print(", ");
+        }
+\par
+// Accessing the key
+        System.out.print("\nKeys: ");
+        for(String key: numbers.keySet()) {
+            System.out.print(key);
+            System.out.print(", ");
+        }
+\par
+// Accessing the value
+        System.out.print("\nValues: ");
+        for(Integer value: numbers.values()) {
+            System.out.print(value);
+            System.out.print(", ");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1540}%
+\begin{lstlisting}
+HashMap: {One=1, Two=2, Three=3}
+Entries: One=1, Two=2, Three=3
+Keys: One, Two, Three,
+Values: 1, 2, ,3,
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1548}%
+\begin{lstlisting}
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+\par
+class Main {
+    public static void main(String[] args) {
+        // Creating a HashMap
+        HashMap<String, Integer> numbers = new HashMap<>();
+        numbers.put("One", 1);
+        numbers.put("Two", 2);
+        numbers.put("Three", 3);
+        System.out.println("HashMap: " + numbers);
+\par
+// Creating an object of Iterator
+        Iterator<Entry<String, Integer>> iterate1 = numbers.entrySet().iterator();
+\par
+// Accessing the Key/Value pair
+        System.out.print("Entries: ");
+        while(iterate1.hasNext()) {
+            System.out.print(iterate1.next());
+            System.out.print(", ");
+        }
+\par
+// Accessing the key
+        Iterator<String> iterate2 = numbers.keySet().iterator();
+        System.out.print("\nKeys: ");
+        while(iterate2.hasNext()) {
+            System.out.print(iterate2.next());
+            System.out.print(", ");
+        }
+\par
+// Accessing the value
+        Iterator<Integer> iterate3 = numbers.values().iterator();
+         System.out.print("\nValues: ");
+        while(iterate3.hasNext()) {
+            System.out.print(iterate3.next());
+            System.out.print(", ");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1553}%
+\begin{lstlisting}
+HashMap: {One=1, Two=2, Three=3}
+Entries: One=1, Two=2, Three=3
+Keys: One, Two, Three,
+Values: 1, 2, 3,
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1570}%
+\begin{lstlisting}
+// Set implementation using HashSet
+Set<String> animals = new HashSet<>();
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1601}%
+\begin{lstlisting}
+import java.util.Set;
+import java.util.HashSet;
+\par
+class Main {
+\par
+public static void main(String[] args) {
+        // Creating a set using the HashSet class
+        Set<Integer> set1 = new HashSet<>();
+\par
+// Add elements to the set1
+        set1.add(2);
+        set1.add(3);
+        System.out.println("Set1: " + set1);
+\par
+// Creating another set using the HashSet class
+        Set<Integer> set2 = new HashSet<>();
+\par
+// Add elements
+        set2.add(1);
+        set2.add(2);
+        System.out.println("Set2: " + set2);
+\par
+// Union of two sets
+        set2.addAll(set1);
+        System.out.println("Union is: " + set2);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1604}%
+\begin{lstlisting}
+Set1: [2, 3]
+Set2: [1, 2]
+Union is: [1, 2, 3]
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1607}%
+\begin{lstlisting}
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.Iterator;
+\par
+class Main {
+\par
+public static void main(String[] args) {
+        // Creating a set using the TreeSet class
+        Set<Integer> numbers = new TreeSet<>();
+\par
+// Add elements to the set
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(1);
+        System.out.println("Set using TreeSet: " + numbers);
+\par
+// Access Elements using iterator()
+        System.out.print("Accessing elements using iterator(): ");
+        Iterator<Integer> iterate = numbers.iterator();
+        while(iterate.hasNext()) {
+            System.out.print(iterate.next());
+            System.out.print(", ");
+        }
+\par
+}
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1610}%
+\begin{lstlisting}
+Set using TreeSet: [1, 2, 3]
+Accessing elements using iterator(): 1, 2, 3,
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1613}%
+\begin{lstlisting}
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1638}%
+\begin{lstlisting}
+// Creates an InputStream
+InputStream object1 = new FileInputStream();
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1659}%
+\begin{lstlisting}
+This is a line of text inside the file.
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1663}%
+\begin{lstlisting}
+import java.io.FileInputStream;
+import java.io.InputStream;
+\par
+public class Main {
+    public static void main(String args[]) {
+\par
+byte[] array = new byte[100];
+\par
+try {
+            InputStream input = new FileInputStream("input.txt");
+\par
+System.out.println("Available bytes in the file: " + input.available());
+\par
+// Read byte from the input stream
+            input.read(array);
+            System.out.println("Data read from the file: ");
+\par
+// Convert byte array into string
+            String data = new String(array);
+            System.out.println(data);
+\par
+// Close the input stream
+            input.close();
+        }
+        catch (Exception e) {
+            e.getStackTrace();
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1667}%
+\begin{lstlisting}
+Available bytes in the file: 35
+Data read from the file:
+This is a line of text inside the file
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1682}%
+\begin{lstlisting}
+// Creates an OutputStream
+OutputStream object = new FileOutputStream();
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1698}%
+\begin{lstlisting}
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+\par
+public class Main {
+\par
+public static void main(String args[]) {
+        String data = "This is a line of text inside the file.";
+\par
+try {
+            OutputStream out = new FileOutputStream("output.txt");
+\par
+// Converts the string into bytes
+            byte[] dataBytes = data.getBytes();
+\par
+// Writes data to the output stream
+            out.write(dataBytes);
+            System.out.println("Data is written to the file.");
+\par
+// Closes the output stream
+            out.close();
+        }
+\par
+catch (Exception e) {
+            e.getStackTrace();
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1716}%
+\begin{lstlisting}
+// Creates a Reader
+Reader input = new FileReader();
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1737}%
+\begin{lstlisting}
+import java.io.Reader;
+import java.io.FileReader;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+// Creates an array of character
+        char[] array = new char[100];
+\par
+try {
+            // Creates a reader using the FileReader
+            Reader input = new FileReader("input.txt");
+\par
+// Checks if reader is ready 
+            System.out.println("Is there data in the stream?  " + input.ready());
+\par
+// Reads characters
+            input.read(array);
+            System.out.println("Data in the stream:");
+            System.out.println(array);
+\par
+// Closes the reader
+            input.close();
+        }
+\par
+catch(Exception e) {
+            e.getStackTrace();
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1741}%
+\begin{lstlisting}
+Is there data in the stream?  true
+Data in the stream:
+This is a line of text inside the file.
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1761}%
+\begin{lstlisting}
+// Creates a Writer
+Writer output = new FileWriter();
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1777}%
+\begin{lstlisting}
+import java.io.FileWriter;
+import java.io.Writer;
+\par
+public class Main {
+\par
+public static void main(String args[]) {
+\par
+String data = "This is the data in the output file";
+\par
+try {
+            // Creates a Writer using FileWriter
+            Writer output = new FileWriter("output.txt");
+\par
+// Writes string to the file
+            output.write(data);
+\par
+// Closes the writer
+            output.close();
+        }
+\par
+catch (Exception e) {
+            e.getStackTrace();
+        }
+    }
+}
+\par
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1794}%
+\begin{lstlisting}
+if (expression) {
+    // statements
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1803}%
+\begin{lstlisting}
+class IfStatement {
+    public static void main(String[] args) {
+\par
+int number = 10;
+\par
+// checks if number is greater than 0
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        }
+        System.out.println("This statement is always executed.");
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1806}%
+\begin{lstlisting}
+The number is positive.
+This statement is always executed.
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1818}%
+\begin{lstlisting}
+class Main {
+  public static void main(String[] args) {
+    // create a string variable
+    String language = "Java";
+\par
+// if statement
+    if(language == "Java") {
+      System.out.println("This is best programming language.");
+    } 
+  }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1828}%
+\begin{lstlisting}
+if (expression) {
+   // codes
+}
+else {
+  // some other code
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1834}%
+\begin{lstlisting}
+class IfElse {
+    public static void main(String[] args) {    	
+        int number = 10;
+\par
+// checks if number is greater than 0	 
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        }
+        else {
+            System.out.println("The number is not positive.");
+        }
+\par
+System.out.println("This statement is always executed.");
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1848}%
+\begin{lstlisting}
+The number is not positive.
+This statement is always executed.
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1854}%
+\begin{lstlisting}
+if (expression1) {
+   // codes
+}
+else if(expression2) {
+   // codes
+}
+else if (expression3) {
+   // codes
+}
+.
+.
+else {
+   // codes
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1866}%
+\begin{lstlisting}
+class Ladder {
+    public static void main(String[] args) {   
+\par
+int number = 0;
+\par
+// checks if number is greater than 0	 
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        }
+\par
+// checks if number is less than 0
+        else if (number < 0) {
+            System.out.println("The number is negative.");
+        }
+        else {
+            System.out.println("The number is 0.");
+        } 
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1883}%
+\begin{lstlisting}
+class Number {
+    public static void main(String[] args) {
+\par
+// declaring double type variables
+        Double n1 = -1.0, n2 = 4.5, n3 = -5.3, largestNumber;
+\par
+// checks if n1 is greater than or equal to n2
+        if (n1 >= n2) {
+\par
+// if...else statement inside the if block
+            // checks if n1 is greater than or equal to n3
+            if (n1 >= n3) {
+                largestNumber = n1;
+            }
+\par
+else {
+                largestNumber = n3;
+            }
+        }
+        else {
+\par
+// if..else statement inside else block
+            // checks if n2 is greater than or equal to n3
+            if (n2 >= n3) {
+                largestNumber = n2;
+            }
+\par
+else {
+                largestNumber = n3;
+            }
+        }
+\par
+System.out.println("The largest number is " + largestNumber);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1891}%
+\begin{lstlisting}
+if (expression) {
+   number = 10;
+}
+else {
+   number = -10;
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1895}%
+\begin{lstlisting}
+number = (expression) ? expressionTrue : expressinFalse;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1906}%
+\begin{lstlisting}
+class Operator {
+   public static void main(String[] args) {   
+\par
+Double number = -5.5;
+      String result;
+\par
+result = (number > 0.0) ? "positive" : "not positive";
+      System.out.println(number + " is " + result);
+   }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1911}%
+\begin{lstlisting}
+if (expression1) {
+	result = 1;
+} else if (expression2) {
+	result = 2;
+} else if (expression3) {
+	result = 3;
+} else {
+	result = 0;
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1917}%
+\begin{lstlisting}
+result = (expression1) ? 1 : (expression2) ? 2 : (expression3) ? 3 : 0;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1923}%
+\begin{lstlisting}
+switch (variable/expression) {
+case value1:
+   // statements of case1
+   break;
+\par
+case value2:
+   // statements of case2
+   break;
+\par
+.. .. ...
+   .. .. ...
+\par
+default:
+   // default statements
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1944}%
+\begin{lstlisting}
+class Main {
+    public static void main(String[] args) {
+\par
+int week = 4;
+        String day;
+\par
+// switch statement to check day
+        switch (week) {
+            case 1:
+                day = "Sunday";
+                break;
+            case 2:
+                day = "Monday";
+                break;
+            case 3:
+                day = "Tuesday";
+                break;
+\par
+// match the value of week
+            case 4:
+                day = "Wednesday";
+                break;
+            case 5:
+                day = "Thursday";
+                break;
+            case 6:
+                day = "Friday";
+                break;
+            case 7:
+                day = "Saturday";
+                break;
+            default:
+                day = "Invalid day";
+                break;
+        }
+        System.out.println("The day is " + day);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1958}%
+\begin{lstlisting}
+import java.util.Scanner;
+\par
+class Main {
+    public static void main(String[] args) {
+\par
+char operator;
+        Double number1, number2, result;
+\par
+// create an object of Scanner class
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter operator (either +, -, * or /): ");
+\par
+// ask user to enter operator
+        operator = scanner.next().charAt(0);
+        System.out.print("Enter number1 and number2 respectively: ");
+\par
+// ask user to enter numbers
+        number1 = scanner.nextDouble();
+        number2 = scanner.nextDouble();
+\par
+switch (operator) {
+\par
+// performs addition between numbers
+            case '+':
+                result = number1 + number2;
+                System.out.print(number1 + "+" + number2 + " = " + result);
+                break;
+\par
+// performs subtraction between numbers
+            case '-':
+                result = number1 - number2;
+                System.out.print(number1 + "-" + number2 + " = " + result);
+                break;
+\par
+// performs multiplication between numbers
+            case '*':
+                result = number1 * number2;
+                System.out.print(number1 + "*" + number2 + " = " + result);
+                break;
+\par
+// performs division between numbers
+            case '/':
+                result = number1 / number2;
+                System.out.print(number1 + "/" + number2 + " = " + result);
+                break;
+\par
+default:
+                System.out.println("Invalid operator!");
+                break;
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1961}%
+\begin{lstlisting}
+Enter operator (either +, -, * or /): *
+Enter number1 and number2 respectively: 1.4
+-5.3
+1.4*-5.3 = -7.419999999999999
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1965}%
+\begin{lstlisting}
+for (initialization; testExpression; update)
+{
+    // codes inside for loop's body
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1974}%
+\begin{lstlisting}
+// Program to print a sentence 10 times
+\par
+class Loop {
+    public static void main(String[] args) {
+\par
+for (int i = 1; i <= 10; ++i) {
+            System.out.println("Line " + i);
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1977}%
+\begin{lstlisting}
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+Line 10
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1991}%
+\begin{lstlisting}
+// Program to find the sum of natural numbers from 1 to 1000.
+\par
+class Number {
+    public static void main(String[] args) {
+\par
+int sum = 0;
+\par
+for (int i = 1; i <= 1000; ++i) {
+            sum += i;     // sum = sum + i
+        }
+\par
+System.out.println("Sum = " + sum);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting1998}%
+\begin{lstlisting}
+// Infinite for Loop
+\par
+class Infinite {
+    public static void main(String[] args) {
+\par
+int sum = 0;
+\par
+for (int i = 1; i <= 10; --i) {
+            System.out.println("Hello");
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2006}%
+\begin{lstlisting}
+for (int a : array) {
+    System.out.println(a);
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2012}%
+\begin{lstlisting}
+for(data_type item : collections) {
+    ...
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2017}%
+\begin{lstlisting}
+// The program below calculates the sum of all elements of an integer array.
+\par
+class Main {
+ public static void main(String[] args) {
+\par
+// create array
+   int[] numbers = {3, 4, 5, -5, 0, 12};
+   int sum = 0;
+\par
+// for each loop 
+   for (int number: numbers) {
+     sum += number;
+   }
+\par
+System.out.println("Sum = " + sum);
+ }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2025}%
+\begin{lstlisting}
+class Main {
+ public static void main(String[] args) {
+\par
+char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+\par
+// using for loop
+   for (int i = 0; i < vowels.length; ++ i) {
+     System.out.println(vowels[i]);
+   }
+ }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2029}%
+\begin{lstlisting}
+a
+e
+i
+o
+u
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2032}%
+\begin{lstlisting}
+class Main {
+ public static void main(String[] args) {
+\par
+// create a char array  
+   char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+\par
+// foreach loop
+   for (char item: vowels) {
+     System.out.println(item);
+   }
+ }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2049}%
+\begin{lstlisting}
+while (testExpression) {
+    // codes inside the body of while loop
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2058}%
+\begin{lstlisting}
+// Program to print line 10 times
+\par
+class Loop {
+    public static void main(String[] args) {
+\par
+int i = 1;
+\par
+while (i <= 10) {
+            System.out.println("Line " + i);
+            ++i;
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2074}%
+\begin{lstlisting}
+// Program to find the sum of natural numbers from 1 to 100.
+\par
+class AssignmentOperator {
+    public static void main(String[] args) {
+\par
+int sum = 0, i = 100;
+\par
+while (i != 0) {
+            sum += i;     // sum = sum + i;
+            --i;
+        }
+\par
+System.out.println("Sum = " + sum);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2085}%
+\begin{lstlisting}
+do {
+   // codes inside body of do while loop
+} while (testExpression);
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2096}%
+\begin{lstlisting}
+import java.util.Scanner;
+\par
+class Sum {
+    public static void main(String[] args) {
+\par
+Double number, sum = 0.0;
+        // creates an object of Scanner class
+        Scanner input = new Scanner(System.in);
+\par
+do {
+\par
+// takes input from the user
+            System.out.print("Enter a number: ");
+            number = input.nextDouble();
+            sum += number;
+        } while (number != 0.0);  // test expression
+\par
+System.out.println("Sum = " + sum);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2099}%
+\begin{lstlisting}
+Enter a number: 2.5
+Enter a number: 23.3
+Enter a number: -4.2
+Enter a number: 3.4
+Enter a number: 0
+Sum = 25.0
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2106}%
+\begin{lstlisting}
+// Infinite while loop
+while (true) {
+   // body of while loop
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2109}%
+\begin{lstlisting}
+// Infinite while loop
+int i = 100;
+while (i == 100) {
+   System.out.print("Hey!");
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2114}%
+\begin{lstlisting}
+class Test {
+    public static void main(String[] args) {
+\par
+// for loop
+        for (int i = 1; i <= 10; ++i) {
+\par
+// if the value of i is 5 the loop terminates  
+            if (i == 5) {
+                break;
+            }      
+            System.out.println(i);
+        }   
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2117}%
+\begin{lstlisting}
+1
+2
+3
+4
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2122}%
+\begin{lstlisting}
+if (i == 5) {
+    break;
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2128}%
+\begin{lstlisting}
+import java.util.Scanner;
+\par
+class UserInputSum {
+    public static void main(String[] args) {
+\par
+Double number, sum = 0.0;
+\par
+// create an object of Scanner
+        Scanner input = new Scanner(System.in);
+\par
+while (true) {
+            System.out.print("Enter a number: ");
+\par
+// takes double input from user
+            number = input.nextDouble();
+\par
+// if number is negative the loop terminates
+            if (number < 0.0) {
+                break;
+            }
+\par
+sum += number;
+        }
+        System.out.println("Sum = " + sum);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2131}%
+\begin{lstlisting}
+Enter a number: 3.2
+Enter a number: 5
+Enter a number: 2.3
+Enter a number: 0
+Enter a number: -4.5
+Sum = 10.5
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2135}%
+\begin{lstlisting}
+if (number < 0.0) {
+    break;
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2142}%
+\begin{lstlisting}
+while (testExpression) {
+   // codes
+   second:
+   while (testExpression) {
+      // codes
+      while(testExpression) {
+         // codes
+         break second;
+      }
+   }
+   // control jumps here
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2149}%
+\begin{lstlisting}
+class LabeledBreak {
+    public static void main(String[] args) {
+\par
+// the for loop is labeled as first   
+        first:
+        for( int i = 1; i < 5; i++) {
+\par
+// the for loop is labeled as second
+            second:
+            for(int j = 1; j < 3; j ++ ) {
+                System.out.println("i = " + i + "; j = " +j);
+\par
+// the break statement breaks the first for loop
+                if ( i == 2)
+                    break first;
+            }
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2152}%
+\begin{lstlisting}
+i = 1; j = 1
+i = 1; j = 2
+i = 2; j = 1
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2155}%
+\begin{lstlisting}
+first:
+for(int i = 1; i < 5; i++) {...}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2161}%
+\begin{lstlisting}
+class LabeledBreak {
+    public static void main(String[] args) {
+\par
+// the for loop is labeled as first
+        first:
+        for( int i = 1; i < 5; i++) {
+\par
+// the for loop is labeled as second
+            second:
+            for(int j = 1; j < 3; j ++ ) {
+\par
+System.out.println("i = " + i + "; j = " +j);
+\par
+// the break statement terminates the loop labeled as second   
+                if ( i == 2)
+                    break second;
+            }
+        }
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2164}%
+\begin{lstlisting}
+i = 1; j = 1
+i = 1; j = 2
+i = 2; j = 1
+i = 3; j = 1
+i = 3; j = 2
+i = 4; j = 1
+i = 4; j = 2
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2171}%
+\begin{lstlisting}
+class Test {
+    public static void main(String[] args) {
+\par
+// for loop
+        for (int i = 1; i <= 10; ++i) {
+\par
+// if value of i is between 4 and 9, continue is executed 
+            if (i > 4 && i < 9) {
+                continue;
+            }      
+            System.out.println(i);
+        }   
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2174}%
+\begin{lstlisting}
+1
+2
+​​​​3
+4
+9
+10
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2179}%
+\begin{lstlisting}
+if (i > 5 && i < 9) {
+    continue;
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2186}%
+\begin{lstlisting}
+import java.util.Scanner;
+\par
+class AssignmentOperator {
+    public static void main(String[] args) {
+\par
+Double number, sum = 0.0;
+        // create an object of Scanner
+        Scanner input = new Scanner(System.in);
+\par
+for (int i = 1; i < 6; ++i) {
+            System.out.print("Enter a number: ");
+            // takes double type input from the user
+            number = input.nextDouble();
+\par
+// if number is negative, the iteration is skipped
+            if (number <= 0.0) {
+                continue;
+            }
+\par
+sum += number;
+        }
+        System.out.println("Sum = " + sum);
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2189}%
+\begin{lstlisting}
+Enter a number: 2.2
+Enter a number: 5.6
+Enter a number: 0
+Enter a number: -2.4
+Enter a number: -3
+Sum = 7.8
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2198}%
+\begin{lstlisting}
+class LabeledContinue {
+    public static void main(String[] args) {
+\par
+// the outer for loop is labeled as label      
+        first:
+        for (int i = 1; i < 6; ++i) {
+            for (int j = 1; j < 5; ++j) {
+                if (i == 3 || j == 2)
+\par
+// skips the iteration of label (outer for loop)
+                    continue first;
+                System.out.println("i = " + i + "; j = " + j); 
+            }
+        } 
+    }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2201}%
+\begin{lstlisting}
+i = 1; j = 1
+i = 2; j = 1
+i = 4; j = 1
+i = 5; j = 1
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2205}%
+\begin{lstlisting}
+if (i==3 || j==2)
+    continue first;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2209}%
+\begin{lstlisting}
+first:
+for (int i = 1; i < 6; ++i) {..}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3010}%
+$\lstinline{this}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3012}%
+$\lstinline{self}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2301}%
+\begin{lstlisting}
+enum Size {
+    constant1, constant2, …, constantN;
+\par
+// methods and fields	
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2310}%
+\begin{lstlisting}
+enum Size { 
+   SMALL, MEDIUM, LARGE, EXTRALARGE 
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2316}%
+\begin{lstlisting}
+enum Size {
+   SMALL, MEDIUM, LARGE, EXTRALARGE
+}
+\par
+class Main {
+   public static void main(String[] args) {
+      System.out.println(Size.SMALL);
+      System.out.println(Size.MEDIUM);
+   }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2320}%
+\begin{lstlisting}
+SMALL
+MEDIUM
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2324}%
+\begin{lstlisting}
+pizzaSize = Size.SMALL;
+pizzaSize = Size.MEDIUM;
+pizzaSize = Size.LARGE;
+pizzaSize = Size.EXTRALARGE;
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2326}%
+\begin{lstlisting}
+enum Size {
+ SMALL, MEDIUM, LARGE, EXTRALARGE
+}
+\par
+class Test {
+ Size pizzaSize;
+ public Test(Size pizzaSize) {
+   this.pizzaSize = pizzaSize;
+ }
+ public void orderPizza() {
+   switch(pizzaSize) {
+     case SMALL:
+       System.out.println("I ordered a small size pizza.");
+       break;
+     case MEDIUM:
+       System.out.println("I ordered a medium size pizza.");
+       break;
+     default:
+       System.out.println("I don't know which one to order.");
+       break;
+   }
+ }
+}
+\par
+class Main {
+ public static void main(String[] args) {
+   Test t1 = new Test(Size.MEDIUM);
+   t1.orderPizza();
+ }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2332}%
+\begin{lstlisting}
+I ordered a medium size pizza.
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2342}%
+\begin{lstlisting}
+enum Size{
+   SMALL, MEDIUM, LARGE, EXTRALARGE;
+\par
+public String getSize() {
+\par
+// this will refer to the object SMALL
+      switch(this) {
+         case SMALL:
+          return "small";
+\par
+case MEDIUM:
+          return "medium";
+\par
+case LARGE:
+          return "large";
+\par
+case EXTRALARGE:
+          return "extra large";
+\par
+default:
+          return null;
+      }
+   }
+\par
+public static void main(String[] args) {
+\par
+// calling the method getSize() using the object SMALL
+      System.out.println("The size of the pizza is " + Size.SMALL.getSize());
+   }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2390}%
+\begin{lstlisting}
+class Size {
+   public final static int SMALL = 1;
+   public final static int MEDIUM = 2;
+   public final static int LARGE = 3;
+   public final static int EXTRALARGE = 4;
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2405}%
+\begin{lstlisting}
+enum Size {
+\par
+// enum constants calling the enum constructors 
+   SMALL("The size is small."),
+   MEDIUM("The size is medium."),
+   LARGE("The size is large."),
+   EXTRALARGE("The size is extra large.");
+\par
+private final String pizzaSize;
+\par
+// private enum constructor
+   private Size(String pizzaSize) {
+      this.pizzaSize = pizzaSize;
+   }
+\par
+public String getSize() {
+      return pizzaSize;
+   }
+}
+\par
+class Main {
+   public static void main(String[] args) {
+      Size size = Size.SMALL;
+      System.out.println(size.getSize());
+   }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2428}%
+\begin{lstlisting}
+enum Size {
+   SMALL, MEDIUM, LARGE, EXTRALARGE
+}
+\par
+class Main {
+   public static void main(String[] args) {
+\par
+System.out.println("string value of SMALL is " + Size.SMALL.toString());
+      System.out.println("string value of MEDIUM is " + Size.MEDIUM.name());
+\par
+}
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2432}%
+\begin{lstlisting}
+string value of SMALL is SMALL
+string value of MEDIUM is MEDIUM
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{lstlisting2437}%
+\begin{lstlisting}
+enum Size {
+   SMALL {
+\par
+// overriding toString() for SMALL
+      public String toString() {
+        return "The size is small.";
+      }
+   },
+\par
+MEDIUM {
+\par
+// overriding toString() for MEDIUM
+      public String toString() {
+        return "The size is medium.";
+      }
+   };
+}
+\par
+class Main {
+   public static void main(String[] args) {
+      System.out.println(Size.MEDIUM.toString());
+   }
+}
+\end{lstlisting}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+
+\end{document}

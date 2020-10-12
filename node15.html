@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Hello world example</TITLE>
+<META NAME="description" CONTENT="Hello world example">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node16.html">
+<LINK REL="previous" HREF="node14.html">
+<LINK REL="next" HREF="node16.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html433"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node16.html">Example with methods</A>
+<B> Up:</B> <A
+ HREF="node14.html">Syntax</A>
+<B> Previous:</B> <A
+ HREF="node14.html">Syntax</A>
+ &nbsp; <B>  <A ID="tex2html434"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00461000000000000000">
+Hello world example</A>
+</H2><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The traditional Hello world program can be written in Java as:
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img6.svg"
+ ALT="\begin{lstlisting}
+public class HelloWorldApp {
+public static void main(String[...
+...ln(''Hello World!''); // Prints the string to the console.
+}
+}
+\end{lstlisting}">
+<BR> 
+</SPAN>
+<P>
+<SPAN CLASS="TINY">All source files must be named after the public class they contain, appending the suffix <!-- MATH
+ $\lstinline{.java}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img7.svg"
+ ALT="$\lstinline{.java}$"></SPAN>, for example, <!-- MATH
+ $\lstinline{HelloWorldApp.java}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img8.svg"
+ ALT="$\lstinline{HelloWorldApp.java}$"></SPAN>. It must first be compiled into bytecode, using a Java compiler, producing a file with the <!-- MATH
+ $\lstinline{.class}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img9.svg"
+ ALT="$\lstinline{.class}$"></SPAN> suffix (<!-- MATH
+ $\lstinline{HelloWorldApp.class}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img10.svg"
+ ALT="$\lstinline{HelloWorldApp.class}$"></SPAN>, in this case). Only then can it be executed or launched. The Java source file may only contain one public class, but it can contain multiple classes with a non-public access modifier and any number of public inner classes. When the source file contains multiple classes, it is necessary to make one class (introduced by the class keyword) <!-- MATH
+ $\lstinline{public}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img11.svg"
+ ALT="$\lstinline{public}$"></SPAN> (preceded by the public keyword) and name the source file with that public class name. 
+</SPAN>
+<P>
+<SPAN CLASS="TINY">A class that is not declared public may be stored in any <!-- MATH
+ $\lstinline{.java}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img7.svg"
+ ALT="$\lstinline{.java}$"></SPAN> file. The compiler will generate a class file for each class defined in the source file. The name of the class file is the name of the class, with <!-- MATH
+ $\lstinline{.class}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img9.svg"
+ ALT="$\lstinline{.class}$"></SPAN> appended. For class file generation, anonymous classes are treated as if their name were the concatenation of the name of their enclosing class, a $, and an integer.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The keyword <!-- MATH
+ $\lstinline{public}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img11.svg"
+ ALT="$\lstinline{public}$"></SPAN> denotes that a method can be called from code in other classes, or that a class may be used by classes outside the class hierarchy. The class hierarchy is related to the name of the directory in which the <!-- MATH
+ $\lstinline{.java}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img7.svg"
+ ALT="$\lstinline{.java}$"></SPAN> file is located. This is called an access level modifier. Other access level modifiers include the keywords <!-- MATH
+ $\lstinline{private}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img12.svg"
+ ALT="$\lstinline{private}$"></SPAN> (a method that can only be accessed in the same class) and <!-- MATH
+ $\lstinline{protected}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img13.svg"
+ ALT="$\lstinline{protected}$"></SPAN> (which allows code from the same package to access). If a piece of code attempts to access private methods or protected methods, the JVM will throw a <!-- MATH
+ $\lstinline{SecurityException}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img14.svg"
+ ALT="$\lstinline{SecurityException}$"></SPAN>.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The keyword <!-- MATH
+ $\lstinline{static}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img15.svg"
+ ALT="$\lstinline{static}$"></SPAN> in front of a method indicates a static method, which is associated only with the class and not with any specific instance of that class. Only static methods can be invoked without a reference to an object. Static methods cannot access any class members that are not also static. Methods that are not designated static are instance methods and require a specific instance of a class to operate.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The keyword<!-- MATH
+ $\lstinline{void}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img16.svg"
+ ALT="$\lstinline{void}$"></SPAN> indicates that the main method does not return any value to the caller. If a Java program is to exit with an error code, it must call <!-- MATH
+ $\lstinline{System.exit()}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.93ex; vertical-align: -0.53ex; " SRC="img17.svg"
+ ALT="$\lstinline{System.exit()}$"></SPAN> explicitly.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The method name main is not a keyword in the Java language. It is simply the name of the method the Java launcher calls to pass control to the program. Java classes that run in managed environments such as applets and Enterprise JavaBeans do not use or need a main() method. A Java program may contain multiple classes that have main methods, which means that the VM needs to be explicitly told which class to launch from.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The main method must accept an array of <!-- MATH
+ $\lstinline{String}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img18.svg"
+ ALT="$\lstinline{String}$"></SPAN> objects. By convention, it is referenced as <!-- MATH
+ $\lstinline{args}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.44ex; vertical-align: -0.53ex; " SRC="img19.svg"
+ ALT="$\lstinline{args}$"></SPAN> although any other legal identifier name can be used. Since Java 5, the main method can also use variable arguments, in the form of <!-- MATH
+ $\lstinline{public static void main(String... args)}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.93ex; vertical-align: -0.53ex; " SRC="img20.svg"
+ ALT="$\lstinline{public static void main(String... args)}$"></SPAN>, allowing the main method to be invoked with an arbitrary number of <!-- MATH
+ $\lstinline{String}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img18.svg"
+ ALT="$\lstinline{String}$"></SPAN> arguments. The effect of this alternate declaration is semantically identical (to the args parameter which is still an array of <!-- MATH
+ $\lstinline{String}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img18.svg"
+ ALT="$\lstinline{String}$"></SPAN> objects), but it allows an alternative syntax for creating and passing the array.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The Java launcher launches Java by loading a given class (specified on the command line or as an attribute in a JAR) and starting its <!-- MATH
+ $\lstinline{public static void main(String[])}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.93ex; vertical-align: -0.53ex; " SRC="img21.svg"
+ ALT="$\lstinline{public static void main(String[])}$"></SPAN> method. Stand-alone programs must declare this method explicitly. The <!-- MATH
+ $\lstinline{String[] args}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.93ex; vertical-align: -0.53ex; " SRC="img22.svg"
+ ALT="$\lstinline{String[] args}$"></SPAN> parameter is an array of <!-- MATH
+ $\lstinline{String}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img18.svg"
+ ALT="$\lstinline{String}$"></SPAN> objects containing any arguments passed to the class. The parameters to <!-- MATH
+ $\lstinline{main}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img23.svg"
+ ALT="$\lstinline{main}$"></SPAN> are often passed by means of a command line.
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Printing is part of a Java standard library: The <!-- MATH
+ $\lstinline{System}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.53ex; " SRC="img24.svg"
+ ALT="$\lstinline{System}$"></SPAN> class defines a public static field called <!-- MATH
+ $\lstinline{out}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.26ex; vertical-align: -0.12ex; " SRC="img25.svg"
+ ALT="$\lstinline{out}$"></SPAN>. The out object is an instance of the <!-- MATH
+ $\lstinline{PrintStream}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.36ex; vertical-align: -0.12ex; " SRC="img26.svg"
+ ALT="$\lstinline{PrintStream}$"></SPAN> class and provides many methods for printing data to standard out, including <!-- MATH
+ $\lstinline{println(String)}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.93ex; vertical-align: -0.53ex; " SRC="img27.svg"
+ ALT="$\lstinline{println(String)}$"></SPAN> which also appends a new line to the passed string. The string Hello World! is automatically converted to a String object by the compiler. 
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html433"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node16.html">Example with methods</A>
+<B> Up:</B> <A
+ HREF="node14.html">Syntax</A>
+<B> Previous:</B> <A
+ HREF="node14.html">Syntax</A>
+ &nbsp; <B>  <A ID="tex2html434"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Labeled break Statement</TITLE>
+<META NAME="description" CONTENT="Labeled break Statement">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="previous" HREF="node192.html">
+<LINK REL="next" HREF="node194.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node194.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node192.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node192.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1190"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node194.html">Java continue Statement</A>
+<B> Up:</B> <A
+ HREF="node192.html">Java break Statement</A>
+<B> Previous:</B> <A
+ HREF="node192.html">Java break Statement</A>
+ &nbsp; <B>  <A ID="tex2html1191"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00660100000000000000">
+Labeled break Statement</A>
+</H3><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Till now, we have used the unlabeled break statement. It terminates the innermost loop and switch statement. However, there is another form of break statement in Java known as the labeled break. We can use the labeled break statement to terminate the outermost loop as well.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">As you can see in the above image, we have used the <SPAN  CLASS="texttt">label</SPAN> identifier to specify the outer loop. Now, notice how the <SPAN  CLASS="texttt">break</SPAN> statement is used (<SPAN  CLASS="texttt">break label</SPAN>;). Here, the break statement is terminating the labeled statement (i.e. outer loop). Then, the control of the program jumps to the statement after the labeled statement. Here's another example:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img350.svg"
+ ALT="\begin{lstlisting}
+while (testExpression) {
+// codes
+second:
+while (testExpre...
+...sion) {
+// codes
+break second;
+}
+}
+// control jumps here
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above example, when the statement <SPAN  CLASS="texttt">break second</SPAN>; is executed, the <SPAN  CLASS="texttt">while</SPAN> loop labeled as <SPAN  CLASS="texttt">second</SPAN> is terminated. And, the control of the program moves to the statement after the second <SPAN  CLASS="texttt">while</SPAN> loop.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img351.svg"
+ ALT="\begin{lstlisting}
+class LabeledBreak {
+public static void main(String[] args) ...
+...reaks the first for loop
+if ( i == 2)
+break first;
+}
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img352.svg"
+ ALT="\begin{lstlisting}
+i = 1; j = 1
+i = 1; j = 2
+i = 2; j = 1
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">In the above example, the <SPAN  CLASS="texttt">labeled break</SPAN> statement is used to terminate the loop labeled as first. That is,
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img353.svg"
+ ALT="\begin{lstlisting}
+first:
+for(int i = 1; i &lt; 5; i++) {...}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Here, if we change the statement <SPAN  CLASS="texttt">break first</SPAN>; to <SPAN  CLASS="texttt">break second</SPAN>; the program will behave differently. In this case, <SPAN  CLASS="texttt">for</SPAN> loop labeled as second will be terminated. For example,
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img354.svg"
+ ALT="\begin{lstlisting}
+class LabeledBreak {
+public static void main(String[] args) ...
+...loop labeled as second
+if ( i == 2)
+break second;
+}
+}
+}
+}
+\end{lstlisting}">
+<BR>
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Output:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+<BR>
+<IMG STYLE=""
+ SRC="img355.svg"
+ ALT="\begin{lstlisting}
+i = 1; j = 1
+i = 1; j = 2
+i = 2; j = 1
+i = 3; j = 1
+i = 3; j = 2
+i = 4; j = 1
+i = 4; j = 2
+\end{lstlisting}">
+<BR> 
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node194.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node192.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node192.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1190"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node194.html">Java continue Statement</A>
+<B> Up:</B> <A
+ HREF="node192.html">Java break Statement</A>
+<B> Previous:</B> <A
+ HREF="node192.html">Java break Statement</A>
+ &nbsp; <B>  <A ID="tex2html1191"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

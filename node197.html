@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Programming Paradigms</TITLE>
+<META NAME="description" CONTENT="Programming Paradigms">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node198.html">
+<LINK REL="previous" HREF="node196.html">
+<LINK REL="next" HREF="node198.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node198.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node196.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node196.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1222"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node198.html">Object-Oriented Programming</A>
+<B> Up:</B> <A
+ HREF="node196.html">Object-Oriented Programming</A>
+<B> Previous:</B> <A
+ HREF="node196.html">Object-Oriented Programming</A>
+ &nbsp; <B>  <A ID="tex2html1223"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00710000000000000000">
+Programming Paradigms</A>
+</H1><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Programming paradigms are a way to classify programming languages based on their features. Languages can be classified into multiple paradigms. Some paradigms are concerned mainly with implications for the execution model of the language, such as allowing side effects, or whether the sequence of operations is defined by the execution model. Other paradigms are concerned mainly with the way that code is organized, such as grouping a code into units along with the state that is modified by the code. Yet others are concerned mainly with the style of syntax and grammar. Common programming paradigms include:
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<OL>
+<LI>imperative in which the programmer instructs the machine how to change its state,
+
+<OL>
+<LI>procedural which groups instructions into procedures,
+</LI>
+<LI>object-oriented which groups instructions together with the part of the state they operate on,
+</LI>
+</OL>
+</LI>
+<LI>declarative in which the programmer merely declares properties of the desired result, but not how to compute it
+
+<OL>
+<LI>functional in which the desired result is declared as the value of a series of function applications,
+</LI>
+<LI>logic in which the desired result is declared as the answer to a question about a system of facts and rules,
+</LI>
+<LI>mathematical in which the desired result is declared as the solution of an optimization problem
+</LI>
+</OL>
+</LI>
+</OL><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Languages that fall into the <SPAN  CLASS="textit">imperative paradigm</SPAN> have two main features: they state the order in which operations occur, with constructs that explicitly control that order, and they allow side effects, in which state can be modified at one point in time, within one unit of code, and then later read at a different point in time inside a different unit of code. The communication between the units of code is not explicit. Meanwhile, in <SPAN  CLASS="textit">object-oriented programming</SPAN>, code is organized into objects that contain a state that is only modified by the code that is part of the object. Most object-oriented languages are also imperative languages. In contrast, languages that fit the <SPAN  CLASS="textit">declarative paradigm</SPAN> do not state the order in which to execute operations. Instead, they supply a number of operations that are available in the system, along with the conditions under which each is allowed to execute. The implementation of the language's execution model tracks which operations are free to execute and chooses the order on its own. More at Comparison of multi-paradigm programming languages.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN">Different approaches to programming have developed over time, being identified as such either at the time or retrospectively. An early approach consciously identified as such is structured programming, advocated since the mid 1960s. The concept of a programming paradigm as such dates at least to 1978, in the Turing Award lecture of Robert W. Floyd, entitled The Paradigms of Programming, which cites the notion of paradigm as used by Thomas Kuhn in his The Structure of Scientific Revolutions (1962). Floyd, R. W. (1979). The paradigms of programming. Communications of the ACM. 22 (8): 455–460. doi:10.1145/359138.359140.
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<OL>
+<LI>Machine code
+
+<P>
+The lowest-level programming paradigms are machine code, which directly represents the instructions (the contents of program memory) as a sequence of numbers, and assembly language where the machine instructions are represented by mnemonics and memory addresses can be given symbolic labels. These are sometimes called first-and second-generation languages.
+
+<P>
+In the 1960s, assembly languages were developed to support library COPY and quite sophisticated conditional macro generation and preprocessing abilities, CALL to (subroutines), external variables and common sections (globals), enabling significant code re-use and isolation from hardware specifics via use of logical operators such as READ/WRITE/GET/PUT. Assembly was and still is, used for time critical systems and often in embedded systems as it gives the most direct control of what the machine does.
+
+<P>
+</LI>
+<LI>Procedural languages
+
+<P>
+The next advance was the development of procedural languages. These third-generation languages (the first described as high-level languages) use vocabulary related to the problem being solved. For example,
+
+<P>
+
+<UL>
+<LI>COmmon Business Oriented Language (COBOL) – uses terms like file, move and copy.
+</LI>
+<LI>FORmula TRANslation (FORTRAN) – using mathematical language terminology, it was developed mainly for scientific and engineering problems.
+</LI>
+<LI>ALGOrithmic Language (ALGOL) – focused on being an appropriate language to define algorithms, while using mathematical language terminology, targeting scientific and engineering problems, just like FORTRAN.
+</LI>
+<LI>Programming Language One (PL/I) – a hybrid commercial-scientific general purpose language supporting pointers.
+</LI>
+<LI>Beginners All purpose Symbolic Instruction Code (BASIC) – it was developed to enable more people to write programs.
+</LI>
+<LI>C – a general-purpose programming language, initially developed by Dennis Ritchie between 1969 and 1973 at AT&amp;T Bell Labs.
+</LI>
+</UL>
+
+<P>
+All these languages follow the procedural paradigm. That is, they describe, step by step, exactly the procedure that should, according to the particular programmer at least, be followed to solve a specific problem. The efficacy and efficiency of any such solution are both therefore entirely subjective and highly dependent on that programmer's experience, inventiveness, and ability.
+
+<P>
+</LI>
+<LI>Object-oriented programming
+
+<P>
+Following the widespread use of procedural languages, object-oriented programming (OOP) languages were created, such as Simula, Smalltalk, C++, C#, Eiffel, PHP, and Java. In these languages, data and methods to manipulate it are kept as one unit called an object. With perfect encapsulation, one of the distinguishing features of OOP, the only way that another object or user would be able to access the data is via the object's methods. Thus, the inner workings of an object may be changed without affecting any code that uses the object. There is still some controversy raised by Alexander Stepanov, Richard Stallman and other programmers, concerning the efficacy of the OOP paradigm versus the procedural paradigm. The need for every object to have associative methods leads some skeptics to associate OOP with software bloat; an attempt to resolve this dilemma came through polymorphism.
+
+<P>
+Because object-oriented programming is considered a paradigm, not a language, it is possible to create even an object-oriented assembler language. High Level Assembly (HLA) is an example of this that fully supports advanced data types and object-oriented assembly language programming – despite its early origins. Thus, differing programming paradigms can be seen rather like motivational memes of their advocates, rather than necessarily representing progress from one level to the next[citation needed]. Precise comparisons of the efficacy of competing paradigms are frequently made more difficult because of new and differing terminology applied to similar entities and processes together with numerous implementation distinctions across languages.
+
+<P>
+</LI>
+<LI>Functional programming
+
+<P>
+functional programming is a programming paradigm where programs are constructed by applying and composing functions. It is a declarative programming paradigm in which function definitions are trees of expressions that each return a value, rather than a sequence of imperative statements which change the state of the program.
+
+<P>
+In functional programming, functions are treated as first-class citizens, meaning that they can be bound to names (including local identifiers), passed as arguments, and returned from other functions, just as any other data type can. This allows programs to be written in a declarative and composable style, where small functions are combined in a modular manner.
+
+<P>
+Functional programming is sometimes treated as synonymous with purely functional programming, a subset of functional programming which treats all functions as deterministic mathematical functions, or pure functions. When a pure function is called with some given arguments, it will always return the same result, and cannot be affected by any mutable state or other side effects. This is in contrast with impure procedures, common in imperative programming, which can have side effects (such as modifying the program's state or taking input from a user). Proponents of purely functional programming claim that by restricting side effects, programs can have fewer bugs, be easier to debug and test, and be more suited to formal verification. Hudak, Paul (September 1989). Conception, evolution, and application of functional programming languages (PDF). ACM Computing Surveys. 21 (3): 359–411. doi:10.1145/72551.72554. S2CID 207637854. Hughes, John (1984). Why Functional Programming Matters.
+
+<P>
+Functional programming has its roots in academia, evolving from the lambda calculus, a formal system of computation based only on functions. Functional programming has historically been less popular than imperative programming, but many functional languages are seeing use today in industry and education, including Common Lisp, Scheme, Clojure, Wolfram Language, Racket, Erlang, OCaml, Haskell, and F#. Functional programming is also key to some languages that have found success in specific domains, like R in statistics, J, K and Q in financial analysis, and XQuery/XSLT for XML. Domain-specific declarative languages like SQL and Lex/Yacc use some elements of functional programming, such as not allowing mutable values. In addition, many other programming languages support programming in a functional style or have implemented features from functional programming, such as C++11, Kotlin, Perl, PHP, Python, and Scala.
+
+<P>
+</LI>
+</OL><SPAN CLASS="TINY"><SPAN CLASS="SPAN">
+</SPAN></SPAN>
+<P>
+<SPAN CLASS="TINY"><SPAN CLASS="SPAN"></SPAN></SPAN>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node198.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node196.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node196.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1222"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node198.html">Object-Oriented Programming</A>
+<B> Up:</B> <A
+ HREF="node196.html">Object-Oriented Programming</A>
+<B> Previous:</B> <A
+ HREF="node196.html">Object-Oriented Programming</A>
+ &nbsp; <B>  <A ID="tex2html1223"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

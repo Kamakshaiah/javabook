@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Using merge() Method</TITLE>
+<META NAME="description" CONTENT="Using merge() Method">
+<META NAME="keywords" CONTENT="Java_Book">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="Java_Book.css">
+
+<LINK REL="next" HREF="node156.html">
+<LINK REL="previous" HREF="node154.html">
+<LINK REL="next" HREF="node156.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node156.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node148.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node154.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html1063"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node156.html">Other Methods of HashMap</A>
+<B> Up:</B> <A
+ HREF="node148.html">Methods of HashMap</A>
+<B> Previous:</B> <A
+ HREF="node154.html">Recompute Values</A>
+ &nbsp; <B>  <A ID="tex2html1064"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION005104700000000000000">
+Using <SPAN  CLASS="texttt">merge()</SPAN> Method</A>
+</H3><SPAN CLASS="TINY">
+</SPAN>
+<P>
+<SPAN CLASS="TINY">The <SPAN  CLASS="texttt">merge()</SPAN> method associates the specified value to the specified key if the specified key is not already associated. However, if the specified key is already associated with a value, it will merge the new specified value with the existing old value. For example,
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img283.svg"
+ ALT="\begin{lstlisting}
+import java.util.HashMap;
+\par
+class Main {
+public static vo...
+...e);
+System.out.println(''New HashMap: '' + numbers);
+}
+}
+\par
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">Output
+</SPAN>
+<P>
+<SPAN CLASS="TINY">
+<BR>
+<IMG STYLE=""
+ SRC="img284.svg"
+ ALT="\begin{lstlisting}
+Original HashMap: {Second=2, First=1}
+New HashMap: {Second=2, First=5}
+\end{lstlisting}">
+<BR>
+</SPAN>
+<P>
+<SPAN CLASS="TINY">In the above example, the <SPAN  CLASS="texttt">merge()</SPAN> method takes 3 parameters: <SPAN  CLASS="texttt">key, newValue</SPAN> and a lambda expression (that computes the new merged value).
+</SPAN>
+<P>
+<SPAN CLASS="TINY"></SPAN>
+<BR><HR>
+
+</BODY>
+</HTML>
